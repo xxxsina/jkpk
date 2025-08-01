@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <!-- 直播的用户头像角标 -->
+  <solid android:color="@color/ksad_reward_main_color" />
+  <size
+    android:width="20dp"
+    android:height="14dp" />
+  <corners
+    android:bottomRightRadius="7dp"
+    android:topLeftRadius="7dp"
+    android:topRightRadius="7dp" />
+</shape>

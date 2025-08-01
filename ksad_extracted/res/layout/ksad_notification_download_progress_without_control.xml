@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:gravity="center_vertical"
+  android:orientation="horizontal"
+  tools:ignore="HardcodedText,RtlHardcoded,SpUsage">
+
+  <!-- 不带有下载暂停/恢复 按钮的通知栏layout-->
+  <!-- Icon : 中间部分 : 按钮 = 72 : 195 : 88-->
+  <ImageView
+    android:id="@+id/ksad_download_icon"
+    android:layout_width="0dp"
+    android:layout_height="72dp"
+    android:layout_weight="72"
+    android:contentDescription="appIcon"
+    android:padding="12dp"
+    android:scaleType="centerCrop"
+    android:src="@drawable/ksad_notification_default_icon" />
+
+  <RelativeLayout
+    android:layout_width="0dp"
+    android:layout_height="72dp"
+    android:layout_weight="267"
+    android:orientation="vertical"
+    android:paddingBottom="12dp"
+    android:paddingTop="12dp">
+
+    <LinearLayout
+      android:id="@+id/ksad_download_title_view"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_alignParentTop="true"
+      android:orientation="horizontal">
+
+      <TextView
+        android:id="@+id/ksad_download_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:maxWidth="160dp"
+        android:textColor="#222222"
+        android:textSize="16dp"
+        tools:text="kw.apk" />
+
+      <TextView
+        android:id="@+id/ksad_download_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:textColor="#222222"
+        android:textSize="16dp"
+        tools:text="下载中" />
+    </LinearLayout>
+
+    <LinearLayout
+      android:paddingRight="12dp"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      android:orientation="vertical">
+
+      <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:orientation="horizontal">
+
+        <TextView
+          android:id="@+id/ksad_download_size"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentLeft="true"
+          android:maxLines="1"
+          android:textColor="#666666"
+          android:textSize="10sp"
+          tools:text="12.3MB/12.4MB" />
+
+        <TextView
+          android:id="@+id/ksad_download_percent_num"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentRight="true"
+          android:maxLines="1"
+          android:textColor="#666666"
+          android:textSize="10sp"
+          tools:text="下载进度：13%" />
+      </RelativeLayout>
+
+      <ProgressBar
+        android:id="@+id/ksad_download_progress"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_gravity="bottom"
+        android:progressDrawable="@drawable/ksad_notification_progress" />
+
+    </LinearLayout>
+
+  </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.kwad.sdk.core.view.AdBaseFrameLayout  android:id="@+id/ksad_root_container"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
+  <!-- 全页面TK的全屏 -->
+  <com.kwad.sdk.widget.KSFrameLayout
+    android:id="@+id/ksad_js_full_card"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" />
+
+  <ViewStub
+    android:id="@+id/ksad_native_container_stub"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout="@layout/ksad_activity_fullscreen_native" />
+
+  <!-- 试玩广告的容器 -->
+  <com.kwad.sdk.core.webview.KsAdWebView
+    android:id="@+id/ksad_playable_webview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="gone" />
+</com.kwad.sdk.core.view.AdBaseFrameLayout>

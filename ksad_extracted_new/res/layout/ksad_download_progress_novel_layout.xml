@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  tools:layout_height="40dp"
+  tools:layout_width="350dp">
+
+  <com.kwad.components.core.page.widget.TextProgressBar
+    android:id="@+id/ksad_progress_bar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:indeterminateOnly="false"
+    android:progressDrawable="@drawable/ksad_feed_download_progress_novel"
+    android:visibility="gone"
+    tools:visibility="visible" />
+
+  <TextView
+    android:id="@+id/ksad_normal_text"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/ksad_feed_actionbar_cover_pressed"
+    android:textColor="#FFFFFF"
+    app:ksad_downloadTextSize="14dp"
+    android:textStyle="bold"
+    tools:ignore="SpUsage"
+    tools:text="立即下载" />
+
+  <View
+    android:id="@+id/ksad_foreground_cover"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ksad_feed_actionbar_cover_bg"/>
+
+</FrameLayout>

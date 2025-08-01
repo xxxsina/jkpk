@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context=".open.contentalliance.subad.TestSubAdHomeActivity"
+  tools:ignore="HardcodedText">
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <FrameLayout
+      android:layout_width="match_parent"
+      android:layout_height="46dp"
+      android:background="@android:color/white">
+
+      <TextView
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:text="测试内容-插入外部广告"
+        android:textAllCaps="false"
+        android:textColor="#222222"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+      <ImageView
+        android:id="@+id/ksad_main_left_back_btn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_vertical|left"
+        android:layout_marginLeft="6dp"
+        android:src="@drawable/ksad_back_black_icon" />
+
+    </FrameLayout>
+
+    <View
+      android:layout_width="match_parent"
+      android:layout_height="1px"
+      android:background="#e0e0e0" />
+
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@drawable/ksad_main_item_bg"
+      android:clickable="true"
+      android:onClick="testSubAdSimple"
+      android:padding="16dp"
+      android:text="插入第三方广告（单独Fragment）"
+      android:textAllCaps="false"
+      android:textColor="#222222"
+      android:textSize="16sp" />
+
+    <View
+      android:layout_width="match_parent"
+      android:layout_height="1px"
+      android:background="@drawable/ksad_main_list_divider_bg" />
+
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@drawable/ksad_main_item_bg"
+      android:clickable="true"
+      android:onClick="testSubAdViewPager"
+      android:padding="16dp"
+      android:text="插入第三方广告（ViewPager）"
+      android:textColor="#222222"
+      android:textSize="16sp" />
+
+    <View
+      android:layout_width="match_parent"
+      android:layout_height="1px"
+      android:background="@drawable/ksad_main_list_divider_bg" />
+
+    <View
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="#f8f8f8" />
+  </LinearLayout>
+
+</ScrollView>

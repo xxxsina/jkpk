@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ksad_shake_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal|bottom"
+    android:background="@drawable/ksad_shake_layout_bg"
+    android:clickable="false"
+    android:clipToPadding="false"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/ksad_splash_shake_view_margin_bottom"
+    android:visibility="gone"
+    tools:visibility="visible">
+
+    <!-- 摇一摇的View，默认不显示，仅在开启摇一摇转化的时候才显示 -->
+    <com.kwad.components.ad.splashscreen.widget.KsShakeView
+        android:id="@+id/ksad_shake_view"
+        android:layout_width="@dimen/ksad_splash_shake_view_width"
+        android:layout_height="@dimen/ksad_splash_shake_view_height"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/ksad_splash_shake_view_margin_top"
+        app:ksad_innerCircleStrokeColor="#B3FFFFFF"
+        app:ksad_innerCircleStrokeWidth="1dp"
+        app:ksad_outerStrokeColor="#4DFFFFFF"
+        app:ksad_outerStrokeWidth="1dp"
+        app:ksad_shakeViewStyle="2" />
+
+    <TextView
+        android:id="@+id/ksad_shake_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="5dp"
+        android:clickable="false"
+        android:text="摇一摇"
+        android:textColor="@android:color/white"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/ksad_shake_action"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:clickable="false"
+        android:text="或点击跳转详情页/第三方应用"
+        android:textColor="@android:color/white"
+        android:textSize="10sp" />
+
+</LinearLayout>

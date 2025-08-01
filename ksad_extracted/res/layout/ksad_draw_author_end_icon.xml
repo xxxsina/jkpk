@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="100dp"
+  android:layout_height="wrap_content"
+  android:gravity="center"
+  android:clipChildren="false"
+  android:clipToPadding="false"
+  android:orientation="vertical">
+
+  <FrameLayout
+    android:id="@+id/ksad_author_icon_layout"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_gravity="center_horizontal">
+
+    <!--  实现波纹动画的底部图片，默认尺寸是头像的一半，最大值是外层容器的值  -->
+    <com.kwad.components.core.widget.KSCornerImageView
+      android:id="@+id/ksad_author_animator"
+      android:layout_width="96dp"
+      android:layout_height="96dp"
+      android:layout_gravity="center"
+      android:src="@drawable/ksad_author_circle" />
+
+    <!--  实现波纹动画的底部图，第二环  -->
+    <com.kwad.components.core.widget.KSCornerImageView
+      android:id="@+id/ksad_author_animator2"
+      android:layout_width="96dp"
+      android:layout_height="96dp"
+      android:layout_gravity="center"
+      android:src="@drawable/ksad_author_circle" />
+
+    <!--  头像的容器，使得头像在缩放动画时不超过该区域  -->
+    <com.kwad.sdk.widget.KSFrameLayout
+      android:id="@+id/ksad_author_icon_frame"
+      android:layout_width="96dp"
+      android:layout_height="96dp"
+      android:layout_gravity="center"
+      android:padding="1dp"
+      app:ksad_radius="200dp">
+
+      <com.kwad.components.core.widget.KSCornerImageView
+        android:id="@+id/ksad_author_icon"
+        android:layout_width="84dp"
+        android:layout_gravity="center"
+        android:layout_height="84dp"
+        app:ksad_radius="200dp"
+        tools:src="@drawable/ksad_default_app_icon" />
+    </com.kwad.sdk.widget.KSFrameLayout>
+
+    <!-- 头像上层固定的圆环  -->
+    <com.kwad.components.core.widget.KSCornerImageView
+      android:id="@+id/ksad_author_icon_outer"
+      android:layout_width="96dp"
+      android:layout_height="96dp"
+      android:layout_gravity="center"
+      android:background="@drawable/ksad_author_circle" />
+  </FrameLayout>
+
+</LinearLayout>

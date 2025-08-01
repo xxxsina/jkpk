@@ -1,0 +1,192 @@
+[
+  {
+    "preview_type": "落地页-表单提交",
+    "preview_aid": 1696548822380611,
+    "preview_cids": [
+      {
+        "preview_style": "竖版视频",
+        "preview_cid": 1696549039087667
+      },
+      {
+        "preview_style": "竖版大图",
+        "preview_cid": 1696556324791347
+      },
+      {
+        "preview_style": "横版大图",
+        "preview_cid": 1696556324792339
+      },
+      {
+        "preview_style": "小图",
+        "preview_cid": 1696556324792371
+      },
+      {
+        "preview_style": "组图",
+        "preview_cid": 1696556327070755
+      },
+      {
+        "preview_style": "横版视频",
+        "preview_cid": 1696556327070739
+      }
+    ]
+  },
+  {
+    "preview_type": "直播",
+    "preview_aid": "1",
+    "preview_cids": [
+      {
+        "preview_style": "直播-预览流",
+        "image_mode": "166"
+      },
+      {
+        "preview_style": "直播-视频",
+        "image_mode": "5"
+      },
+      {
+        "preview_style": "直播-竖版视频",
+        "image_mode": "15"
+      },
+      {
+        "preview_style": "直播-竖版图片",
+        "image_mode": "16"
+      },
+      {
+        "preview_style": "直播-大图",
+        "image_mode": "3"
+      },
+      {
+        "preview_style": "直播-小图",
+        "image_mode": "2"
+      }
+    ]
+  },
+  {
+    "preview_type": "Playable",
+    "preview_aid": 1696550504417319,
+    "preview_cids": [
+      {
+        "preview_style": "横版视频",
+        "preview_cid": 1696824047861763
+      }
+    ]
+  },
+  {
+    "preview_type": "下载-商店直投",
+    "preview_aid": 1696551305698388,
+    "preview_cids": [
+      {
+        "preview_style": "竖版视频",
+        "preview_cid": 1696551470298205
+      },
+      {
+        "preview_style": "竖版大图",
+        "preview_cid": 1696551972303940
+      },
+      {
+        "preview_style": "横版大图",
+        "preview_cid": 1696551972303972
+      },
+      {
+        "preview_style": "小图",
+        "preview_cid": 1696551972304964
+      },
+      {
+        "preview_style": "组图",
+        "preview_cid": 1696551972305012
+      },
+      {
+        "preview_style": "横版视频",
+        "preview_cid": 1696551972304996
+      }
+    ]
+  },
+  {
+    "preview_type": "下载-直接下载",
+    "preview_aid": 1696551673061384,
+    "preview_cids": [
+      {
+        "preview_style": "竖版视频",
+        "preview_cid": 1696551860512808
+      },
+      {
+        "preview_style": "竖版大图",
+        "preview_cid": 1696551860512824
+      },
+      {
+        "preview_style": "横版大图",
+        "preview_cid": 1696551860513816
+      },
+      {
+        "preview_style": "小图",
+        "preview_cid": 1696551860513848
+      },
+      {
+        "preview_style": "组图",
+        "preview_cid": 1696551863487591
+      },
+      {
+        "preview_style": "横版视频",
+        "preview_cid": 1696551863487575
+      }
+    ]
+  },
+  {
+    "preview_type": "下载-落地页下载",
+    "preview_aid": 1696552094764077,
+    "preview_cids": [
+      {
+        "preview_style": "竖版视频",
+        "preview_cid": 1696552308109399
+      },
+      {
+        "preview_style": "竖版大图",
+        "preview_cid": 1696552308109415
+      },
+      {
+        "preview_style": "横版大图",
+        "preview_cid": 1696552310348807
+      },
+      {
+        "preview_style": "小图",
+        "preview_cid": 1696552310348839
+      },
+      {
+        "preview_style": "组图",
+        "preview_cid": 1696552310349847
+      },
+      {
+        "preview_style": "横版视频",
+        "preview_cid": 1696552310349831
+      }
+    ]
+  },
+  {
+    "preview_type": "调起类",
+    "preview_aid": 1696552393856036,
+    "preview_cids": [
+      {
+        "preview_style": "竖版视频",
+        "preview_cid": 1696552559522936
+      },
+      {
+        "preview_style": "竖版大图",
+        "preview_cid": 1696552559523912
+      },
+      {
+        "preview_style": "横版大图",
+        "preview_cid": 1696552559523944
+      },
+      {
+        "preview_style": "小图",
+        "preview_cid": 1696552562068494
+      },
+      {
+        "preview_style": "组图",
+        "preview_cid": 1696552562068542
+      },
+      {
+        "preview_style": "横版视频",
+        "preview_cid": 1696552562068526
+      }
+    ]
+  }
+]

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <!-- checked 的状态表示语音的可以用，即声音可以播放 -->
+  <item android:drawable="@drawable/ksad_interstitial_mute" android:state_selected="false" />
+  <item android:drawable="@drawable/ksad_interstitial_unmute" android:state_selected="true" />
+
+</selector>

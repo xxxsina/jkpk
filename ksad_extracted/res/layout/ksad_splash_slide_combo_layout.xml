@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:id="@+id/ksad_slide_combo_root"
+  android:layout_width="match_parent"
+  android:layout_height="460dp"
+  android:layout_gravity="bottom"
+  android:visibility="gone"
+  tools:visibility="visible"
+  tools:background="#50FF0000">
+
+  <com.kwad.components.ad.splashscreen.widget.KsSlideHandView
+    android:layout_width="306dp"
+    android:layout_height="242dp"
+    android:layout_gravity="center|bottom"
+    android:id="@+id/ksad_slide_combo_slide_hand"
+    android:layout_marginBottom="200dp">
+
+  </com.kwad.components.ad.splashscreen.widget.KsSlideHandView>
+
+  <com.kwad.components.ad.splashscreen.widget.KsSlideRoundView
+    android:layout_width="match_parent"
+    android:layout_height="210dp"
+    android:id="@+id/ksad_slide_combo_round_bg"
+    app:ksad_shakeIcon = "@drawable/ksad_splash_slide_round_white_bg"
+    android:layout_gravity="bottom">
+
+  </com.kwad.components.ad.splashscreen.widget.KsSlideRoundView>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="348dp"
+    android:orientation="vertical">
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      tools:text="任意方向滑动或点击"
+      android:text="@string/ksad_splash_slide_combo_guide_text"
+      android:id="@+id/ksad_slide_combo_action_text"
+      android:textColor="@android:color/white"
+      android:textSize="20sp"
+      android:shadowColor="#99000000"
+      android:shadowDx="0"
+      android:shadowDy="0"
+      android:shadowRadius="5"
+      android:layout_gravity="center_horizontal"/>
+
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      tools:text="跳转详情或第三方应用"
+      android:text="@string/ksad_splash_slide_combo_sub_text"
+      android:id="@+id/ksad_slide_combo_action_sub_text"
+      android:textColor="@android:color/white"
+      android:textSize="12sp"
+      android:shadowColor="#99000000"
+      android:shadowDx="0"
+      android:shadowDy="0"
+      android:shadowRadius="5"
+      android:layout_marginTop="6dp"
+      android:layout_gravity="center_horizontal"/>
+  </LinearLayout>
+
+
+</FrameLayout>

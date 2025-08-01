@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.kwad.demo.open.nativead.TestNativeAdActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="@android:color/white">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:gravity="center"
+            android:background="@android:color/white"
+            android:text="测试媒体自渲染广告"
+            android:textSize="17sp"
+            android:textColor="#222222"
+            android:textStyle="bold"
+            android:textAllCaps="false" />
+
+        <ImageView
+            android:id="@+id/ksad_main_left_back_btn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="6dp"
+            android:layout_gravity="center_vertical|left"
+            android:src="@drawable/ksad_back_black_icon"/>
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#e0e0e0" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:onClick="requestNativeAdVideo"
+        android:textColor="#222222"
+        android:textSize="16sp"
+        android:padding="16dp"
+        android:background="@drawable/ksad_main_item_bg"
+        android:text="测试视频广告"
+        tools:ignore="HardcodedText" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@drawable/ksad_main_list_divider_bg" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:onClick="requestNativeAdImage"
+        android:textColor="#222222"
+        android:textSize="16sp"
+        android:padding="16dp"
+        android:background="@drawable/ksad_main_item_bg"
+        android:text="测试图文广告"
+        tools:ignore="HardcodedText" />
+
+    <View
+      android:layout_width="match_parent"
+      android:layout_height="1px"
+      android:background="@drawable/ksad_main_list_divider_bg" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#222222"
+        android:textSize="16sp"
+        android:padding="16dp"
+        android:background="@drawable/ksad_main_item_bg"
+        android:clickable="true"
+        android:onClick="testFeedNativeList"
+        android:text="测试信息流自渲染广告"
+        android:textAllCaps="false" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@drawable/ksad_main_list_divider_bg" />
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:textColor="#222222"
+      android:textSize="16sp"
+      android:padding="16dp"
+      android:background="@drawable/ksad_main_item_bg"
+      android:clickable="true"
+      android:onClick="testDialogNative"
+      android:text="测试插屏自渲染"
+      android:textAllCaps="false" />
+
+    <View
+      android:layout_width="match_parent"
+      android:layout_height="1px"
+      android:background="@drawable/ksad_main_list_divider_bg" />
+    <EditText
+      android:id="@+id/native_ad_et"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:hint="请输入posId"
+      android:textColor="#222222"
+      android:textSize="16sp"
+      android:padding="16dp"
+      android:background="@drawable/ksad_main_item_bg"
+      tools:ignore="HardcodedText" />
+
+    <FrameLayout
+        android:id="@+id/native_ad_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <View
+      android:layout_width="match_parent"
+      android:layout_height="1px"
+      android:background="@drawable/ksad_main_list_divider_bg" />
+    <include layout="@layout/server_bidding_layout" />
+</LinearLayout>

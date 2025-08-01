@@ -1,0 +1,45 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    defaultConfig {
+        applicationId "com.kwad.demo"
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+        buildConfigField("Boolean", "isToastEnable", "${toastEnable}")
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    allprojects {
+        repositories {
+            jcenter()
+            flatDir {
+                dirs 'libs'
+            }
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar','*.aar'], dir: 'libs')
+    implementation 'com.github.bumptech.glide:glide:4.8.0'
+    implementation 'androidx.multidex:multidex:2.0.1'
+    implementation 'com.google.code.gson:gson:2.8.9'
+
+    /********媒体需要依赖开始********/
+    //SDK有依赖support-v4库，请确保工程中有support-V7
+    implementation deps.support.appcompat_v7
+    implementation deps.support.recyclerview_v7
+    /********媒体需要依赖结束********/
+
+}

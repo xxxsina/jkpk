@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.kwad.demo"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  tools:ignore="LockedOrientationActivity">
+
+  <uses-sdk tools:overrideLibrary="cn.leo.produce" />
+
+  <!--检测当前网络状态是2G、3G、4G还是WiFi-->
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+  <!--联网权限-->
+  <uses-permission android:name="android.permission.INTERNET" />
+  <!--获取设备标识IMEI。用于标识用户-->
+  <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+  <!--获取MAC地址，用于标识用户-->
+  <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+  <!--安装应用权限-->
+  <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+  <!--定位权限，不强制要求-->
+  <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+  <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+  <!--读写存储权限 非必须-->
+  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+  <!--建议添加“query_all_package”权限，SDK将通过此权限在AndroidR系统上判定广告对应的应用是否在用户的app上安装，
+  避免投放错误的广告，以此提高用户的广告体验。若添加此权限，需要在您的用户隐私文档中声明-->
+  <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES" />
+  <!--通知栏权限，用于展示下载通知，非必须-->
+  <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+  <!--改变网络权限，非必须-->
+  <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+  <!-- 震动 -->
+  <uses-permission android:name="android.permission.VIBRATE" />
+
+
+  <!--usesCleartextTraffic设置为true视频Android28不支持http请求-->
+  <application
+    android:name="com.kwad.demo.open.DemoApplication"
+    android:allowBackup="true"
+    android:icon="@drawable/test_ic_launcher"
+    android:label="@string/app_name"
+    android:networkSecurityConfig="@xml/network_security_config"
+    android:supportsRtl="true"
+    android:theme="@style/Base.Theme.AppCompat.Light"
+    android:usesCleartextTraffic="true"
+    tools:ignore="GoogleAppIndexingWarning">
+
+    <meta-data
+      android:name="use_miui_font"
+      android:value="false" />
+
+    <!--测试开屏广告入口-->
+    <activity
+      android:name=".open.splash.SplashHomeActivity"
+      android:configChanges="keyboardHidden|orientation|screenSize"
+      android:exported="true"
+      android:screenOrientation="portrait" />
+
+    <activity
+      android:name=".open.banner.TestBannerAdActivity"
+      android:configChanges="keyboardHidden|orientation|screenSize"
+      android:exported="true"
+      android:screenOrientation="portrait" />
+
+    <activity
+      android:name="com.kwad.demo.open.splash.TestSplashScreenViewActivity"
+      android:configChanges="keyboardHidden|orientation|screenSize"
+      android:exported="true"
+      android:screenOrientation="portrait"
+      android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+      tools:ignore="LockedOrientationActivity">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+
+    <activity
+      android:name="com.kwad.demo.open.MainActivity"
+      android:configChanges="keyboardHidden|orientation|screenSize"
+      android:screenOrientation="portrait" />
+
+    <activity android:name=".open.PrivilegeDialog.PolicyDetailActivity" />
+
+
+    <!--测试全屏视频广告-->
+    <activity
+      android:name="com.kwad.demo.open.fullscreen.TestFullScreenVideoActivity"
+      android:configChanges="keyboardHidden|orientation|screenSize"
+      android:exported="true"
+      android:screenOrientation="portrait" />
+
+    <!--测试激励视频广告-->
+    <activity
+      android:name="com.kwad.demo.open.reward.TestRewardVideoActivity"
+      android:configChanges="keyboardHidden|orientation|screenSize"
+      android:exported="true"
+      android:screenOrientation="portrait" />
+
+    <!--测试媒体自渲染广告-->
+    <activity
+      android:name="com.kwad.demo.open.nativead.TestNativeAdActivity"
+      android:configChanges="keyboardHidden|orientation|screenSize"
+      android:screenOrientation="portrait" />
+
+    <!--测试信息流广告入口-->
+    <activity
+      android:name=".open.feed.FeedHomeActivity"
+      android:configChanges="keyboardHidden|orientation|screenSize"
+      android:exported="true"
+      android:screenOrientation="portrait" />
+
+    <!--测试自渲染信息流广告-->
+    <activity
+      android:name="com.kwad.demo.open.nativead.TestFeedNativeListActivity"
+      android:configChanges="keyboardHidden|orientation|screenSize"
+      android:screenOrientation="portrait" />
+
+
+    <!--测试信息流广告 SDK模板+RecyclerView-->
+    <activity
+      android:name=".open.feed.TestConfigFeedRecyclerActivity"
+      android:configChanges="keyboardHidden|orientation|screenSize"
+      android:screenOrientation="portrait" />
+
+    <!--测试信息流广告 SDK模板+ListView-->
+    <activity
+      android:name=".open.feed.TestConfigFeedListActivity"
+      android:configChanges="keyboardHidden|orientation|screenSize"
+      android:screenOrientation="portrait" />
+
+    <activity
+      android:name=".open.interstitial.TestInterstitialAdActivity"
+      android:configChanges="keyboardHidden|orientation|screenSize"
+      android:exported="true"
+      android:screenOrientation="portrait" />
+
+    <activity
+      android:name=".open.interstitial.TestNewInterstitialAdActivity"
+      android:configChanges="keyboardHidden|orientation|screenSize"
+      android:exported="true"
+      android:screenOrientation="portrait" />
+
+    <!--测试Draw竖屏信息流广告-->
+    <activity
+      android:name=".open.draw.TestDrawVideoActivity"
+      android:configChanges="keyboardHidden|orientation|screenSize"
+      android:exported="true"
+      android:screenOrientation="portrait" />
+
+    <activity
+      android:name=".open.contentalliance.setting.TestContentSettingActivity"
+      android:configChanges="keyboardHidden|orientation|screenSize"
+      android:screenOrientation="portrait" />
+
+    <!--测试内容+广告入口-->
+    <activity
+      android:name=".open.contentalliance.contentpage.TestContentAllianceHomeActivity"
+      android:configChanges="keyboardHidden|orientation|screenSize"
+      android:screenOrientation="portrait" />
+
+    <!--测试内容+广告入口-->
+    <activity
+      android:name=".open.contentalliance.wallpaper.TestContentWallpaperHomeActivity"
+      android:configChanges="keyboardHidden|orientation|screenSize"
+      android:screenOrientation="portrait" />
+
+    <!--测试入口组件-->
+    <activity
+      android:name=".open.contentalliance.entry.TestEntryHomeActivity"
+      android:configChanges="keyboardHidden|orientation|screenSize"
+      android:screenOrientation="portrait" />
+    <activity
+      android:name=".open.contentalliance.entry.TestEntryActivity"
+      android:configChanges="keyboardHidden|orientation|screenSize"
+      android:screenOrientation="portrait" />
+    <activity
+      android:name=".open.contentalliance.entry.TestEntryMixedActivity"
+      android:configChanges="keyboardHidden|orientation|screenSize"
+      android:screenOrientation="portrait" />
+
+    <!--动态壁纸滑滑页面-->
+    <activity
+      android:name=".open.contentalliance.wallpaper.TestContentWallpaperDetailActivity"
+      android:configChanges="keyboardHidden|orientation|screenSize"
+      android:screenOrientation="portrait" />
+
+    <!--测试内容壁纸Feed流样式  双feed流样式-->
+    <activity
+      android:name=".open.contentalliance.wallpaper.TestWallpaperFeedPageActivity"
+      android:configChanges="keyboardHidden|orientation|screenSize"
+      android:screenOrientation="portrait" />
+
+    <!--测试内容+广告 单个页面replace方式-->
+    <activity
+      android:name=".open.contentalliance.contentpage.TestContentAllianceActivity"
+      android:configChanges="keyboardHidden|orientation|screenSize"
+      android:screenOrientation="portrait" />
+
+    <!--测试内容+广告 单个页面replace方式-->
+    <activity
+      android:name=".open.contentalliance.contentpage.TestContentPageFragmentActivity"
+      android:configChanges="keyboardHidden|orientation|screenSize"
+      android:screenOrientation="portrait" />
+
+    <!--测试内容+广告  viewpager使用场景 Tab在下边 -->
+    <activity
+      android:name=".open.contentalliance.contentpage.TestContentAllianceViewPagerActivity"
+      android:configChanges="keyboardHidden|orientation|screenSize"
+      android:screenOrientation="portrait" />
+
+    <!--测试内容+广告 TabLayout方式-->
+    <activity
+      android:name=".open.contentalliance.contentpage.TestContentAllianceTabLayoutActivity"
+      android:configChanges="keyboardHidden|orientation|screenSize"
+      android:screenOrientation="portrait" />
+    <!--测试插入第三方广告-->
+    <activity
+      android:name=".open.contentalliance.subad.TestSubAdHomeActivity"
+      android:configChanges="keyboardHidden|orientation|screenSize"
+      android:screenOrientation="portrait" />
+    <activity
+      android:name=".open.contentalliance.subad.TestSubAdSimpleActivity"
+      android:configChanges="keyboardHidden|orientation|screenSize"
+      android:screenOrientation="portrait" />
+    <activity
+      android:name=".open.contentalliance.subad.TestSubAdViewPagerActivity"
+      android:configChanges="keyboardHidden|orientation|screenSize"
+      android:screenOrientation="portrait" />
+
+    <activity
+      android:name=".open.contentalliance.contentpage.TestContentPagePushActivity"
+      android:configChanges="keyboardHidden|orientation|screenSize"
+      android:exported="true"
+      android:screenOrientation="portrait">
+      <intent-filter>
+        <action android:name="com.kwad.content.ACTION_PUSH" />
+      </intent-filter>
+    </activity>
+    <activity
+      android:name=".open.contentalliance.share.TestMediaShareActivity"
+      android:configChanges="keyboardHidden|orientation|screenSize"
+      android:exported="true"
+      android:screenOrientation="portrait" />
+    <activity
+      android:name=".open.contentalliance.contentpage.TestContentPagePushHomeActivity"
+      android:configChanges="keyboardHidden|orientation|screenSize"
+      android:screenOrientation="portrait"
+      tools:ignore="LockedOrientationActivity" />
+
+    <!--测试内容Feed流样式入口-->
+    <activity
+      android:name=".open.contentalliance.feed.TestFeedPageHomeActivity"
+      android:configChanges="keyboardHidden|orientation|screenSize"
+      android:screenOrientation="portrait"
+      tools:ignore="LockedOrientationActivity" />
+
+    <!--测试内容Feed流样式  双feed流样式-->
+    <activity
+      android:name=".open.contentalliance.feed.TestFeedPageSimpleActivity"
+      android:configChanges="keyboardHidden|orientation|screenSize"
+      android:screenOrientation="portrait" />
+
+    <!--测试内容Feed流样式 viewPager场景-->
+    <activity
+      android:name=".open.contentalliance.feed.TestFeedPageViewPagerActivity"
+      android:configChanges="keyboardHidden|orientation|screenSize"
+      android:screenOrientation="portrait" />
+
+    <!--测试内容横版样式入口-->
+    <activity
+      android:name=".open.contentalliance.horizontal.TestHorizontalActivity"
+      android:configChanges="keyboardHidden|orientation|screenSize"
+      android:screenOrientation="portrait"
+      tools:ignore="LockedOrientationActivity" />
+
+    <!--测试内容横版样式，视频Feed流-->
+    <activity
+      android:name=".open.contentalliance.horizontal.TestHorizontalFeedActivity"
+      android:configChanges="keyboardHidden|orientation|screenSize"
+      android:screenOrientation="portrait" />
+
+    <!--测试内容横版样式，视频Feed流, 流内播放样式-->
+    <activity
+      android:name=".open.contentalliance.horizontal.TestHorizontalPlayFeedActivity"
+      android:configChanges="keyboardHidden|orientation|screenSize"
+      android:screenOrientation="portrait" />
+
+    <!--内容联盟(横版视频流数据外漏样式)-->
+    <activity
+      android:name=".open.contentalliance.horizontal.TestHorizontalJumpVideoActivity"
+      android:configChanges="keyboardHidden|orientation|screenSize"
+      android:screenOrientation="portrait" />
+
+    <!--测试内容热榜功能-->
+    <activity
+      android:name=".open.contentalliance.hotspot.TestHotspotHomeActivity"
+      android:configChanges="keyboardHidden|orientation|screenSize"
+      android:screenOrientation="portrait" />
+
+    <!--测试内容热榜列表-->
+    <activity
+      android:name=".open.contentalliance.hotspot.TestHotspotPageActivity"
+      android:configChanges="keyboardHidden|orientation|screenSize"
+      android:screenOrientation="portrait" />
+
+    <!--测试内容热榜数据-->
+    <activity
+      android:name=".open.contentalliance.hotspot.TestHotspotDataActivity"
+      android:configChanges="keyboardHidden|orientation|screenSize"
+      android:screenOrientation="portrait" />
+
+    <!-- 广告联盟的返回页面 -->
+    <activity
+      android:name=".open.TestReturnBackActivity"
+      android:exported="true"
+      android:launchMode="singleTask"
+      android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+      <intent-filter>
+        <action android:name="android.intent.action.VIEW" />
+
+        <category android:name="android.intent.category.DEFAULT" />
+        <category android:name="android.intent.category.BROWSABLE" />
+
+        <data android:scheme="ksad" />
+        <data android:scheme="kwai.union" />
+      </intent-filter>
+    </activity>
+
+    <!-- 测试电商直播二级入口界面 -->
+    <activity
+      android:name="com.kwad.demo.open.contentalliance.TestLiveHomeActivity"
+      android:configChanges="keyboardHidden|orientation|screenSize"
+      android:screenOrientation="portrait" />
+
+    <!-- 测试电商直播 Replace方式接入 直接进来就是滑滑流形态 -->
+    <activity
+      android:name="com.kwad.demo.open.contentalliance.TestEcLivePageActivity"
+      android:configChanges="keyboardHidden|orientation|screenSize"
+      android:screenOrientation="portrait" />
+
+    <!-- 测试电商直播 TabLayout方式接入 -->
+    <activity
+      android:name="com.kwad.demo.open.contentalliance.TestEcLiveTabLayoutActivity"
+      android:configChanges="keyboardHidden|orientation|screenSize"
+      android:screenOrientation="portrait" />
+
+    <!-- 测试电商直播 ViewPager方式接入 -->
+    <activity
+      android:name="com.kwad.demo.open.contentalliance.TestEcLiveViewPagerActivity"
+      android:configChanges="keyboardHidden|orientation|screenSize"
+      android:screenOrientation="portrait" />
+
+    <!-- 测试短剧二级入口界面 -->
+    <activity
+      android:name="com.kwad.demo.open.contentalliance.tube.TestTubeHomeActivity"
+      android:configChanges="keyboardHidden|orientation|screenSize"
+      android:screenOrientation="portrait"
+      android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+    <!-- 测试短剧 Replace方式接入 -->
+    <activity
+      android:name="com.kwad.demo.open.contentalliance.tube.sdk.TestTubePageActivity"
+      android:configChanges="keyboardHidden|orientation|screenSize"
+      android:screenOrientation="portrait" />
+
+    <!-- 测试短剧 TabLayout方式接入 -->
+    <activity
+      android:name="com.kwad.demo.open.contentalliance.tube.sdk.TestTubeTabLayoutActivity"
+      android:configChanges="keyboardHidden|orientation|screenSize"
+      android:screenOrientation="portrait" />
+
+    <!-- 测试短剧 播放页 -->
+    <activity
+      android:name=".open.contentalliance.tube.sdk.TestTubeDetailPageActivity"
+      android:configChanges="keyboardHidden|orientation|screenSize"
+      android:screenOrientation="portrait"
+      android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+    <activity
+      android:name=".open.contentalliance.TestContentHomeActivity"
+      android:configChanges="keyboardHidden|orientation|screenSize"
+      android:screenOrientation="portrait"
+      android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+    <activity
+      android:name=".open.contentalliance.tube.api.TestTubeApiActivity"
+      android:configChanges="keyboardHidden|orientation|screenSize"
+      android:screenOrientation="portrait"
+      android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+    <activity
+      android:name=".open.contentalliance.tube.api.TestTubeApiRecommendActivity"
+      android:configChanges="keyboardHidden|orientation|screenSize"
+      android:screenOrientation="portrait"
+      android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+    <activity
+      android:name=".open.contentalliance.tube.api.TestTubeApiHistoryActivity"
+      android:configChanges="keyboardHidden|orientation|screenSize"
+      android:screenOrientation="portrait"
+      android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+    <activity
+      android:name=".open.contentalliance.tube.api.TestTubeApiDetailPageActivity"
+      android:configChanges="keyboardHidden|orientation|screenSize"
+      android:screenOrientation="portrait"
+      android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+    <!-- 摇一摇模块中的配置 -->
+    <activity
+      android:name="com.kwad.debug.QRData.QRDataSolveActivity"
+      android:launchMode="singleTop"
+      android:exported="false" />
+    <activity
+      android:name="com.kwad.debug.DevelopQRCodeActivity"
+      android:launchMode="singleTop"
+      android:exported="false" /> <!-- 仅为测试使用，存在develop 包中 -->
+    <service
+      android:name="com.kwad.debug.DebugAccessibilityService"
+      android:description="@string/app_name"
+      android:exported="false"
+      android:label="@string/app_name"
+      android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE" >
+      <intent-filter>
+        <action android:name="android.accessibilityservice.AccessibilityService" />
+      </intent-filter>
+
+    </service>
+
+  </application>
+</manifest>

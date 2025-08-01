@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/ksad_kwad_web_title_bar"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="@dimen/ksad_activity_title_bar_height"
+  android:background="#F8F8F8"
+  android:gravity="center_vertical"
+  android:orientation="horizontal">
+
+  <!-- 联盟页面的通用标题栏 -->
+
+  <ImageView
+    android:id="@+id/ksad_kwad_web_navi_back"
+    android:layout_width="30dp"
+    android:layout_height="30dp"
+    android:layout_alignParentLeft="true"
+    android:layout_centerVertical="true"
+    android:layout_marginLeft="12dp"
+    android:scaleType="center"
+    android:src="@drawable/ksad_navi_back_selector" />
+
+  <ImageView
+    android:id="@+id/ksad_kwad_web_navi_close"
+    android:layout_width="30dp"
+    android:layout_height="30dp"
+    android:layout_centerVertical="true"
+    android:layout_marginLeft="8dp"
+    android:layout_toRightOf="@id/ksad_kwad_web_navi_back"
+    android:scaleType="center"
+    android:src="@drawable/ksad_navi_close_selector" />
+
+  <TextView
+    android:id="@+id/ksad_kwad_titlebar_title"
+    android:layout_width="170dp"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:background="@null"
+    android:ellipsize="end"
+    android:fontFamily="sans-serif-medium"
+    android:gravity="center|center_vertical"
+    android:minWidth="50dp"
+    android:paddingRight="10dp"
+    android:singleLine="true"
+    android:textColor="#222222"
+    android:textSize="17sp"
+    tools:text="落地页标题" />
+</RelativeLayout>

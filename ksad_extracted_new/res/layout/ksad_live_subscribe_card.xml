@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.kwad.sdk.widget.KSFrameLayout android:id="@+id/ksad_reward_live_subscribe_root"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="@dimen/ksad_live_subscribe_card_full_height"
+  android:background="@android:color/transparent"
+  android:orientation="vertical"
+  android:visibility="gone"
+  tools:visibility="visible">
+
+  <!-- 直播预约的兜底卡片样式 -->
+
+  <LinearLayout
+    android:id="@+id/ksad_reward_live_subscribe_follower_area"
+    android:layout_width="wrap_content"
+    android:layout_height="28dp"
+    android:layout_gravity="top"
+    android:layout_marginTop="@dimen/ksad_live_subscribe_card_count_area_margin_top"
+    android:background="@drawable/ksad_tips_card_bg"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingLeft="4dp"
+    android:paddingRight="4dp"
+    tools:layout_marginTop="0dp">
+    <!-- 预约人数区域 -->
+
+
+    <FrameLayout
+      android:layout_width="wrap_content"
+      android:layout_height="@dimen/ksad_live_subscribe_card_follower_avatar_size">
+
+      <com.kwad.sdk.widget.KSFrameLayout
+        android:layout_width="@dimen/ksad_live_subscribe_card_follower_avatar_size"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="29dp"
+        android:background="@android:color/white"
+        android:padding="1dp"
+        app:ksad_radius="200dp">
+
+        <com.kwad.components.core.widget.KSCornerImageView
+          android:id="@+id/ksad_reward_live_subscribe_follower_icon3"
+          style="@style/ksad_LiveSubscriberAvatar"
+          app:ksad_radius="200dp"
+          tools:src="@drawable/ksad_ic_default_user_avatar"
+          tools:visibility="visible" />
+      </com.kwad.sdk.widget.KSFrameLayout>
+
+
+      <com.kwad.sdk.widget.KSFrameLayout
+        android:layout_width="@dimen/ksad_live_subscribe_card_follower_avatar_size"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+        android:background="@android:color/white"
+        android:padding="1dp"
+        app:ksad_radius="200dp">
+
+        <com.kwad.components.core.widget.KSCornerImageView
+          android:id="@+id/ksad_reward_live_subscribe_follower_icon2"
+          style="@style/ksad_LiveSubscriberAvatar"
+          app:ksad_radius="200dp"
+          tools:src="@drawable/ksad_ic_default_user_avatar"
+          tools:visibility="visible" />
+      </com.kwad.sdk.widget.KSFrameLayout>
+
+      <com.kwad.sdk.widget.KSFrameLayout
+        android:layout_width="@dimen/ksad_live_subscribe_card_follower_avatar_size"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:padding="1dp"
+        app:ksad_radius="200dp">
+
+        <com.kwad.components.core.widget.KSCornerImageView
+          android:id="@+id/ksad_reward_live_subscribe_follower_icon1"
+          style="@style/ksad_LiveSubscriberAvatar"
+          app:ksad_radius="200dp"
+          tools:src="@drawable/ksad_ic_default_user_avatar"
+          tools:visibility="visible" />
+      </com.kwad.sdk.widget.KSFrameLayout>
+
+    </FrameLayout>
+
+
+    <TextView
+      android:id="@+id/ksad_reward_live_subscribe_count"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="5dp"
+      android:textColor="#FCFFFFFF"
+      android:textSize="12sp"
+      tools:text="1万人以预约直播" />
+
+  </LinearLayout>
+
+  <com.kwad.sdk.widget.KSRelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/ksad_live_subscribe_card_height"
+    android:layout_gravity="bottom"
+    android:background="@android:color/white"
+    android:orientation="horizontal"
+    app:ksad_radius="12dp">
+
+    <FrameLayout
+      android:id="@+id/ksad_reward_live_subscribe_right"
+      android:layout_width="100dp"
+      android:layout_height="match_parent"
+      android:layout_alignParentRight="true">
+
+      <com.kwad.components.core.widget.KsStyledTextButton
+        android:id="@+id/ksad_reward_live_subscribe_btn_follow"
+        android:layout_width="88dp"
+        android:layout_height="36dp"
+        android:layout_gravity="left|center_vertical"
+        android:layout_marginRight="12dp"
+        android:background="@drawable/ksad_ksad_reward_follow_btn_follow_bg"
+        android:gravity="center"
+        android:text="去关注TA"
+        android:textColor="@android:color/white" />
+
+      <com.kwad.components.core.widget.KSCornerImageView
+        android:id="@+id/ksad_reward_live_subscribe_kwai_logo"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_gravity="right|top"
+        android:src="@drawable/ksad_ic_default_user_avatar"
+        app:ksad_leftTopCorner="false"
+        app:ksad_radius="10dp"
+        app:ksad_rightBottomCorner="false" />
+    </FrameLayout>
+
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_toLeftOf="@id/ksad_reward_live_subscribe_right"
+      android:gravity="center_vertical"
+      android:orientation="horizontal">
+
+      <FrameLayout
+        android:layout_width="76dp"
+        android:layout_height="@dimen/ksad_live_subscribe_card_height">
+
+        <com.kwad.sdk.widget.KSFrameLayout
+          android:layout_width="61dp"
+          android:layout_height="61dp"
+          android:layout_gravity="center"
+          android:background="@drawable/ksad_author_icon_bg"
+          android:padding="4dp"
+          app:ksad_radius="500dp">
+
+          <com.kwad.components.core.widget.KSCornerImageView
+            android:id="@+id/ksad_reward_live_subscribe_icon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:ksad_radius="500dp"
+            tools:src="@drawable/ksad_ic_default_user_avatar" />
+
+        </com.kwad.sdk.widget.KSFrameLayout>
+
+
+        <TextView
+          android:id="@+id/ksad_reward_live_subscribe_badge"
+          android:layout_width="20dp"
+          android:layout_height="wrap_content"
+          android:layout_gravity="right|top"
+          android:layout_marginTop="4dp"
+          android:background="@drawable/ksad_live_icon_corner_badge_bg"
+          android:gravity="center"
+          android:text="直播"
+          android:textColor="@android:color/white"
+          android:textSize="7dp" />
+      </FrameLayout>
+
+
+      <LinearLayout
+        android:id="@+id/ksad_reward_text_aera"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-2dp"
+        android:orientation="vertical">
+
+        <TextView
+          android:id="@+id/ksad_reward_live_subscribe_name"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginBottom="4dp"
+          android:ellipsize="end"
+          android:maxLines="1"
+          android:textColor="#FF222222"
+          android:textSize="15sp"
+          android:textStyle="bold"
+          tools:text="东方41骨折促销！！" />
+
+        <TextView
+          android:id="@+id/ksad_reward_live_subscribe_desc"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:drawableLeft="@drawable/ksad_ic_clock_grey"
+          android:ellipsize="end"
+          android:maxLines="1"
+          android:textColor="#FF666666"
+          android:textSize="12sp"
+          tools:text="2020年2月22 18:00" />
+      </LinearLayout>
+    </LinearLayout>
+
+  </com.kwad.sdk.widget.KSRelativeLayout>
+
+</com.kwad.sdk.widget.KSFrameLayout>

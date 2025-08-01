@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.kwad.sdk.core.view.AdBasePvFrameLayout android:id="@+id/ksad_land_page_root"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:fitsSystemWindows="true"
+  android:orientation="vertical">
+
+</com.kwad.sdk.core.view.AdBasePvFrameLayout>

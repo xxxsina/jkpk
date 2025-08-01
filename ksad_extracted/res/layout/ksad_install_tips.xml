@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="@dimen/ksad_install_tips_card_height"
+  android:gravity="center_vertical"
+  android:background="@drawable/ksad_install_tips_bg"
+  android:paddingLeft="@dimen/ksad_install_tips_card_padding_left"
+  android:paddingRight="@dimen/ksad_install_tips_card_padding_right">
+
+  <ImageView
+    android:id="@+id/ksad_install_tips_close"
+    android:layout_centerVertical="true"
+    android:layout_alignParentLeft="true"
+    android:layout_width="24dp"
+    android:layout_height="match_parent"
+    android:src="@drawable/ksad_install_tips_ic_close" />
+
+  <ImageView
+    android:id="@+id/ksad_install_tips_icon"
+    android:layout_width="48dp"
+    android:layout_height="48dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="8dp"
+    android:layout_centerVertical="true"
+    android:layout_toRightOf="@id/ksad_install_tips_close"
+    android:src="@drawable/ksad_logo_gray" />
+
+  <Button
+    android:id="@+id/ksad_install_tips_install"
+    android:layout_width="72dp"
+    android:layout_height="28dp"
+    android:layout_centerVertical="true"
+    android:background="@drawable/ksad_install_tips_btn_install_bg"
+    android:text="安装"
+    android:gravity="center"
+    android:layout_alignParentRight="true"
+    android:textColor="@android:color/white"
+    android:textSize="12sp" />
+
+  <TextView
+    android:id="@+id/ksad_install_tips_content"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="6dp"
+    android:gravity="center_vertical"
+    android:layout_centerVertical="true"
+    android:maxLines="2"
+    android:paddingRight="12dp"
+    android:textSize="14sp"
+    android:layout_toRightOf="@id/ksad_install_tips_icon"
+    android:layout_toLeftOf="@id/ksad_install_tips_install"
+    android:textColor="#222222"
+    tools:text="快手联盟已经下载完毕，请点击免费安装" />
+
+
+</RelativeLayout>

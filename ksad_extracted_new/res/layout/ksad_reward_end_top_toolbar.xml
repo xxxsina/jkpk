@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/ksad_play_end_top_toolbar"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="75dp"
+  android:background="@android:color/transparent"
+  android:orientation="vertical"
+  android:paddingLeft="16dp"
+  android:paddingRight="16dp"
+  tools:ignore="HardcodedText, RtlHardcoded, SpUsage, ContentDescription">
+
+  <FrameLayout
+    android:id="@+id/ksad_end_reward_icon_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:visibility="gone"
+    tools:visibility="visible">
+
+    <ImageView
+      android:id="@+id/ksad_end_reward_icon"
+      android:layout_width="28dp"
+      android:layout_height="28dp"
+      android:layout_marginRight="10dp"
+      android:layout_marginTop="16dp"
+      android:src="@drawable/ksad_video_reward_icon"
+      android:visibility="gone"
+      tools:visibility="gone" />
+
+    <LinearLayout
+      android:id="@+id/ksad_detail_reward_deep_task_view_playend"
+      android:layout_width="wrap_content"
+      android:layout_height="28dp"
+      android:layout_marginRight="10dp"
+      android:layout_marginTop="16dp"
+      android:background="@drawable/ksad_reward_deep_task_view_bg"
+      android:gravity="center"
+      android:orientation="horizontal">
+
+      <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="2dp"
+        android:background="@drawable/ksad_reward_deep_task_icon_bg"
+        android:src="@drawable/ksad_video_reward_deep_task_icon" />
+
+      <TextView
+        android:id="@+id/ksad_reward_deep_task_count_down_playend"
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="1dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="12dp"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:textSize="15dp" />
+    </LinearLayout>
+
+
+  </FrameLayout>
+
+  <TextView
+    android:id="@+id/ksad_end_left_call_btn"
+    android:layout_width="wrap_content"
+    android:layout_height="28dp"
+    android:layout_marginTop="16dp"
+    android:layout_toRightOf="@+id/ksad_end_reward_icon_layout"
+    android:background="@drawable/ksad_reward_call_bg"
+    android:drawablePadding="4dp"
+    android:drawableRight="@drawable/ksad_arrow_left"
+    android:gravity="center"
+    android:paddingLeft="12dp"
+    android:paddingRight="10dp"
+    android:textColor="#FFFFFF"
+    android:textSize="14dp"
+    android:visibility="gone"
+    tools:text="免费获取"
+    tools:visibility="visible" />
+
+  <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="28dp"
+    android:layout_alignParentRight="true"
+    android:layout_marginTop="16dp"
+    android:orientation="horizontal">
+
+    <TextView
+      android:id="@+id/ksad_end_right_call_btn"
+      android:layout_width="wrap_content"
+      android:layout_height="match_parent"
+      android:background="@drawable/ksad_reward_call_bg"
+      android:drawablePadding="4dp"
+      android:drawableRight="@drawable/ksad_arrow_left"
+      android:gravity="center"
+      android:paddingLeft="12dp"
+      android:paddingRight="10dp"
+      android:textColor="#FFFFFF"
+      android:textSize="14dp"
+      android:visibility="gone"
+      tools:text="免费获取"
+      tools:visibility="visible" />
+
+    <ImageView
+      android:id="@+id/ksad_end_close_btn"
+      android:layout_width="28dp"
+      android:layout_height="match_parent"
+      android:layout_marginLeft="12dp"
+      android:scaleType="centerInside"
+      android:src="@drawable/ksad_page_close"
+      android:visibility="gone"
+      tools:visibility="visible" />
+  </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ksad_second_confirm_root_view"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="138dp">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@drawable/ksad_seconed_confirm_bg"
+        android:layout_width="280dp"
+        android:layout_height="138dp">
+        <TextView
+            android:id="@+id/ksad_second_confirm_content_view"
+            android:layout_width="match_parent"
+            android:layout_height="89dp"
+            android:layout_gravity="center"
+            android:textSize="18sp"
+            android:textColor="#222222"
+            android:gravity="center"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            tools:text="即将打开小红书"
+            android:layout_marginStart="27dp"
+            android:layout_marginEnd="27dp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#EAEAEA" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="48dp" >
+            <TextView
+                android:id="@+id/ksad_second_confirm_cancle"
+                android:layout_width="140dp"
+                android:layout_height="match_parent"
+                android:textColor="#666666"
+                android:textSize="16sp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="取消"
+                tools:text="取消" />
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#EAEAEA" />
+            <TextView
+                android:layout_width="140dp"
+                android:id="@+id/ksad_second_confirm_ensure"
+                android:layout_height="match_parent"
+                android:textColor="#FE3666"
+                android:textSize="16sp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="确认"
+                tools:text="确认" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

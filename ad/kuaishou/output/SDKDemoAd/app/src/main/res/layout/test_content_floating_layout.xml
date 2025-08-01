@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/item_type"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:background="@drawable/test_item_floating_bg"
+        android:ellipsize="end"
+        android:gravity="left|center"
+        android:maxLines="1"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        tools:ignore="RtlHardcoded"
+        tools:text="item type: ad" />
+
+    <TextView
+        android:id="@+id/item_position"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/test_item_floating_bg"
+        android:ellipsize="end"
+        android:gravity="left|center"
+        android:maxLines="1"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        tools:ignore="RtlHardcoded"
+        tools:text="item position: 1" />
+
+    <TextView
+        android:id="@+id/item_page_status"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/test_item_floating_bg"
+        android:ellipsize="end"
+        android:gravity="center|left"
+        android:maxLines="1"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        tools:ignore="RtlHardcoded"
+        tools:text="item page: attached" />
+
+    <TextView
+        android:id="@+id/item_video_status"
+        android:layout_width="230dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/test_item_floating_bg"
+        android:ellipsize="end"
+        android:gravity="center|left"
+        android:maxLines="1"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        tools:ignore="RtlHardcoded"
+        tools:text="item videoStatus: playCompleted" />
+</LinearLayout>

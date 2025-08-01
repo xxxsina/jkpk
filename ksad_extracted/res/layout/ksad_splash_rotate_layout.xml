@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:id="@+id/ksad_rotate_root"
+  android:layout_gravity="center_horizontal|bottom"
+  android:background="@drawable/ksad_shake_layout_bg"
+  android:clickable="false"
+  android:clipToPadding="false"
+  android:orientation="vertical"
+  android:paddingBottom="@dimen/ksad_splash_rotate_view_margin_bottom"
+  android:visibility="gone"
+  tools:visibility="visible">
+
+  <!-- 开屏扭动的View，默认不显示，仅在开启摇一摇转化的时候才显示 -->
+  <com.kwad.components.ad.splashscreen.widget.KsRotateView
+    android:id="@+id/ksad_rotate_view"
+    android:layout_width="@dimen/ksad_splash_rotate_view_width"
+    android:layout_height="@dimen/ksad_splash_rotate_view_height"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="@dimen/ksad_splash_rotate_view_margin_top" />
+
+  <TextView
+    android:id="@+id/ksad_rotate_text"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginBottom="3dp"
+    android:layout_marginTop="11dp"
+    android:clickable="false"
+    android:shadowColor="#95000000"
+    android:shadowDy="1.0"
+    android:shadowRadius="1.0"
+    android:text="扭动手机"
+    android:textColor="@android:color/white"
+    android:textSize="16sp" />
+
+  <TextView
+    android:id="@+id/ksad_rotate_action"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:clickable="false"
+    android:shadowColor="#95000000"
+    android:shadowDy="1.0"
+    android:shadowRadius="1.0"
+    android:text="或点击跳转详情页/第三方应用"
+    android:textColor="@android:color/white"
+    android:textSize="12sp" />
+
+</LinearLayout>

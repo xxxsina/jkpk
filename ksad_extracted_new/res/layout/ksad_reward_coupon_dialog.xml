@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical">
+
+  <!-- 小店通广告中，激励视频打开后展示的优惠券信息弹窗 -->
+
+  <!-- 半透明背景 -->
+  <ImageView
+    android:id="@+id/ksad_coupon_dialog_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:alpha="0.5"
+    android:background="#000000" />
+
+
+  <!-- 卡片 -->
+  <com.kwad.sdk.widget.KSRelativeLayout
+    android:id="@+id/ksad_coupon_dialog_card"
+    android:layout_width="@dimen/ksad_coupon_dialog_width"
+    android:layout_height="@dimen/ksad_coupon_dialog_height"
+    android:layout_gravity="center_horizontal|top"
+    android:layout_marginTop="160dp"
+    android:background="@drawable/ksad_coupon_dialog_bg"
+    android:gravity="center_horizontal">
+
+    <!-- 高度为：34*2 + 86 -->
+    <FrameLayout
+      android:layout_width="match_parent"
+      android:layout_height="154dp"
+      android:layout_alignParentTop="true"
+      android:layout_marginTop="24dp"
+      android:gravity="center_horizontal"
+      android:orientation="vertical">
+
+      <TextView
+        android:id="@+id/ksad_coupon_dialog_title"
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:textColor="@color/ksad_reward_main_color"
+        android:textSize="20sp"
+        tools:text="满减优惠券" />
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:orientation="vertical">
+
+        <TextView
+          android:id="@+id/ksad_coupon_dialog_content"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_horizontal"
+          android:gravity="center"
+          android:includeFontPadding="false"
+          android:textColor="@color/ksad_reward_main_color"
+          android:textSize="52sp"
+          tools:text="¥30" />
+
+        <TextView
+          android:id="@+id/ksad_coupon_dialog_desc"
+          android:layout_width="wrap_content"
+          android:layout_height="34dp"
+          android:layout_gravity="center_horizontal"
+          android:gravity="center"
+          android:textColor="@color/ksad_reward_main_color"
+          android:textSize="14sp"
+          tools:text="满10000可用" />
+      </LinearLayout>
+
+
+    </FrameLayout>
+
+
+    <Button
+      android:id="@+id/ksad_coupon_dialog_btn_action"
+      android:layout_width="170dp"
+      android:layout_height="42dp"
+      android:layout_alignParentBottom="true"
+      android:layout_centerHorizontal="true"
+      android:layout_marginBottom="30dp"
+      android:background="@drawable/ksad_coupon_dialog_action_btn_bg"
+      android:textColor="#FFBA2600"
+      android:textSize="14sp"
+      tools:text="立即领取" />
+
+  </com.kwad.sdk.widget.KSRelativeLayout>
+
+</FrameLayout>

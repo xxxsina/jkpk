@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical"
+  tools:context=".open.fullscreen.TestFullScreenVideoActivity">
+
+  <FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="46dp"
+    android:background="@android:color/white">
+
+    <TextView
+      android:id="@+id/inter_page_title"
+      android:layout_width="match_parent"
+      android:layout_height="46dp"
+      android:background="@android:color/white"
+      android:gravity="center"
+      android:text="测试插屏广告"
+      android:textAllCaps="false"
+      android:textColor="#222222"
+      android:textSize="17sp"
+      android:textStyle="bold" />
+
+    <ImageView
+      android:id="@+id/ksad_main_left_back_btn"
+      android:layout_width="40dp"
+      android:layout_height="40dp"
+      android:layout_gravity="center_vertical|left"
+      android:layout_marginLeft="6dp"
+      android:src="@drawable/ksad_back_black_icon" />
+
+  </FrameLayout>
+
+  <View
+    android:layout_width="match_parent"
+    android:layout_height="1px"
+    android:background="#e0e0e0" />
+
+  <View
+    android:layout_width="match_parent"
+    android:layout_height="1px"
+    android:background="@drawable/ksad_main_list_divider_bg" />
+
+  <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ksad_main_item_bg"
+    android:clickable="true"
+    android:gravity="left"
+    android:onClick="requestNewInterstitialAd"
+    android:padding="16dp"
+    android:text="展示新插屏广告-优选"
+    android:textColor="#222222"
+    android:textSize="16sp" />
+
+  <View
+    android:layout_width="match_parent"
+    android:layout_height="1px"
+    android:background="@drawable/ksad_main_list_divider_bg" />
+
+  <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ksad_main_item_bg"
+    android:clickable="true"
+    android:gravity="left"
+    android:onClick="requestNewInterstitialAdFull"
+    android:padding="16dp"
+    android:text="展示新插屏广告-全屏"
+    android:textColor="#222222"
+    android:textSize="16sp" />
+
+  <View
+    android:layout_width="match_parent"
+    android:layout_height="1px"
+    android:background="@drawable/ksad_main_list_divider_bg" />
+
+  <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ksad_main_item_bg"
+    android:clickable="true"
+    android:gravity="left"
+    android:onClick="requestNewInterstitialAdHalf"
+    android:padding="16dp"
+    android:text="展示新插屏广告-半屏"
+    android:textColor="#222222"
+    android:textSize="16sp" />
+
+  <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#f8f8f8"
+    android:clickable="true"
+    android:focusable="true"
+    android:padding="16dp"
+    android:text="可选设置项："
+    android:textColor="#222222"
+    android:textSize="16sp" />
+
+  <View
+    android:layout_width="match_parent"
+    android:layout_height="1px"
+    android:background="@drawable/ksad_main_list_divider_bg" />
+
+  <Switch
+    android:id="@+id/video_sound_switch"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#f8f8f8"
+    android:checked="false"
+    android:padding="16dp"
+    android:switchPadding="16dp"
+    android:text="是否关闭声音"
+    android:textSize="16sp" />
+
+  <View
+    android:layout_width="match_parent"
+    android:layout_height="1px"
+    android:background="@drawable/ksad_main_list_divider_bg" />
+
+  <Switch
+    android:id="@+id/change_orientation_switch"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#f8f8f8"
+    android:padding="16dp"
+    android:switchPadding="16dp"
+    android:text="切换当前屏幕方向"
+    android:textSize="16sp" />
+
+  <LinearLayout
+    android:paddingHorizontal="16dp"
+    android:paddingVertical="10dp"
+    android:gravity="center_vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:background="#f8f8f8"
+      android:clickable="true"
+      android:focusable="true"
+      android:text="服务端竞价广告位："
+      android:textColor="#222222"
+      android:textSize="16sp" />
+
+    <RadioGroup
+      android:id="@+id/bidding_pos_group"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal">
+
+      <RadioButton
+        android:id="@+id/bidding_posid_selected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="优选" />
+
+      <RadioButton
+        android:id="@+id/bidding_posid_full"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="全屏" />
+
+      <RadioButton
+        android:id="@+id/bidding_posid_half"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="半屏" />
+    </RadioGroup>
+  </LinearLayout>
+
+  <View
+    android:layout_width="match_parent"
+    android:layout_height="1px"
+    android:background="@drawable/ksad_main_list_divider_bg" />
+
+  <include layout="@layout/server_bidding_layout" />
+
+  <View
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f8f8f8" />
+
+</LinearLayout>

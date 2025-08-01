@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/ksad_card_tips_root"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="wrap_content"
+  android:layout_height="@dimen/ksad_live_card_tips_height"
+  android:layout_gravity="bottom|left"
+  android:layout_marginBottom="@dimen/ksad_live_card_tips_margin_bottom"
+  android:layout_marginLeft="@dimen/ksad_live_card_tips_margin_left"
+  android:background="@drawable/ksad_tips_card_bg"
+  android:gravity="center_vertical"
+  android:orientation="horizontal"
+  android:paddingLeft="8dp"
+  android:paddingRight="8dp"
+  tools:layout_marginBottom="@dimen/ksad_live_card_tips_margin_left">
+
+  <!-- 激励卡片出现之前的tips 提示，又被成为弱卡 -->
+  <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="12dp"
+    android:background="@drawable/ksad_main_color_card_bg"
+    android:maxLines="1"
+    android:paddingLeft="2dp"
+    android:paddingRight="2dp"
+    android:text="@string/ksad_card_tips_pre"
+    android:textColor="@android:color/white"
+    android:textSize="8sp" />
+
+  <TextView
+    android:id="@+id/ksad_card_tips_title"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="4dp"
+    android:ellipsize="end"
+    android:gravity="center"
+    android:maxLines="1"
+    android:maxWidth="97dp"
+    android:textColor="@android:color/white"
+    android:textSize="12sp"
+    tools:text="汽车用品送大礼快手联盟" />
+
+  <ImageView
+    android:layout_width="1dp"
+    android:layout_height="12dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:background="#66FFFFFF" />
+
+  <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:maxLines="1"
+    android:textColor="@android:color/white"
+    android:textSize="12sp"
+    android:text="@string/ksad_card_tips_interested" />
+</LinearLayout>

@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context=".open.MainActivity"
+  tools:ignore="HardcodedText">
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="46dp"
+      android:background="@android:color/white"
+      android:gravity="center"
+      android:text="快手联盟"
+      android:textColor="#222222"
+      android:textSize="17sp"
+      android:textStyle="bold" />
+
+    <View
+      android:layout_width="match_parent"
+      android:layout_height="1px"
+      android:background="#e0e0e0" />
+
+    <FrameLayout
+      android:layout_width="match_parent"
+      android:layout_height="56dp"
+      android:background="@drawable/ksad_main_item_bg"
+      android:clickable="true"
+      android:onClick="startSDK">
+
+      <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_gravity="center_vertical|left"
+        android:layout_marginLeft="18dp"
+        android:src="@drawable/ksad_main_ad_icon" />
+
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|left"
+        android:layout_marginLeft="52dp"
+        android:gravity="center_vertical"
+        android:text="启动SDK"
+        android:textColor="#222222"
+        android:textSize="16dp" />
+    </FrameLayout>
+
+    <View
+      android:layout_width="match_parent"
+      android:layout_height="1px"
+      android:background="#e0e0e0" />
+
+    <FrameLayout
+      android:layout_width="match_parent"
+      android:layout_height="56dp"
+      android:background="@drawable/ksad_main_item_bg"
+      android:clickable="true"
+      android:onClick="testFullscreen">
+
+      <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_gravity="center_vertical|left"
+        android:layout_marginLeft="18dp"
+        android:src="@drawable/ksad_main_ad_icon" />
+
+      <ImageView
+        android:layout_width="8dp"
+        android:layout_height="16dp"
+        android:layout_gravity="center_vertical|right"
+        android:layout_marginRight="16dp"
+        android:src="@drawable/ksad_main_list_arrow" />
+
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|left"
+        android:layout_marginLeft="52dp"
+        android:gravity="center_vertical"
+        android:text="测试全屏视频广告"
+        android:textColor="#222222"
+        android:textSize="16dp" />
+    </FrameLayout>
+
+    <View
+      android:layout_width="match_parent"
+      android:layout_height="1px"
+      android:background="@drawable/ksad_main_divider_bg" />
+
+    <FrameLayout
+      android:layout_width="match_parent"
+      android:layout_height="56dp"
+      android:background="@drawable/ksad_main_item_bg"
+      android:clickable="true"
+      android:onClick="testReward">
+
+      <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_gravity="center_vertical|left"
+        android:layout_marginLeft="18dp"
+        android:src="@drawable/ksad_main_ad_icon" />
+
+      <ImageView
+        android:layout_width="8dp"
+        android:layout_height="16dp"
+        android:layout_gravity="center_vertical|right"
+        android:layout_marginRight="16dp"
+        android:src="@drawable/ksad_main_list_arrow" />
+
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|left"
+        android:layout_marginLeft="52dp"
+        android:gravity="center_vertical"
+        android:text="测试激励视频广告"
+        android:textColor="#222222"
+        android:textSize="16dp" />
+    </FrameLayout>
+
+    <View
+      android:layout_width="match_parent"
+      android:layout_height="1px"
+      android:background="@drawable/ksad_main_divider_bg" />
+
+    <FrameLayout
+      android:layout_width="match_parent"
+      android:layout_height="56dp"
+      android:background="@drawable/ksad_main_item_bg"
+      android:clickable="true"
+      android:onClick="testFeedList">
+
+      <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_gravity="center_vertical|left"
+        android:layout_marginLeft="18dp"
+        android:src="@drawable/ksad_main_ad_icon" />
+
+      <ImageView
+        android:layout_width="8dp"
+        android:layout_height="16dp"
+        android:layout_gravity="center_vertical|right"
+        android:layout_marginRight="16dp"
+        android:src="@drawable/ksad_main_list_arrow" />
+
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|left"
+        android:layout_marginLeft="52dp"
+        android:gravity="center_vertical"
+        android:text="测试信息流广告"
+        android:textColor="#222222"
+        android:textSize="16dp" />
+    </FrameLayout>
+
+    <View
+      android:layout_width="match_parent"
+      android:layout_height="1px"
+      android:background="@drawable/ksad_main_divider_bg" />
+
+    <FrameLayout
+      android:layout_width="match_parent"
+      android:layout_height="56dp"
+      android:background="@drawable/ksad_main_item_bg"
+      android:clickable="true"
+      android:onClick="testDrawAd">
+
+      <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_gravity="center_vertical|left"
+        android:layout_marginLeft="18dp"
+        android:src="@drawable/ksad_main_ad_icon" />
+
+      <ImageView
+        android:layout_width="8dp"
+        android:layout_height="16dp"
+        android:layout_gravity="center_vertical|right"
+        android:layout_marginRight="16dp"
+        android:src="@drawable/ksad_main_list_arrow" />
+
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|left"
+        android:layout_marginLeft="52dp"
+        android:gravity="center_vertical"
+        android:text="测试Draw信息流广告"
+        android:textColor="#222222"
+        android:textSize="16dp" />
+    </FrameLayout>
+
+    <View
+      android:layout_width="match_parent"
+      android:layout_height="1px"
+      android:background="@drawable/ksad_main_divider_bg" />
+
+    <FrameLayout
+      android:layout_width="match_parent"
+      android:layout_height="56dp"
+      android:background="@drawable/ksad_main_item_bg"
+      android:clickable="true"
+      android:onClick="testSplash">
+
+      <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_gravity="center_vertical|left"
+        android:layout_marginLeft="18dp"
+        android:src="@drawable/ksad_main_ad_icon" />
+
+      <ImageView
+        android:layout_width="8dp"
+        android:layout_height="16dp"
+        android:layout_gravity="center_vertical|right"
+        android:layout_marginRight="16dp"
+        android:src="@drawable/ksad_main_list_arrow" />
+
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|left"
+        android:layout_marginLeft="52dp"
+        android:gravity="center_vertical"
+        android:text="测试开屏广告"
+        android:textColor="#222222"
+        android:textSize="16dp" />
+    </FrameLayout>
+
+    <View
+      android:layout_width="match_parent"
+      android:layout_height="1px"
+      android:background="@drawable/ksad_main_divider_bg" />
+
+    <FrameLayout
+      android:layout_width="match_parent"
+      android:layout_height="56dp"
+      android:background="@drawable/ksad_main_item_bg"
+      android:clickable="true"
+      android:onClick="testInterstitialAd">
+
+      <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_gravity="center_vertical|left"
+        android:layout_marginLeft="18dp"
+        android:src="@drawable/ksad_main_ad_icon" />
+
+      <ImageView
+        android:layout_width="8dp"
+        android:layout_height="16dp"
+        android:layout_gravity="center_vertical|right"
+        android:layout_marginRight="16dp"
+        android:src="@drawable/ksad_main_list_arrow" />
+
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|left"
+        android:layout_marginLeft="52dp"
+        android:gravity="center_vertical"
+        android:text="测试插屏广告"
+        android:textColor="#222222"
+        android:textSize="16dp" />
+    </FrameLayout>
+
+    <FrameLayout
+      android:layout_width="match_parent"
+      android:layout_height="56dp"
+      android:background="@drawable/ksad_main_item_bg"
+      android:clickable="true"
+      android:onClick="testNewInterstitialAd">
+
+      <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_gravity="center_vertical|left"
+        android:layout_marginLeft="18dp"
+        android:src="@drawable/ksad_main_ad_icon" />
+
+      <ImageView
+        android:layout_width="8dp"
+        android:layout_height="16dp"
+        android:layout_gravity="center_vertical|right"
+        android:layout_marginRight="16dp"
+        android:src="@drawable/ksad_main_list_arrow" />
+
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|left"
+        android:layout_marginLeft="52dp"
+        android:gravity="center_vertical"
+        android:text="测试新插屏广告（新插屏广告位）"
+        android:textColor="#222222"
+        android:textSize="16dp" />
+    </FrameLayout>
+
+    <View
+      android:layout_width="match_parent"
+      android:layout_height="1px"
+      android:background="@drawable/ksad_main_divider_bg" />
+    <View
+      android:layout_width="match_parent"
+      android:layout_height="1px"
+      android:background="@drawable/ksad_main_divider_bg" />
+
+    <FrameLayout
+      android:layout_width="match_parent"
+      android:layout_height="56dp"
+      android:background="@drawable/ksad_main_item_bg"
+      android:clickable="true"
+      android:onClick="testBannerAd">
+
+      <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_gravity="center_vertical|left"
+        android:layout_marginLeft="18dp"
+        android:src="@drawable/ksad_main_ad_icon" />
+
+      <ImageView
+        android:layout_width="8dp"
+        android:layout_height="16dp"
+        android:layout_gravity="center_vertical|right"
+        android:layout_marginRight="16dp"
+        android:src="@drawable/ksad_main_list_arrow" />
+
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|left"
+        android:layout_marginLeft="52dp"
+        android:gravity="center_vertical"
+        android:text="测试banner广告"
+        android:textColor="#222222"
+        android:textSize="16dp" />
+    </FrameLayout>
+    <FrameLayout
+      android:layout_width="match_parent"
+      android:layout_height="56dp"
+      android:background="@drawable/ksad_main_item_bg"
+      android:clickable="true"
+      android:onClick="testNativeAd">
+
+      <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_gravity="center_vertical|left"
+        android:layout_marginLeft="18dp"
+        android:src="@drawable/ksad_main_ad_icon" />
+
+      <ImageView
+        android:layout_width="8dp"
+        android:layout_height="16dp"
+        android:layout_gravity="center_vertical|right"
+        android:layout_marginRight="16dp"
+        android:src="@drawable/ksad_main_list_arrow" />
+
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|left"
+        android:layout_marginLeft="52dp"
+        android:gravity="center_vertical"
+        android:text="测试媒体自渲染广告"
+        android:textColor="#222222"
+        android:textSize="16dp" />
+    </FrameLayout>
+
+    <View
+      android:layout_width="match_parent"
+      android:layout_height="12dp" />
+
+    <FrameLayout
+      android:id="@+id/btn_open_dev_tools"
+      android:layout_width="match_parent"
+      android:layout_height="56dp"
+      android:background="@drawable/ksad_main_item_bg"
+      android:clickable="true"
+      android:focusable="true"
+      android:onClick="openDevTools">
+
+      <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_gravity="center_vertical|left"
+        android:layout_marginLeft="18dp"
+        android:src="@drawable/test_dev_tools" />
+
+      <ImageView
+        android:layout_width="8dp"
+        android:layout_height="16dp"
+        android:layout_gravity="center_vertical|right"
+        android:layout_marginRight="16dp"
+        android:src="@drawable/ksad_main_list_arrow" />
+
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|left"
+        android:layout_marginLeft="52dp"
+        android:gravity="center_vertical"
+        android:text="SDK开发者测试工具"
+        android:textColor="#222222"
+        android:textSize="16dp" />
+    </FrameLayout>
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="#FFF8F8F8"
+      android:minHeight="136dp"
+      android:orientation="vertical">
+
+      <TextView
+        android:id="@+id/sdk_version"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:gravity="center"
+        android:text="SDK Version 2.6.6"
+        android:textColor="#C6C6C6"
+        android:textSize="12sp" />
+
+      <TextView
+        android:id="@+id/sdk_did"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:gravity="center"
+        android:textColor="#C6C6C6"
+        android:textIsSelectable="true"
+        android:textSize="12sp" />
+
+      <TextView
+        android:id="@+id/sdk_version2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:gravity="center"
+        android:text="SDK Version 2.6.6"
+        android:textColor="#C6C6C6"
+        android:textSize="12sp"
+        android:visibility="gone" />
+    </LinearLayout>
+  </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="http://schemas.android.com/tools">
+    <color name="black">#FF000000</color>
+    <color name="ksad_88_white">#88FFFFFF</color>
+    <color name="ksad_99_black">#99000000</color>
+    <color name="ksad_99_white">#99FFFFFF</color>
+    <color name="ksad_black_6c">#FF6C6C6C</color>
+    <color name="ksad_black_alpha100">#ff000000</color>
+    <color name="ksad_black_alpha20">#33000000</color>
+    <color name="ksad_black_alpha35">#23000000</color>
+    <color name="ksad_black_alpha50">#80000000</color>
+    <color name="ksad_default_dialog_bg_color">#4D666666</color>
+    <color name="ksad_default_privacy_link_color">#FFFFFF</color>
+    <color name="ksad_default_shake_btn_bg_color">#66000000</color>
+    <color name="ksad_feed_main_color">#FE3666</color>
+    <color name="ksad_for_liteapi">#FF000000</color>
+    <color name="ksad_gray_9c">#FF9C9C9C</color>
+    <color name="ksad_jinniu_end_origin_color">#FF9C9C9C</color>
+    <color name="ksad_no_title_common_dialog_negativebtn_color">#666666</color>
+    <color name="ksad_no_title_common_dialog_positivebtn_color">#5181FB</color>
+    <color name="ksad_play_again_horizontal_bg">#B3000000</color>
+    <color name="ksad_play_again_horizontal_bg_light">#4D000000</color>
+    <color name="ksad_playable_pre_tips_icon_bg">#33FFFFFF</color>
+    <color name="ksad_reward_main_color">#FFFE3666</color>
+    <color name="ksad_reward_original_price">#FF666666</color>
+    <color name="ksad_reward_undone_color">#FF9C9C9C</color>
+    <color name="ksad_secondary_btn_color">#1AFE3666</color>
+    <color name="ksad_shake_icon_bg_start_color">#66000000</color>
+    <color name="ksad_splash_endcard_appdesc_color">#FFFFFF</color>
+    <color name="ksad_splash_endcard_appversion_color">#B9B9B9</color>
+    <color name="ksad_splash_endcard_bg_color">#99000000</color>
+    <color name="ksad_splash_endcard_developer_color">#66FFFFFF</color>
+    <color name="ksad_splash_endcard_name_color">#222222</color>
+    <color name="ksad_splash_endcard_ompliance_color">#99FFFFFF</color>
+    <color name="ksad_splash_endcard_title_color">#9A0009</color>
+    <color name="ksad_text_black_222">#222222</color>
+    <color name="ksad_translucent">#00000000</color>
+    <color name="ksad_white">#FFFFFF</color>
+    <color name="ksad_white_alpha_20">#33FFFFFF</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="white">#FFFFFFFF</color>
+    <dimen name="ksad_action_bar_height">44dp</dimen>
+    <dimen name="ksad_activity_title_bar_height">44dp</dimen>
+    <dimen name="ksad_coupon_dialog_height">304dp</dimen>
+    <dimen name="ksad_coupon_dialog_value_prefix_text_size">32sp</dimen>
+    <dimen name="ksad_coupon_dialog_width">263dp</dimen>
+    <dimen name="ksad_draw_author_end_icon_width">100dp</dimen>
+    <dimen name="ksad_draw_author_icon_stroke_width">1dp</dimen>
+    <dimen name="ksad_draw_author_icon_width">70dp</dimen>
+    <dimen name="ksad_fullscreen_shake_center_hand_size">46dp</dimen>
+    <dimen name="ksad_fullscreen_shake_center_icon_size">92dp</dimen>
+    <dimen name="ksad_fullscreen_shake_center_tips_height">30dp</dimen>
+    <dimen name="ksad_fullscreen_shake_center_tips_start_width">40dp</dimen>
+    <dimen name="ksad_fullscreen_shake_center_tips_width">90dp</dimen>
+    <dimen name="ksad_fullscreen_shake_tips_height">42dp</dimen>
+    <dimen name="ksad_fullscreen_shake_tips_icon_live_shop_marginBottom">280dp</dimen>
+    <dimen name="ksad_fullscreen_shake_tips_icon_marginBottom">185dp</dimen>
+    <dimen name="ksad_fullscreen_shake_tips_icon_marginLeft">39dp</dimen>
+    <dimen name="ksad_fullscreen_shake_tips_icon_padding">7dp</dimen>
+    <dimen name="ksad_fullscreen_shake_tips_icon_size">28dp</dimen>
+    <dimen name="ksad_fullscreen_shake_tips_icon_stroke_size">1dp</dimen>
+    <dimen name="ksad_fullscreen_shake_tips_title_live_shop_marginBottom">259dp</dimen>
+    <dimen name="ksad_fullscreen_shake_tips_title_marginBottom">164dp</dimen>
+    <dimen name="ksad_fullscreen_shake_tips_width">90dp</dimen>
+    <dimen name="ksad_hand_slide_hand_height">63dp</dimen>
+    <dimen name="ksad_hand_slide_height">191dp</dimen>
+    <dimen name="ksad_hand_slide_tail_height_end">170dp</dimen>
+    <dimen name="ksad_hand_slide_tail_height_start">36dp</dimen>
+    <dimen name="ksad_hand_slide_tail_shadow_width">20dp</dimen>
+    <dimen name="ksad_hand_slide_tail_width">36dp</dimen>
+    <dimen name="ksad_hand_slide_up">128dp</dimen>
+    <dimen name="ksad_hand_slide_width">76dp</dimen>
+    <dimen name="ksad_image_player_sweep_wave_height_end">345dp</dimen>
+    <dimen name="ksad_image_player_sweep_wave_height_start">138dp</dimen>
+    <dimen name="ksad_image_player_sweep_wave_width_end">700dp</dimen>
+    <dimen name="ksad_image_player_sweep_wave_width_start">259dp</dimen>
+    <dimen name="ksad_install_tips_bottom_height">100dp</dimen>
+    <dimen name="ksad_install_tips_bottom_margin_bottom">16dp</dimen>
+    <dimen name="ksad_install_tips_bottom_margin_left">36dp</dimen>
+    <dimen name="ksad_install_tips_card_elevation">2dp</dimen>
+    <dimen name="ksad_install_tips_card_height">80dp</dimen>
+    <dimen name="ksad_install_tips_card_margin">8dp</dimen>
+    <dimen name="ksad_install_tips_card_padding_left">10dp</dimen>
+    <dimen name="ksad_install_tips_card_padding_right">12dp</dimen>
+    <dimen name="ksad_interstitial_card_radius">8dp</dimen>
+    <dimen name="ksad_interstitial_download_bar_height">70dp</dimen>
+    <dimen name="ksad_interstitial_icon_radius">4dp</dimen>
+    <dimen name="ksad_jinniu_light_sweep_margin_left">-72dp</dimen>
+    <dimen name="ksad_jinniu_light_sweep_width">72dp</dimen>
+    <dimen name="ksad_live_base_card_full_height">180dp</dimen>
+    <dimen name="ksad_live_card_tips_animation_y">44dp</dimen>
+    <dimen name="ksad_live_card_tips_height">28dp</dimen>
+    <dimen name="ksad_live_card_tips_margin_bottom">-28dp</dimen>
+    <dimen name="ksad_live_card_tips_margin_left">16dp</dimen>
+    <dimen name="ksad_live_origin_dialog_height">338dp</dimen>
+    <dimen name="ksad_live_shop_card_full_height">88dp</dimen>
+    <dimen name="ksad_live_subscribe_card_count_area_margin_top">42dp</dimen>
+    <dimen name="ksad_live_subscribe_card_count_area_trans_y">-42dp</dimen>
+    <dimen name="ksad_live_subscribe_card_follower_avatar_size">20dp</dimen>
+    <dimen name="ksad_live_subscribe_card_full_height">121dp</dimen>
+    <dimen name="ksad_live_subscribe_card_height">84dp</dimen>
+    <dimen name="ksad_live_subscribe_card_logo_margin_bottom">110dp</dimen>
+    <dimen name="ksad_live_subscribe_card_margin">16dp</dimen>
+    <dimen name="ksad_live_subscribe_card_width_horizontal">343dp</dimen>
+    <dimen name="ksad_live_subscribe_dialog_height">320dp</dimen>
+    <dimen name="ksad_live_subscribe_dialog_icon_size">56dp</dimen>
+    <dimen name="ksad_live_subscribe_dialog_width">271dp</dimen>
+    <dimen name="ksad_live_subscribe_end_dialog_height">249dp</dimen>
+    <dimen name="ksad_live_subscribe_end_dialog_icon_size">82dp</dimen>
+    <dimen name="ksad_live_subscribe_end_dialog_width">311dp</dimen>
+    <dimen name="ksad_play_again_dialog_btn_height">48dp</dimen>
+    <dimen name="ksad_play_again_end_icon_size">80dp</dimen>
+    <dimen name="ksad_play_again_end_icon_size_horizontal">54dp</dimen>
+    <dimen name="ksad_playable_action_btn_height">40dp</dimen>
+    <dimen name="ksad_playable_end_btn_margin_top">32dp</dimen>
+    <dimen name="ksad_playable_end_btn_margin_top_small">24dp</dimen>
+    <dimen name="ksad_playable_end_content_width">263dp</dimen>
+    <dimen name="ksad_playable_end_desc_margin_top">16dp</dimen>
+    <dimen name="ksad_playable_end_desc_margin_top_small">12dp</dimen>
+    <dimen name="ksad_reward_apk_info_card_actionbar_text_size">15dp</dimen>
+    <dimen name="ksad_reward_apk_info_card_height">156dp</dimen>
+    <dimen name="ksad_reward_apk_info_card_icon_size">58dp</dimen>
+    <dimen name="ksad_reward_apk_info_card_margin">16dp</dimen>
+    <dimen name="ksad_reward_apk_info_card_step_area_height">79dp</dimen>
+    <dimen name="ksad_reward_apk_info_card_step_divider_height">16dp</dimen>
+    <dimen name="ksad_reward_apk_info_card_step_icon_radius">12dp</dimen>
+    <dimen name="ksad_reward_apk_info_card_step_icon_size">12dp</dimen>
+    <dimen name="ksad_reward_apk_info_card_step_icon_text_size">8sp</dimen>
+    <dimen name="ksad_reward_apk_info_card_tags_height">18dp</dimen>
+    <dimen name="ksad_reward_apk_info_card_width">343dp</dimen>
+    <dimen name="ksad_reward_author_height">97dp</dimen>
+    <dimen name="ksad_reward_author_icon_anim_start">62dp</dimen>
+    <dimen name="ksad_reward_author_icon_inner_width">62dp</dimen>
+    <dimen name="ksad_reward_author_icon_stroke_width">1dp</dimen>
+    <dimen name="ksad_reward_author_icon_width">70dp</dimen>
+    <dimen name="ksad_reward_author_width">70dp</dimen>
+    <dimen name="ksad_reward_follow_author_icon_margin_bottom">242dp</dimen>
+    <dimen name="ksad_reward_follow_card_height">64dp</dimen>
+    <dimen name="ksad_reward_follow_card_margin">12dp</dimen>
+    <dimen name="ksad_reward_follow_card_width_horizontal">351dp</dimen>
+    <dimen name="ksad_reward_follow_dialog_card_height">222dp</dimen>
+    <dimen name="ksad_reward_follow_dialog_height">243dp</dimen>
+    <dimen name="ksad_reward_follow_dialog_icon_size">80dp</dimen>
+    <dimen name="ksad_reward_follow_dialog_width">280dp</dimen>
+    <dimen name="ksad_reward_follow_end_card_height">247dp</dimen>
+    <dimen name="ksad_reward_follow_end_height">318dp</dimen>
+    <dimen name="ksad_reward_follow_end_width">280dp</dimen>
+    <dimen name="ksad_reward_follow_logo_margin_bottom">87dp</dimen>
+    <dimen name="ksad_reward_followed_card_height">64dp</dimen>
+    <dimen name="ksad_reward_followed_card_width">216dp</dimen>
+    <dimen name="ksad_reward_jinniu_card_btn_height">40dp</dimen>
+    <dimen name="ksad_reward_jinniu_card_height">105dp</dimen>
+    <dimen name="ksad_reward_jinniu_card_height_full">155dp</dimen>
+    <dimen name="ksad_reward_jinniu_card_icon_size">85dp</dimen>
+    <dimen name="ksad_reward_jinniu_card_margin">12dp</dimen>
+    <dimen name="ksad_reward_jinniu_card_padding">10dp</dimen>
+    <dimen name="ksad_reward_jinniu_dialog_close_size">30dp</dimen>
+    <dimen name="ksad_reward_jinniu_dialog_height">334dp</dimen>
+    <dimen name="ksad_reward_jinniu_dialog_icon_size">58dp</dimen>
+    <dimen name="ksad_reward_jinniu_dialog_width">286dp</dimen>
+    <dimen name="ksad_reward_jinniu_end_height">344dp</dimen>
+    <dimen name="ksad_reward_jinniu_end_icon_size">100dp</dimen>
+    <dimen name="ksad_reward_jinniu_end_max_width">355dp</dimen>
+    <dimen name="ksad_reward_jinniu_end_origin_text_size">12sp</dimen>
+    <dimen name="ksad_reward_jinniu_logo_margin_bottom">125dp</dimen>
+    <dimen name="ksad_reward_js_actionbar_height">120dp</dimen>
+    <dimen name="ksad_reward_middle_end_card_logo_view_height">16dp</dimen>
+    <dimen name="ksad_reward_middle_end_card_logo_view_margin_bottom">10dp</dimen>
+    <dimen name="ksad_reward_native_normal_actionbar_height">90dp</dimen>
+    <dimen name="ksad_reward_order_card_coupon_height">18dp</dimen>
+    <dimen name="ksad_reward_order_card_height">102dp</dimen>
+    <dimen name="ksad_reward_order_card_icon_size">82dp</dimen>
+    <dimen name="ksad_reward_order_card_margin">12dp</dimen>
+    <dimen name="ksad_reward_order_card_padding">10dp</dimen>
+    <dimen name="ksad_reward_order_coupon_divider">4dp</dimen>
+    <dimen name="ksad_reward_order_dialog_height">242dp</dimen>
+    <dimen name="ksad_reward_order_dialog_icon_size">60dp</dimen>
+    <dimen name="ksad_reward_order_dialog_width">280dp</dimen>
+    <dimen name="ksad_reward_order_end_dialog_height">236dp</dimen>
+    <dimen name="ksad_reward_order_end_dialog_width">280dp</dimen>
+    <dimen name="ksad_reward_order_logo_margin_bottom">123dp</dimen>
+    <dimen name="ksad_reward_order_original_price_size">12sp</dimen>
+    <dimen name="ksad_reward_order_price_size">15sp</dimen>
+    <dimen name="ksad_reward_playable_pre_tips_default_margin_bottom">40dp</dimen>
+    <dimen name="ksad_reward_playable_pre_tips_height">40dp</dimen>
+    <dimen name="ksad_reward_playable_pre_tips_icon_padding">5dp</dimen>
+    <dimen name="ksad_reward_playable_pre_tips_icon_size">34dp</dimen>
+    <dimen name="ksad_reward_playable_pre_tips_margin_bottom">16dp</dimen>
+    <dimen name="ksad_reward_playable_pre_tips_margin_bottom_without_actionbar">43dp</dimen>
+    <dimen name="ksad_reward_playable_pre_tips_margin_right">-71dp</dimen>
+    <dimen name="ksad_reward_playable_pre_tips_transx">-70dp</dimen>
+    <dimen name="ksad_reward_playable_pre_tips_width">117dp</dimen>
+    <dimen name="ksad_reward_shake_center_hand_size">46dp</dimen>
+    <dimen name="ksad_reward_shake_center_icon_size">92dp</dimen>
+    <dimen name="ksad_reward_shake_center_tips_height">30dp</dimen>
+    <dimen name="ksad_reward_shake_center_tips_start_width">40dp</dimen>
+    <dimen name="ksad_reward_shake_center_tips_width">90dp</dimen>
+    <dimen name="ksad_reward_shake_tips_height">42dp</dimen>
+    <dimen name="ksad_reward_shake_tips_icon_live_shop_marginBottom">280dp</dimen>
+    <dimen name="ksad_reward_shake_tips_icon_marginBottom">185dp</dimen>
+    <dimen name="ksad_reward_shake_tips_icon_marginLeft">39dp</dimen>
+    <dimen name="ksad_reward_shake_tips_icon_padding">7dp</dimen>
+    <dimen name="ksad_reward_shake_tips_icon_size">28dp</dimen>
+    <dimen name="ksad_reward_shake_tips_icon_stroke_size">1dp</dimen>
+    <dimen name="ksad_reward_shake_tips_title_live_shop_marginBottom">259dp</dimen>
+    <dimen name="ksad_reward_shake_tips_title_marginBottom">164dp</dimen>
+    <dimen name="ksad_reward_shake_tips_width">90dp</dimen>
+    <dimen name="ksad_reward_task_dialog_height">264dp</dimen>
+    <dimen name="ksad_reward_task_dialog_width">290dp</dimen>
+    <dimen name="ksad_seek_bar_progress_text_margin">10dp</dimen>
+    <dimen name="ksad_skip_view_divider_height">12dp</dimen>
+    <dimen name="ksad_skip_view_divider_margin_horizontal">8dp</dimen>
+    <dimen name="ksad_skip_view_divider_margin_left">52dp</dimen>
+    <dimen name="ksad_skip_view_divider_margin_vertical">10dp</dimen>
+    <dimen name="ksad_skip_view_divider_width">1dp</dimen>
+    <dimen name="ksad_skip_view_height">32dp</dimen>
+    <dimen name="ksad_skip_view_padding_horizontal">16dp</dimen>
+    <dimen name="ksad_skip_view_radius">16dp</dimen>
+    <dimen name="ksad_skip_view_text_size">14sp</dimen>
+    <dimen name="ksad_skip_view_width">128dp</dimen>
+    <dimen name="ksad_splash_actionbar_height">52dp</dimen>
+    <dimen name="ksad_splash_actionbar_margin_bottom">20dp</dimen>
+    <dimen name="ksad_splash_actionbar_width">280dp</dimen>
+    <dimen name="ksad_splash_endcard_ab_subtitle_text_sp">10sp</dimen>
+    <dimen name="ksad_splash_endcard_ab_subtitle_text_sp_land">7sp</dimen>
+    <dimen name="ksad_splash_endcard_ab_title_text_sp">16sp</dimen>
+    <dimen name="ksad_splash_endcard_ab_title_text_sp_land">13sp</dimen>
+    <dimen name="ksad_splash_endcard_actionbar_iconh">48dp</dimen>
+    <dimen name="ksad_splash_endcard_actionbar_iconh_land">39dp</dimen>
+    <dimen name="ksad_splash_endcard_actionbar_iconw">187dp</dimen>
+    <dimen name="ksad_splash_endcard_actionbar_iconw_land">152dp</dimen>
+    <dimen name="ksad_splash_endcard_app_iconh">100dp</dimen>
+    <dimen name="ksad_splash_endcard_app_iconh_land">60dp</dimen>
+    <dimen name="ksad_splash_endcard_app_iconw">100dp</dimen>
+    <dimen name="ksad_splash_endcard_app_iconw_land">60dp</dimen>
+    <dimen name="ksad_splash_endcard_app_margin_top">124dp</dimen>
+    <dimen name="ksad_splash_endcard_app_margin_top_land">80dp</dimen>
+    <dimen name="ksad_splash_endcard_appdesc_h">48dp</dimen>
+    <dimen name="ksad_splash_endcard_appdesc_h_land">30dp</dimen>
+    <dimen name="ksad_splash_endcard_appdesc_margin_top">40dp</dimen>
+    <dimen name="ksad_splash_endcard_appdesc_margin_top_land">28dp</dimen>
+    <dimen name="ksad_splash_endcard_appdesc_text_sp">16sp</dimen>
+    <dimen name="ksad_splash_endcard_appdesc_text_sp_land">11sp</dimen>
+    <dimen name="ksad_splash_endcard_appname_h">30dp</dimen>
+    <dimen name="ksad_splash_endcard_appname_h_land">18dp</dimen>
+    <dimen name="ksad_splash_endcard_appname_margin_top">8dp</dimen>
+    <dimen name="ksad_splash_endcard_appname_margin_top_land">4dp</dimen>
+    <dimen name="ksad_splash_endcard_appname_text_sp">20sp</dimen>
+    <dimen name="ksad_splash_endcard_appname_text_sp_land">14sp</dimen>
+    <dimen name="ksad_splash_endcard_appver_h">14dp</dimen>
+    <dimen name="ksad_splash_endcard_appver_h_land">10dp</dimen>
+    <dimen name="ksad_splash_endcard_appver_text_sp">10sp</dimen>
+    <dimen name="ksad_splash_endcard_appver_text_sp_land">8sp</dimen>
+    <dimen name="ksad_splash_endcard_close_root_h">24dp</dimen>
+    <dimen name="ksad_splash_endcard_close_root_h_land">17dp</dimen>
+    <dimen name="ksad_splash_endcard_close_root_margin_top">14dp</dimen>
+    <dimen name="ksad_splash_endcard_close_root_margin_top_land">12dp</dimen>
+    <dimen name="ksad_splash_endcard_gift_iconh">412dp</dimen>
+    <dimen name="ksad_splash_endcard_gift_iconh_land">256dp</dimen>
+    <dimen name="ksad_splash_endcard_gift_iconw">327dp</dimen>
+    <dimen name="ksad_splash_endcard_gift_iconw_land">206dp</dimen>
+    <dimen name="ksad_splash_endcard_title_iconh">32dp</dimen>
+    <dimen name="ksad_splash_endcard_title_iconh_land">20dp</dimen>
+    <dimen name="ksad_splash_endcard_title_iconw">208dp</dimen>
+    <dimen name="ksad_splash_endcard_title_iconw_land">130dp</dimen>
+    <dimen name="ksad_splash_hand_bgh">168dp</dimen>
+    <dimen name="ksad_splash_hand_bgw">60dp</dimen>
+    <dimen name="ksad_splash_rotate_view_height">88dp</dimen>
+    <dimen name="ksad_splash_rotate_view_margin_bottom">34dp</dimen>
+    <dimen name="ksad_splash_rotate_view_margin_top">24dp</dimen>
+    <dimen name="ksad_splash_rotate_view_width">88dp</dimen>
+    <dimen name="ksad_splash_shake_animator_height">8dp</dimen>
+    <dimen name="ksad_splash_shake_view_height">92dp</dimen>
+    <dimen name="ksad_splash_shake_view_margin_bottom">30dp</dimen>
+    <dimen name="ksad_splash_shake_view_margin_top">16dp</dimen>
+    <dimen name="ksad_splash_shake_view_width">92dp</dimen>
+    <dimen name="ksad_title_bar_height">45dp</dimen>
+    <item name="ksad_container" type="id"/>
+    <item name="ksad_video_immerse_text_container" type="id"/>
+    <string name="app_name">banner</string>
+    <string name="ksad_ad_default_username_normal">可爱的广告君</string>
+    <string name="ksad_card_tips_interested">感兴趣</string>
+    <string name="ksad_card_tips_pre">预告</string>
+    <string name="ksad_click_immediate">立即点击</string>
+    <string name="ksad_data_error_toast">内容获取失败</string>
+    <string name="ksad_deep_link_dialog_content">再次开启 【%s】</string>
+    <string name="ksad_default_no_more_tip_or_toast_txt">更多内容请前往快手App查看</string>
+    <string name="ksad_download_kwai_waiting">下载信息获取中，请稍后再试。</string>
+    <string name="ksad_half_page_loading_error_tip">加载失败，请点击重试</string>
+    <string name="ksad_install_tips">“ %1$s ”已完成下载，点击完成安装</string>
+    <string name="ksad_launch_tips">您已安装“ %1$s ”，是否打开该应用</string>
+    <string name="ksad_leave_persist">残忍离开</string>
+    <string name="ksad_left_slide_to_next">左滑试一试</string>
+    <string name="ksad_live_end">直播已结束</string>
+    <string name="ksad_network_error_toast">网络错误</string>
+    <string name="ksad_no_title_common_dialog_negativebtn_title">取消</string>
+    <string name="ksad_no_title_common_dialog_positivebtn_title">确定</string>
+    <string name="ksad_page_load_no_more_tip">无更多内容</string>
+    <string name="ksad_page_loading_data_error_sub_title">内容获取失败请点击重试</string>
+    <string name="ksad_page_loading_data_error_title">空空如也</string>
+    <string name="ksad_page_loading_error_retry">重试</string>
+    <string name="ksad_page_loading_network_error_sub_title">请检查网络连接后重试</string>
+    <string name="ksad_page_loading_network_error_title">网络不给力</string>
+    <string name="ksad_request_install_content">安装后，可以在快手查看商品详情和下单</string>
+    <string name="ksad_request_install_nagative">暂不开启</string>
+    <string name="ksad_request_install_positive">去开启</string>
+    <string name="ksad_request_install_title">授权安装快手</string>
+    <string name="ksad_reward_playable_load_error_toast">请稍后重试，内容准备中</string>
+    <string name="ksad_reward_success_tip">领取奖励</string>
+    <string name="ksad_right_slide_to_return">右滑返回</string>
+    <string name="ksad_see_detail">了解详情 ></string>
+    <string name="ksad_skip_text">跳过</string>
+    <string name="ksad_splash_preload_tips_text">已提前加载</string>
+    <string name="ksad_splash_rotate_combo_rotate_text">"扭动或点击了解更多"</string>
+    <string name="ksad_splash_shake_combo_action_text">"摇一摇"</string>
+    <string name="ksad_splash_shake_combo_sub_text">"或点击跳转详情页/三方应用"</string>
+    <string name="ksad_splash_slide_combo_guide_text">"任意方向滑动或点击"</string>
+    <string name="ksad_splash_slide_combo_sub_text">"跳转详情或第三方应用"</string>
+    <string name="ksad_splash_slide_guide_text">轻滑试试</string>
+    <string name="ksad_watch_continue">留下看看</string>
+    <style name="TransparentDialogActivity" parent="@style/Theme.AppCompat.Dialog">
+    <item name="android:windowBackground">@android:color/transparent</item>
+    <item name="android:windowIsTranslucent">true</item>
+    <item name="android:backgroundDimAmount">0</item>
+    <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+  </style>
+    <style name="ksad_LiveSubscriberAvatar">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">match_parent</item>
+    <item name="android:visibility">gone</item>
+  </style>
+    <style name="ksad_RewardCardBtnInstall">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">44dp</item>
+    <item name="android:background">@drawable/ksad_reward_install_btn_bg</item>
+  </style>
+    <style name="ksad_RewardCardTag">
+    <item name="android:background">@drawable/ksad_reward_card_tag_bg</item>
+    <item name="android:paddingLeft">8dp</item>
+    <item name="android:paddingRight">8dp</item>
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">18dp</item>
+    <item name="android:textColor">@color/ksad_reward_main_color</item>
+    <item name="android:textSize">10sp</item>
+    <item name="android:gravity">center</item>
+  </style>
+    <style name="ksad_RewardCardTagWhite">
+    <item name="android:background">@drawable/ksad_reward_card_tag_white_bg</item>
+    <item name="android:paddingLeft">8dp</item>
+    <item name="android:paddingRight">8dp</item>
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">18dp</item>
+    <item name="android:textColor">@android:color/white</item>
+    <item name="android:textSize">10sp</item>
+    <item name="android:gravity">center</item>
+  </style>
+    <declare-styleable name="ksad_ComplianceTextView"><attr format="dimension" name="ksad_width_in_landscape"/><attr format="color|reference" name="ksad_privacy_color"/><attr format="boolean" name="ksad_show_clickable_underline"/></declare-styleable>
+    <declare-styleable name="ksad_DividerView">
+    <attr format="color" name="ksad_color"/>
+    <attr format="dimension" name="ksad_dashLength"/>
+    <attr format="dimension" name="ksad_dashGap"/>
+    <attr format="dimension" name="ksad_dashThickness"/>
+    <attr format="enum" name="ksad_orientation">
+      <enum name="horizontal" value="0"/>
+      <enum name="vertical" value="1"/>
+    </attr>
+  </declare-styleable>
+    <declare-styleable name="ksad_DownloadProgressView">
+    <!-- 下载启动前的文本颜色 -->
+    <attr format="color" name="ksad_downloadTextColor"/>
+    <!-- 下载进行中左侧的文本颜色 -->
+    <attr format="color" name="ksad_downloadLeftTextColor"/>
+    <!-- 下载进行中右侧的文本颜色 -->
+    <attr format="color" name="ksad_downloadRightTextColor"/>
+    <!-- 正常状态下的背景的drawable-->
+    <attr format="reference" name="ksad_backgroundDrawable"/>
+    <!-- 进度条的drawable-->
+    <attr format="reference" name="ksad_progressDrawable"/>
+    <!-- 内部所有的文本的大小 -->
+    <attr format="dimension" name="ksad_downloadTextSize"/>
+    <!-- 下载中显示进度的格式 -->
+    <attr format="string" name="ksad_downloadingFormat"/>
+
+  </declare-styleable>
+    <declare-styleable name="ksad_JinniuCouponLayout">
+    <attr format="dimension" name="ksad_outerRadius"/>
+    <attr format="dimension" name="ksad_verticalRadius"/>
+  </declare-styleable>
+    <declare-styleable name="ksad_KSCornerImageView">
+    <attr format="boolean" name="ksad_leftTopCorner"/>
+    <attr format="boolean" name="ksad_topRightCorner"/>
+    <attr format="boolean" name="ksad_rightBottomCorner"/>
+    <attr format="boolean" name="ksad_bottomLeftCorner"/>
+
+  </declare-styleable>
+    <declare-styleable name="ksad_KSCouponLabelTextView">
+    <attr format="dimension" name="ksad_labelRadius"/>
+    <attr format="dimension" name="ksad_sideRadius"/>
+    <attr format="color" name="ksad_strokeColor"/>
+    <attr format="dimension" name="ksad_strokeSize"/>
+
+  </declare-styleable>
+    <declare-styleable name="ksad_KSLayout">
+    <attr format="dimension" name="ksad_radius"/>
+    <attr format="boolean" name="ksad_clipBackground"/>
+    <attr format="float" name="ksad_ratio"/>
+  </declare-styleable>
+    <declare-styleable name="ksad_KSRatingBar" ns1:ignore="ResourceName">
+    <attr format="dimension" name="ksad_starImageWidth"/>
+    <attr format="dimension" name="ksad_starImageHeight"/>
+    <attr format="dimension" name="ksad_starImagePadding"/>
+    <attr format="integer" name="ksad_totalStarCount"/>
+    <attr format="integer" name="ksad_starCount"/>
+    <attr format="reference" name="ksad_starEmpty"/>
+    <attr format="reference" name="ksad_starFill"/>
+    <attr format="reference" name="ksad_starHalf"/>
+    <attr format="boolean" name="ksad_clickable"/>
+    <attr format="boolean" name="ksad_halfstart"/>
+  </declare-styleable>
+    <declare-styleable name="ksad_KsRadiusStrokeTextView">
+    <attr format="color" name="ksad_textStrokeColor"/>
+    <attr format="dimension" name="ksad_textRadius"/>
+    <attr format="dimension" name="ksad_textLeftTopRadius"/>
+    <attr format="dimension" name="ksad_textLeftBottomRadius"/>
+    <attr format="dimension" name="ksad_textRightTopRadius"/>
+    <attr format="dimension" name="ksad_textRightBottomRadius"/>
+    <attr format="dimension" name="ksad_textStrokeWidth"/>
+    <attr format="reference" name="ksad_textDrawable"/>
+    <attr format="color" name="ksad_textNormalTextColor"/>
+    <attr format="color" name="ksad_textSelectedTextColor"/>
+    <attr format="boolean" name="ksad_textNoLeftStroke"/>
+    <attr format="boolean" name="ksad_textNoRightStroke"/>
+    <attr format="boolean" name="ksad_textNoTopStroke"/>
+    <attr format="boolean" name="ksad_textNoBottomStroke"/>
+    <attr format="color" name="ksad_textPressedSolidColor"/>
+    <attr format="color" name="ksad_textNormalSolidColor"/>
+    <attr format="boolean" name="ksad_textIsSelected"/>
+  </declare-styleable>
+    <declare-styleable name="ksad_KsShadowImageView">
+    <attr format="dimension" name="ksad_shadowSize"/>
+    <attr format="color" name="ksad_shadowColor"/>
+    <attr format="boolean" name="ksad_enableLeftShadow"/>
+    <attr format="boolean" name="ksad_enableRightShadow"/>
+    <attr format="boolean" name="ksad_enableTopShadow"/>
+    <attr format="boolean" name="ksad_enableBottomShadow"/>
+  </declare-styleable>
+    <declare-styleable name="ksad_KsShakeView">
+    <attr format="color" name="ksad_outerStrokeColor"/>
+    <attr format="dimension" name="ksad_outerStrokeWidth"/>
+    <attr format="color" name="ksad_solidColor"/>
+
+    <!--   是否显示内部圆形 -->
+    <attr format="integer" name="ksad_shakeViewStyle"/>
+    <!--   内部圆形的颜色 -->
+    <attr format="color" name="ksad_innerCircleStrokeColor"/>
+    <!--   内部圆形的描边宽度 -->
+    <attr format="dimension" name="ksad_innerCircleStrokeWidth"/>
+    <!--   内部圆形的padding -->
+    <attr format="dimension" name="ksad_innerCirclePadding"/>
+    <!--   摇一摇的图标 -->
+    <attr format="reference" name="ksad_shakeIcon"/>
+
+  </declare-styleable>
+    <declare-styleable name="ksad_KsVerticalMarqueeTextView">
+    <attr format="boolean" name="ksad_autoStartMarquee"/>
+    <attr format="reference|integer" name="ksad_marqueeSpeed"/>
+    <attr format="reference|string" name="ksad_text"/>
+    <attr format="reference|dimension" name="ksad_textSize"/>
+    <attr format="reference|color" name="ksad_textColor"/>
+    <attr format="reference" name="ksad_textAppearance"/>
+    <attr name="ksad_textStyle">
+      <enum name="normal" value="0"/>
+      <enum name="bold" value="1"/>
+      <enum name="italic" value="2"/>
+    </attr>
+    <attr name="ksad_typeface">
+      <enum name="normal" value="0"/>
+      <enum name="sans" value="1"/>
+      <enum name="serif" value="2"/>
+      <enum name="monospace" value="3"/>
+    </attr>
+  </declare-styleable>
+    <declare-styleable name="ksad_SeekBar">
+    <attr format="color" name="ksad_SeekBarBackground"/>
+    <attr format="color" name="ksad_SeekBarProgress"/>
+    <attr format="color" name="ksad_SeekBarSecondProgress"/>
+    <attr format="boolean" name="ksad_SeekBarDisplayProgressText"/>
+    <attr format="boolean" name="ksad_SeekBarLimitProgressText100"/>
+    <attr format="dimension" name="ksad_SeekBarProgressTextSize"/>
+    <attr format="dimension" name="ksad_SeekBarProgressTextMargin"/>
+    <attr format="dimension" name="ksad_SeekBarWidth"/>
+    <attr format="dimension" name="ksad_SeekBarHeight"/>
+    <attr format="dimension" name="ksad_SeekBarRadius"/>
+    <attr format="dimension" name="ksad_SeekBarPaddingLeft"/>
+    <attr format="dimension" name="ksad_SeekBarPaddingRight"/>
+    <attr format="dimension" name="ksad_SeekBarPaddingTop"/>
+    <attr format="dimension" name="ksad_SeekBarPaddingBottom"/>
+    <attr format="reference" name="ksad_SeekBarThumb"/>
+    <attr format="reference" name="ksad_SeekBarDefaultIndicator"/>
+    <attr format="reference" name="ksad_SeekBarDefaultIndicatorPass"/>
+    <attr format="boolean" name="ksad_SeekBarShowProgressText"/>
+    <attr format="color" name="ksad_SeekBarProgressTextColor"/>
+  </declare-styleable>
+    <declare-styleable name="ksad_SlideTipsView">
+    <attr format="boolean" name="ksad_is_left_slide"/>
+  </declare-styleable>
+    <declare-styleable name="ksad_ViewPagerIndicator">
+    <attr format="dimension" name="ksad_dot_distance"/>
+    <attr format="dimension" name="ksad_dot_height"/>
+    <attr format="dimension" name="ksad_dot_selected_width"/>
+    <attr format="dimension" name="ksad_dot_unselected_width"/>
+    <attr format="color" name="ksad_height_color"/>
+    <attr format="color" name="ksad_default_color"/>
+  </declare-styleable>
+</resources>

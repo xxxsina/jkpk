@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/ksad_reward_jinniu_end_card_root"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="#33000000"
+  android:clickable="true"
+  android:visibility="gone"
+  tools:visibility="visible">
+
+  <!-- 金牛电商广告的结束页弹窗 -->
+
+  <com.kwad.sdk.widget.KSFrameLayout
+    android:id="@+id/ksad_reward_jinniu_end_card"
+    android:layout_width="@dimen/ksad_reward_jinniu_end_max_width"
+    android:layout_height="@dimen/ksad_reward_jinniu_end_height"
+    android:layout_centerInParent="true"
+    android:layout_gravity="center"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:background="@drawable/ksad_reward_task_dialog_bg">
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="18dp"
+      android:layout_marginRight="18dp"
+      android:layout_marginTop="36dp"
+      android:orientation="vertical">
+
+      <FrameLayout
+        android:layout_width="@dimen/ksad_reward_jinniu_end_icon_size"
+        android:layout_height="@dimen/ksad_reward_jinniu_end_icon_size"
+        android:layout_gravity="center_horizontal">
+
+        <com.kwad.components.core.widget.KSCornerImageView
+          android:id="@+id/ksad_reward_jinniu_end_icon"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_gravity="top|center_horizontal"
+          app:ksad_radius="8dp"
+          tools:src="@drawable/ksad_default_app_icon" />
+
+        <com.kwad.components.ad.reward.widget.JinniuCouponLayout
+          android:id="@+id/ksad_reward_jinniu_coupon_layout"
+          android:layout_width="wrap_content"
+          android:layout_height="17dp"
+          android:layout_gravity="bottom|left"
+          android:layout_margin="4dp"
+          android:orientation="horizontal"
+          android:paddingLeft="2dp"
+          android:paddingRight="2dp"
+          app:ksad_outerRadius="3dp"
+          app:ksad_verticalRadius="2dp">
+
+          <TextView
+            android:id="@+id/ksad_reward_jinniu_coupon_prefix"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingRight="3dp"
+            android:textColor="#FFFFFF"
+            android:textSize="10sp"
+            tools:text="券" />
+
+          <TextView
+            android:id="@+id/ksad_reward_jinniu_coupon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textColor="#FFFFFF"
+            android:textSize="10sp"
+            tools:text="¥29.9" />
+
+        </com.kwad.components.ad.reward.widget.JinniuCouponLayout>
+      </FrameLayout>
+
+      <TextView
+        android:id="@+id/ksad_reward_jinniu_end_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="16dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:lineSpacingMultiplier="0.8"
+        android:maxLines="1"
+        android:textColor="#FF222222"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:text="理肤泉自用感受…" />
+
+
+      <TextView
+        android:id="@+id/ksad_reward_jinniu_end_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:ellipsize="end"
+        android:gravity="center_horizontal"
+        android:maxLines="2"
+        android:textColor="#FF666666"
+        android:textSize="14sp"
+        tools:text="理肤泉自用感受，涂护肤品岂不是更油理念水乳…" />
+
+      <com.kwad.components.ad.widget.KsPriceView
+        android:id="@+id/ksad_reward_jinniu_end_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:textColor="@color/ksad_reward_main_color"
+        android:textSize="8sp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="48dp"
+      android:layout_gravity="center_horizontal|bottom"
+      android:layout_marginBottom="32dp"
+      android:orientation="horizontal"
+      android:paddingLeft="30dp"
+      android:paddingRight="30dp">
+
+      <com.kwad.components.core.widget.KsStyledTextButton
+        android:id="@+id/ksad_reward_jinniu_end_btn_vide_detail"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:layout_weight="1"
+        android:background="@drawable/ksad_ksad_reward_btn_blue_bg"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="查看商品"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+      <!--   占位   -->
+      <View
+        android:layout_width="16dp"
+        android:layout_height="wrap_content" />
+
+      <com.kwad.components.core.widget.KsStyledTextButton
+        android:id="@+id/ksad_reward_jinniu_end_btn_buy"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:layout_weight="1"
+        android:background="@drawable/ksad_ksad_reward_follow_btn_follow_bg"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="立即抢购"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+    </LinearLayout>
+
+
+  </com.kwad.sdk.widget.KSFrameLayout>
+</RelativeLayout>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:background="#99000000">
+
+  <!--  金牛电商广告的挽留弹窗 -->
+
+  <LinearLayout
+    android:layout_width="@dimen/ksad_reward_jinniu_dialog_width"
+    android:layout_height="@dimen/ksad_reward_jinniu_dialog_height"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="@dimen/ksad_reward_jinniu_dialog_close_size"
+      android:layout_gravity="right"
+      android:orientation="horizontal">
+
+      <TextView
+        android:id="@+id/ksad_reward_jinniu_dialog_play_time_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:textColor="#CCFFFFFF"
+        android:textSize="14sp"
+        tools:text="再看30秒，可获得优惠" />
+
+      <ImageView
+        android:id="@+id/ksad_reward_jinniu_dialog_btn_close"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="4dp"
+        android:src="@drawable/ksad_reward_jinniu_close" />
+    </LinearLayout>
+
+    <com.kwad.sdk.widget.KSFrameLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="@drawable/ksad_reward_task_dialog_bg">
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="28dp"
+        android:orientation="vertical">
+
+        <com.kwad.components.core.widget.KSCornerImageView
+          android:id="@+id/ksad_reward_jinniu_dialog_icon"
+          android:layout_width="@dimen/ksad_reward_jinniu_dialog_icon_size"
+          android:layout_height="@dimen/ksad_reward_jinniu_dialog_icon_size"
+          android:layout_gravity="top|center_horizontal"
+          app:ksad_radius="4dp"
+          tools:src="@drawable/ksad_default_app_icon" />
+
+        <TextView
+          android:id="@+id/ksad_reward_jinniu_dialog_title"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_horizontal"
+          android:layout_marginBottom="7dp"
+          android:layout_marginTop="9dp"
+          android:ellipsize="end"
+          android:gravity="center"
+          android:maxLines="1"
+          android:textColor="#FF222222"
+          android:textSize="16sp"
+          android:textStyle="bold"
+          tools:text="理肤泉自用感受" />
+
+        <TextView
+          android:id="@+id/ksad_reward_jinniu_dialog_desc"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginBottom="15dp"
+          android:ellipsize="end"
+          android:gravity="center"
+          android:maxLines="2"
+          android:textColor="#FF6C6C6C"
+          android:textSize="14sp"
+          tools:text="理肤泉自用感受 本人油皮痘痘肌，一直认为油皮再涂护肤品岂不是更油理念水乳…" />
+
+        <TextView
+          android:id="@+id/ksad_reward_jinniu_dialog_detail"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:ellipsize="end"
+          android:gravity="center"
+          android:maxLines="1"
+          android:text="了解详情 >"
+          android:textColor="@color/ksad_reward_main_color"
+          android:textSize="14sp" />
+      </LinearLayout>
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+
+        <com.kwad.components.core.widget.KsStyledTextButton
+          android:id="@+id/ksad_reward_jinniu_dialog_btn_continue"
+          android:layout_width="222dp"
+          android:layout_height="36dp"
+          android:layout_gravity="center_horizontal|bottom"
+          android:layout_marginBottom="12dp"
+          android:background="@drawable/ksad_ksad_reward_follow_btn_follow_bg"
+          android:gravity="center"
+          android:text="继续观看视频"
+          android:textColor="@android:color/white"
+          android:textSize="15sp"
+          android:textStyle="bold" />
+
+        <TextView
+          android:id="@+id/ksad_reward_jinniu_dialog_btn_deny"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_horizontal|bottom"
+          android:gravity="center"
+          android:text="残忍离开"
+          android:textColor="#FF9C9C9C"
+          android:textSize="12sp" />
+
+      </LinearLayout>
+
+    </com.kwad.sdk.widget.KSFrameLayout>
+
+  </LinearLayout>
+
+</FrameLayout>

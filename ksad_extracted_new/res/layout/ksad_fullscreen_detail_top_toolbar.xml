@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/ksad_play_end_top_toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="28dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@android:color/transparent"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    tools:background="@android:color/black"
+    tools:ignore="HardcodedText, RtlHardcoded, SpUsage, ContentDescription">
+
+    <TextView
+        android:id="@+id/ksad_video_count_down"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:background="@drawable/ksad_video_btn_bg"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:textSize="15dp"
+        android:visibility="visible"
+        tools:ignore="SpUsage"
+        tools:text="10" />
+
+    <ImageView
+        android:id="@+id/ksad_video_sound_switch"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginLeft="40dp"
+        android:background="@drawable/ksad_video_btn_bg"
+        android:scaleType="centerInside"
+        android:src="@drawable/ksad_video_sound_selector" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:orientation="horizontal"
+        android:layout_alignParentRight="true">
+
+        <TextView
+            android:id="@+id/ksad_detail_call_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:background="@drawable/ksad_reward_call_bg"
+            android:drawableRight="@drawable/ksad_arrow_left"
+            android:drawablePadding="4dp"
+            android:gravity="center"
+            android:paddingLeft="12dp"
+            android:paddingRight="10dp"
+            android:layout_marginRight="12dp"
+            android:textColor="#FFFFFF"
+            android:textSize="14dp"
+            android:visibility="gone"
+            tools:text="免费获取"
+            tools:visibility="visible" />
+
+
+    <TextView
+        android:id="@+id/ksad_top_toolbar_close_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        tools:text="关闭关"
+        android:textColor="#FFFFFF"
+        android:textSize="14dp"
+        android:gravity="center"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp"
+        tools:visibility="visible"
+        android:visibility="gone"
+        android:background="@drawable/ksad_reward_call_bg" />
+
+    <ImageView
+        android:id="@+id/ksad_skip_icon"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/ksad_video_skip_icon"
+        android:visibility="gone"
+        tools:visibility="gone" />
+    </LinearLayout>
+
+</RelativeLayout>

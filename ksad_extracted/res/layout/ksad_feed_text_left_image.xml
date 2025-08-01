@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:baselineAligned="false"
+    android:orientation="vertical"
+    tools:ignore="ContentDescription,SpUsage,RtlHardcoded">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="76dp"
+            android:layout_marginRight="12dp"
+            android:gravity="center_vertical"
+            android:layout_weight="2">
+
+            <TextView
+                android:id="@+id/ksad_ad_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:ellipsize="end"
+                android:includeFontPadding="false"
+                android:maxLines="2"
+                android:textColor="#020202"
+                android:textSize="15dp"
+                android:lineSpacingExtra="0dp"
+                tools:text="快手广告快手广告快手广告快手广告快手广告" />
+
+            <com.kwad.components.ad.widget.DownloadProgressView
+                android:id="@+id/ksad_app_download_btn"
+                android:layout_width="64dp"
+                android:layout_height="24dp"
+                android:layout_alignParentBottom="true" />
+
+            <ImageView
+                android:id="@+id/ksad_ad_dislike"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:src="@drawable/ksad_ad_dislike_bottom" />
+        </RelativeLayout>
+
+        <com.kwad.sdk.widget.RatioFrameLayout
+            android:id="@+id/ksad_image_container"
+            android:layout_width="0dp"
+            android:layout_height="76dp"
+            android:layout_weight="1"
+            tools:layout_height="76dp">
+
+            <com.kwad.sdk.core.page.widget.RoundAngleImageView
+                android:id="@+id/ksad_ad_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center" />
+
+            <com.kwad.components.core.widget.KsLogoView
+                android:id="@+id/ksad_feed_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ksad_splash_logo_bg"
+                android:layout_gravity="left|bottom" />
+        </com.kwad.sdk.widget.RatioFrameLayout>
+
+    </LinearLayout>
+
+    <com.kwad.components.core.widget.ComplianceTextView
+        android:id="@+id/ksad_compliance_view"
+        android:visibility="gone"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/ksad_compliance_white_bg"
+        android:textColor="#FF9C9C9C"
+        android:textSize="10sp"
+        app:ksad_privacy_color="#FF9C9C9C"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

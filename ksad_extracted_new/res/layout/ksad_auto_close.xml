@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.kwad.sdk.widget.KSLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="wrap_content"
+  android:layout_height="30dp"
+  android:gravity="center_vertical"
+  android:orientation="horizontal">
+
+  <TextView
+    android:id="@+id/ksad_auto_close_text"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="#CCFFFFFF"
+    android:textSize="14sp"
+    android:visibility="gone"
+    tools:text="10秒后自动关闭"
+    tools:visibility="visible" />
+
+  <ImageView
+    android:id="@+id/ksad_auto_close_btn"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="4dp"
+    android:src="@drawable/ksad_icon_auto_close" />
+
+</com.kwad.sdk.widget.KSLinearLayout>

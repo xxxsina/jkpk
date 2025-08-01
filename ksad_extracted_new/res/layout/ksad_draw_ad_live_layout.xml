@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.kwad.sdk.core.view.AdBaseFrameLayout android:id="@+id/ksad_root_live_container"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@android:color/black"
+  tools:ignore="RtlHardcoded, SpUsage">
+
+  <!-- 播放器内容封面的模糊图片 -->
+  <ImageView
+    android:id="@+id/ksad_video_first_frame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:scaleType="fitXY" />
+
+  <View
+    android:id="@+id/ksad_draw_live_frame_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ksad_black_alpha50"
+    android:visibility="gone" />
+
+  <!--播放器区域-->
+  <com.kwad.sdk.widget.KSFrameLayout
+    android:id="@+id/ksad_draw_video_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="bottom"/>
+
+  <ImageView
+    android:id="@+id/ksad_video_first_frame_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scaleType="fitXY" />
+
+
+  <!-- 直播商品卡底部卡卡片 -->
+  <ViewStub
+    android:id="@+id/ksad_draw_live_shop_stub"
+    android:layout_width="match_parent"
+    android:layout_height="88dp"
+    android:layout_gravity="bottom|left"
+    android:layout_marginBottom="23dp"
+    android:layout_marginHorizontal="20dp"
+    android:layout="@layout/ksad_draw_actionbar_live_shop"
+    tools:visibility="gone" />
+
+  <!-- 直播基础卡的底部兜底卡片 -->
+  <ViewStub
+    android:id="@+id/ksad_draw_live_base_stub"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:layout_marginBottom="7dp"
+    android:layout_gravity="bottom|left"
+    android:layout="@layout/ksad_draw_actionbar_live_base"
+    android:background="@drawable/ksad_draw_live_bottom_base_bg"
+    tools:visibility="gone" />
+
+  <include layout="@layout/ksad_draw_live_end_card"
+    android:id="@+id/ksad_draw_live_end"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:visibility="gone"/>
+
+  <com.kwad.components.core.widget.ComplianceTextView
+    android:id="@+id/ksad_compliance_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:layout_marginTop="56dp"
+    android:background="@drawable/ksad_compliance_view_bg"
+    android:padding="8dp"
+    android:textColor="#ffffff"
+    android:textSize="10dp"
+    android:visibility="gone"
+    tools:visibility="visible" />
+
+</com.kwad.sdk.core.view.AdBaseFrameLayout>

@@ -1,0 +1,143 @@
+-keep class com.kwai.**{ *; }
+-keep class com.ksad.**{ *; }
+-keep class com.kwad.** { *;}
+-keep class com.kuaishou.aegon.**{ *; }
+
+-dontwarn com.kwai.**
+-dontwarn com.kwad.**
+-dontwarn com.ksad.**
+-dontwarn aegon.chrome.**
+-dontwarn com.kuaishou.aegon.**
+-dontwarn com.tachikoma.core.**
+
+#ijkplayer
+-keep class org.chromium.** {*;}
+-keep class org.chromium.** { *; }
+-keep class aegon.chrome.** { *; }
+-keeppackagenames com.badlogic.gdx.math
+-keeppackagenames com.google.vrtoolkit.cardboard.sensors
+
+-dontwarn okio.**
+-dontwarn okhttp3.**
+# 混淆一级即可
+-keep class okhttp3.* {*;}
+-keep class com.google.gson.* {*;}
+
+#保留注解，如果不添加改行会导致我们的@Keep注解失效
+-keepattributes *Annotation*
+-keep class android.support.annotation.Keep
+-keep @android.support.annotation.Keep class * {*;}
+
+# 安全sdk
+-dontwarn com.kuaishou.android.security.**
+-keep class com.kuaishou.android.security.**{*;}
+-keep class com.yxcorp.kuaishou.addfp.** { *;}
+
+#直播相关混淆
+-dontwarn io.netty.**
+-dontwarn com.kuaishou.livestream.message.**
+-dontwarn com.kuaishou.protobuf.**
+-keep class com.google.protobuf.nano.** {*;}
+-keep class com.kuaishou.livestream.message.nano.** {*;}
+-keep class com.kuaishou.protobuf.livestream.nano.** {*;}
+-keep class com.kuaishou.merchant.message.nano.** {*;}
+-keep class com.kuaishou.protobuf.merchant.message.nano.** {*;}
+
+#直播广告
+-keep class okio.** {*;}
+-keep class io.** {*;}
+-keep class com.yxcorp.** {*;}
+-keep class com.kuaishou.** {*;}
+-keep class org.reactivestreams.** {*;}
+
+-keep class com.kuaishou.livestream.** {*;}
+-keep class com.kuaishou.security.kste.** {*;}
+-keep class com.seclib.kste.** {*;}
+
+# 安全sdk
+-dontwarn com.kuaishou.android.security.**
+-keep class com.kuaishou.dfp.**{*;}
+-keep class com.kuaishou.dfp.KWEGIDDFP {*;}
+-keep class com.kuaishou.dfp.ResponseDfpCallback {*;}
+-keep class com.kuaishou.dfp.env.jni.Watermelon {*;}
+-dontwarn com.squareup.okhttp3.**
+-keep class com.squareup.okhttp3.** { *;}
+-dontwarn okio.**
+-keep class com.google.protobuf.** {*;}
+-keep class com.kuaishou.dfp.env.Proxy.** {*;}
+#new added for android 10
+-keep class com.bun.miitmdid.core.** {*;}
+
+#TK框架
+-keep class com.tachikoma.core.manager.IProviderCollector {*;}
+-keep class * implements com.tachikoma.core.manager.IProviderCollector { *;}
+
+-keep class com.tkruntime.v8.**{*;}
+
+-keep class com.kwad.proguard.annotations.DoNotStrip
+-keep @com.kwad.proguard.annotations.DoNotStrip class * { *; }
+
+-keepclassmembers,includedescriptorclasses class * { native <methods>; }
+
+#风控sdk
+-keep class com.kuaishou.weapon.**{ *; }
+
+# oaid相关
+-dontwarn com.kwad.sdk.oaid.OADIDSDKHelper**
+-keep class * implements com.bun.miitmdid.interfaces.IIdentifierListener { *; }
+-keep class com.bun.miitmdid.core.MdidSdkHelper{*;}
+-keep public class com.kwad.sdk.crash.online.monitor.block.BlockEvent { *; }
+
+# support v7 v4 等，会在DEX模式中使用
+-keep class android.support.**{ *; }
+
+# android arch
+-keep class android.arch.** { *; }
+
+# 调试页面相关，不会对外输出
+-keep class com.kwad.debug.** { *; }
+#WaynePlayer混淆开始
+-keep interface com.kwai.video.player.** {*;}
+-keep class aegon.chromium.** { *; }
+-keep class com.kwai.video.cache.** { *; }
+-keep class com.kwai.video.hodor.** {*;}
+-keep class com.kwai.video.player.** {*;}
+-keep class com.kwai.video.aemonplayer.** {*;}
+-keep class com.kwai.player.debuginfo.** { *; }
+-keep class aegon.chrome.** { *; }
+-keep class kotlin.jvm.functions.** { *; }
+#WaynePlayer混淆结束
+
+
+
+
+-keep class com.kwad.sdk.glide.framesequence.FrameSequence { *; }
+-keep class com.kwad.sdk.glide.framesequence.FrameSequenceDrawable { *; }
+
+
+
+
+-keep class com.kwad.components.offline.api.** { *;}
+
+-keep class * implements com.kwad.components.offline.api.IOfflineCompo { *; }
+
+-keep class com.kwad.components.offline.api.core.annotation.DoNotStrip
+-keep @com.kwad.components.offline.api.core.annotation.DoNotStrip class * { *; }
+
+
+
+
+
+-keep class com.kwad.sdk.glide.framesequence.FrameSequence { *; }
+-keep class com.kwad.sdk.glide.framesequence.FrameSequenceDrawable { *; }
+
+
+
+
+-keep class com.kwad.components.offline.api.** { *;}
+
+-keep class * implements com.kwad.components.offline.api.IOfflineCompo { *; }
+
+-keep class com.kwad.components.offline.api.core.annotation.DoNotStrip
+-keep @com.kwad.components.offline.api.core.annotation.DoNotStrip class * { *; }
+

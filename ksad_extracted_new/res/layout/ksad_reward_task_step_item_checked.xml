@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:background="@android:color/transparent"
+  android:orientation="horizontal">
+
+  <ImageView
+    android:id="@+id/ksad_reward_task_step_item_icon"
+    android:layout_width="@dimen/ksad_reward_apk_info_card_step_icon_size"
+    android:layout_height="@dimen/ksad_reward_apk_info_card_step_icon_size"
+    android:layout_gravity="center_vertical"
+    android:gravity="center"
+    android:src="@drawable/ksad_reward_step_icon_checked" />
+
+  <TextView
+    android:id="@+id/ksad_reward_task_step_item_text"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:layout_marginLeft="8dp"
+    android:text="安装应用"
+    android:textColor="@color/ksad_reward_main_color"
+    android:textSize="14sp" />
+
+</LinearLayout>

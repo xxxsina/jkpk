@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+  android:shape="oval">
+  <solid android:color="#96000000"/> <!-- 设置圆形的颜色为灰色 -->
+  <size android:width="100dp" android:height="100dp"/> <!-- 设置圆形的大小 -->
+</shape>

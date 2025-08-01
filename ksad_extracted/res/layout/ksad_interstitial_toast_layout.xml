@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/ksad_interstitial_toast_container"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="151dp"
+  android:layout_height="64dp"
+  android:gravity="center"
+  android:background="@drawable/ksad_interstitial_toast_bg"
+  android:orientation="vertical"
+  tools:layout_gravity="center">
+
+  <LinearLayout
+    android:layout_width="151dp"
+    android:gravity="center"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <ImageView
+      android:layout_width="24dp"
+      android:layout_height="24dp"
+      android:layout_gravity="center_vertical"
+      android:layout_marginRight="4dp"
+      android:src="@drawable/ksad_interstitial_toast_logo"
+      tools:visibility="visible" />
+
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center_vertical"
+      android:gravity="center_vertical"
+      android:text="点击参与互动"
+      android:textColor="#ffffff"
+      android:textSize="15sp"
+      tools:visibility="visible" />
+
+  </LinearLayout>
+
+  <TextView
+    android:id="@+id/ksad_total_count_down_text"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_marginTop="2dp"
+    android:alpha="0.6"
+    android:textColor="#ffffff"
+    android:textSize="12sp"
+    tools:visibility="visible" />
+</LinearLayout>

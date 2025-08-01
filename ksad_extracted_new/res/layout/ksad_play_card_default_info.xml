@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="278dp"
+  android:layout_height="wrap_content"
+  android:layout_gravity="center"
+  android:gravity="center"
+  android:orientation="vertical">
+
+  <com.kwad.components.core.widget.KSCornerImageView
+    android:id="@+id/ksad_splash_default_icon"
+    android:layout_width="53dp"
+    android:layout_height="53dp" />
+
+  <TextView
+    android:id="@+id/ksad_splash_default_title"
+    android:layout_width="wrap_content"
+    android:layout_height="43dp"
+    android:layout_marginTop="11dp"
+    android:ellipsize="end"
+    android:maxWidth="278dp"
+    android:singleLine="true"
+    android:textColor="#FFFFFF"
+    android:textSize="34sp"
+    android:textStyle="bold"
+    tools:text="美团外卖" />
+
+  <ImageView
+    android:id="@+id/ksad_splash_default_img"
+    android:layout_width="278dp"
+    android:layout_height="264dp"
+    android:layout_marginTop="8dp"
+    android:src="@drawable/ksad_splash_default_icon" />
+
+  <TextView
+    android:id="@+id/ksad_splash_default_desc"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:ellipsize="end"
+    android:gravity="center"
+    android:lineHeight="28dp"
+    android:maxLines="2"
+    android:maxWidth="278dp"
+    android:textColor="#FFFFFF"
+    android:textSize="19sp" />
+
+  <TextView
+    android:id="@+id/ksad_splash_default_tips"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:ellipsize="end"
+    android:gravity="center"
+    android:maxLines="1"
+    android:maxWidth="278dp"
+    android:text="*实际福利以活动详情为准"
+    android:textColor="#BDBDBD"
+    android:textSize="8sp" />
+</LinearLayout>

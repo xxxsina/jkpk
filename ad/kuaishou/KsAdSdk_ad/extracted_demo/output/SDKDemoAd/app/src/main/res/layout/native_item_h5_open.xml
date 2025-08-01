@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="44dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    tool:ignore="SpUsage,RtlHardcoded">
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginLeft="8dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/product_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:layout_marginTop="4dp"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:textColor="#222222"
+            android:textSize="14sp"
+            tool:text="快手APP" />
+
+        <TextView
+            android:id="@+id/h5_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="16dp"
+            android:ellipsize="end"
+            android:gravity="center|left"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:layout_marginTop="4dp"
+            android:textColor="#9C9C9C"
+            android:textSize="12sp"
+            tool:text="快手广告快手广告快手广告快手广告快手广告快手广告" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/h5_open_btn"
+        android:layout_width="64dp"
+        android:layout_height="24dp"
+        android:background="@drawable/native_item_btn_bg"
+        android:gravity="center"
+        android:textColor="#168FFF"
+        android:textSize="11dp"
+        tool:text="查看详情" />
+
+</LinearLayout>

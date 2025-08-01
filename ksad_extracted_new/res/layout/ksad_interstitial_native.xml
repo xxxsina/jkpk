@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.kwad.sdk.widget.KSFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/ksad_interstitial_native_container"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:clipChildren="true"
+  android:orientation="vertical"
+  app:ksad_radius="@dimen/ksad_interstitial_card_radius"
+  tools:background="#ffffff"
+  tools:ignore="ContentDescription,SpUsage,RtlHardcoded">
+
+  <com.kwad.sdk.widget.KSFrameLayout
+    android:id="@+id/ksad_interstitial_native_video_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:layout_gravity="center"
+    android:gravity="center"
+    tools:paddingBottom="@dimen/ksad_interstitial_download_bar_height"
+    android:focusable="true">
+
+    <ImageView
+      android:id="@+id/ksad_video_first_frame_container"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:clickable="true"
+      android:layout_gravity="center"
+      android:scaleType="centerCrop"
+      android:focusable="true" />
+  </com.kwad.sdk.widget.KSFrameLayout>
+
+  <include layout="@layout/ksad_interstitial_native_element" />
+
+</com.kwad.sdk.widget.KSFrameLayout>

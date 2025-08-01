@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/ksad_landing_page_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+    <LinearLayout
+      android:id="@+id/ksad_kwad_titlebar"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+        <include
+          android:id="@+id/ksad_kwad_web_title_bar"
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/ksad_activity_title_bar_height"
+          layout="@layout/ksad_activity_title_bar"/>
+
+        <LinearLayout
+          android:id="@+id/ksad_reward_land_page_open_tip"
+          android:layout_width="match_parent"
+          android:layout_height="34dp"
+          android:orientation="horizontal"
+          android:visibility="gone"
+          tools:visibility="visible"
+          android:gravity="center"
+          android:background="#FFFFFF"
+          >
+            <TextView
+              android:id="@+id/ksad_reward_land_page_open_desc"
+              android:layout_width="wrap_content"
+              android:layout_height="16dp"
+              android:text="浏览详情页，领取奖励"
+              android:textSize="12sp"
+              android:textColor="#2A252C"
+              android:textStyle="bold"
+              android:gravity="center"/>
+            <TextView
+              android:id="@+id/ksad_reward_land_page_open_minute"
+              android:layout_width="16dp"
+              android:layout_height="16dp"
+              android:layout_marginLeft="6dp"
+              android:textSize="12sp"
+              android:textColor="#FFFFFF"
+              android:background="@drawable/ksad_reward_open_land_page_time_bg"
+              tools:text="00"
+              android:gravity="center"
+              />
+            <TextView
+              android:id="@+id/ksad_reward_land_page_open_colon"
+              android:layout_width="9dp"
+              android:layout_height="16dp"
+              android:text=":"
+              android:gravity="center"
+              android:textColor="@color/ksad_reward_main_color"
+              android:textSize="12sp"
+              />
+            <TextView
+              android:id="@+id/ksad_reward_land_page_open_second"
+              android:layout_width="16dp"
+              android:layout_height="16dp"
+              android:textSize="12sp"
+              android:textColor="#FFFFFF"
+              android:background="@drawable/ksad_reward_open_land_page_time_bg"
+              tools:text="08"
+              android:gravity="center"
+              />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.kwad.sdk.core.webview.KsAdWebView
+        android:id="@+id/ksad_video_webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ksad_kwad_titlebar" />
+
+    <LinearLayout
+        android:id="@+id/ksad_web_tip_bar"
+        android:layout_width="match_parent"
+        android:layout_height="29dp"
+        android:layout_alignTop="@+id/ksad_video_webview"
+        android:background="#FFF2E6"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/ksad_web_tip_bar_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:textColor="@color/ksad_reward_main_color"
+            android:ellipsize="marquee"
+            android:textSize="14dp"
+            android:marqueeRepeatLimit="marquee_forever"
+            tools:text="描述文本描述文本描述文本描述文本描述文本描述文本描述文本描述文本描述文本描述文本描述文本描述文本" />
+
+        <ImageView
+            android:id="@+id/ksad_web_tip_close_btn"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/ksad_web_tip_bar_close_button" />
+    </LinearLayout>
+
+    <LinearLayout
+      android:id="@+id/ksad_web_reward_task_layout"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerVertical="true"
+      android:layout_alignParentRight="true"
+      android:gravity="center_horizontal"
+      android:visibility="gone"
+      android:orientation="vertical">
+
+      <ImageView
+        android:layout_width="55dp"
+        android:layout_height="64dp"
+        android:src="@drawable/ksad_web_reward_task_img"/>
+
+      <TextView
+        android:id="@+id/ksad_web_reward_task_text"
+        android:layout_width="77dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="-13dp"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        android:gravity="center"
+        tools:text="倒计时15秒"
+        android:background="@drawable/ksad_web_reward_task_text_bg"/>
+    </LinearLayout>
+
+    <!--TK实现激励任务的卡片区域的容器 -->
+    <FrameLayout
+        android:id="@+id/ksad_js_tk_back_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+</RelativeLayout>

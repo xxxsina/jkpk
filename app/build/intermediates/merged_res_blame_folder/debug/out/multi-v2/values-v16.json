@@ -1,0 +1,38 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.jiankangpaika.app-mergeDebugResources-94:/values-v16/values-v16.xml",
+            "map": [
+                {
+                    "source": "/Users/brucelee/.gradle/caches/transforms-3/2278851b160cfbb81d270aeda45d70ae/transformed/core-1.12.0/res/values-v16/values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "65",
+                        "endOffsets": "116"
+                    }
+                },
+                {
+                    "source": "/Users/brucelee/.gradle/caches/transforms-3/aa0d37f55bcb1f1544f7837ad17f3e4f/transformed/appcompat-1.6.1/res/values-v16/values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "5",
+                        "endColumns": "12",
+                        "endOffsets": "223"
+                    },
+                    "to": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "121",
+                        "endLines": "6",
+                        "endColumns": "12",
+                        "endOffsets": "289"
+                    }
+                }
+            ]
+        }
+    ]
+}

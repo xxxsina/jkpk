@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tool="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="58dp"
+  android:gravity="center_vertical"
+  android:orientation="horizontal"
+  tool:ignore="SpUsage,ContentDescription">
+
+    <ImageView
+      android:id="@+id/ksad_app_icon"
+      android:layout_width="56dp"
+      android:layout_height="58dp"
+      android:src="@drawable/ksad_default_app_icon" />
+
+    <FrameLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_gravity="center_vertical"
+      android:layout_marginLeft="12dp"
+      android:gravity="center_vertical"
+      android:orientation="vertical">
+
+        <TextView
+          android:id="@+id/ksad_app_title"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:ellipsize="end"
+          android:includeFontPadding="false"
+          android:layout_marginTop="4dp"
+          android:maxLines="1"
+          android:textColor="#000000"
+          android:textSize="17dp"
+          android:textStyle="bold"
+          tool:text="快手APP" />
+
+        <TextView
+          android:id="@+id/ksad_app_desc"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_gravity="bottom"
+          android:layout_marginBottom="4dp"
+          android:ellipsize="end"
+          android:includeFontPadding="false"
+          android:maxLines="1"
+          android:textColor="#CC000000"
+          android:textSize="14dp"
+          android:visibility="visible"
+          tool:text="记录美好生活" />
+    </FrameLayout>
+
+
+</LinearLayout>

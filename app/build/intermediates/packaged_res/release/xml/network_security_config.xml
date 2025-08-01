@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <!-- 允许明文HTTP流量的域名配置 -->
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">shb.blcwg.com</domain>
+        <domain includeSubdomains="true">112.124.32.43</domain>
+        <!-- 如果有其他需要HTTP访问的域名，可以在这里添加 -->
+        <!-- <domain includeSubdomains="true">other-domain.com</domain> -->
+    </domain-config>
+    
+    <!-- 生产环境建议：仅在开发和测试阶段允许HTTP，生产环境应使用HTTPS -->
+    <!-- 如果服务器支持HTTPS，建议修改ApiConfig.kt中的BASE_URL为https://shop.blcwg.com -->
+</network-security-config>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools">
+
+  <!-- 该布局会被添加到SkipView中 -->
+  <TextView
+    android:id="@+id/ksad_skip_view_skip"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_centerVertical="true"
+    android:layout_gravity="center_vertical|right"
+    android:includeFontPadding="false"
+    android:maxLines="1"
+    android:textColor="#FFFFFFFF"
+    android:textSize="@dimen/ksad_skip_view_text_size"
+    tools:text="跳过" />
+
+  <ImageView
+    android:id="@+id/ksad_skip_view_divider"
+    android:layout_width="1dp"
+    android:layout_height="match_parent"
+    android:layout_centerVertical="true"
+    android:layout_marginBottom="@dimen/ksad_skip_view_divider_margin_vertical"
+    android:layout_marginLeft="@dimen/ksad_skip_view_divider_margin_horizontal"
+    android:layout_marginRight="@dimen/ksad_skip_view_divider_margin_horizontal"
+    android:layout_marginTop="@dimen/ksad_skip_view_divider_margin_vertical"
+    android:src="#33FFFFFF" />
+
+  <TextView
+    android:id="@+id/ksad_skip_view_timer"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:layout_centerVertical="true"
+    android:layout_gravity="center_vertical|left"
+    android:includeFontPadding="false"
+    android:maxLines="1"
+    android:text="倒计时"
+    android:textColor="#FFFFFFFF"
+    android:textSize="@dimen/ksad_skip_view_text_size" />
+
+
+</merge>

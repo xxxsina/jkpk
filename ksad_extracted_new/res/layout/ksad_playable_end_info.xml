@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@+id/ksad_playabale_end_card"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:clickable="true"
+  android:visibility="gone"
+  tools:background="@color/ksad_play_again_horizontal_bg"
+  tools:visibility="visible">
+
+  <!-- 试玩一下结束页面的native 样式 -->
+
+  <ImageView
+    android:id="@+id/ksad_playabale_end_blur_img"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:foreground="@color/ksad_play_again_horizontal_bg"
+    android:scaleType="centerCrop"
+    android:visibility="gone" />
+
+  <LinearLayout
+    android:id="@+id/ksad_playabale_end_content"
+    android:layout_width="@dimen/ksad_playable_end_content_width"
+    android:layout_height="match_parent"
+    android:layout_gravity="bottom|center_horizontal"
+    android:background="@android:color/transparent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+      android:id="@+id/ksad_playabale_end_icon"
+      android:layout_width="@dimen/ksad_play_again_end_icon_size"
+      android:layout_height="@dimen/ksad_play_again_end_icon_size"
+      android:src="@drawable/ksad_default_app_icon" />
+
+    <TextView
+      android:id="@+id/ksad_playabale_end_title"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="12dp"
+      android:textColor="@android:color/white"
+      android:textSize="20sp"
+      android:textStyle="bold"
+      tools:text="快手联盟"
+      tools:textColor="#FF222222" />
+
+    <com.kwad.components.ad.widget.KsAppTagsView
+      android:id="@+id/ksad_playable_end_tags"
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/ksad_reward_apk_info_card_tags_height"
+      android:layout_gravity="center_vertical"
+      android:layout_marginTop="8dp"
+      android:divider="@drawable/ksad_reward_apk_tags_divider"
+      android:gravity="center"
+      android:orientation="horizontal"
+      android:showDividers="middle" />
+
+    <TextView
+      android:id="@+id/ksad_playabale_end_desc"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/ksad_playable_end_desc_margin_top"
+      android:ellipsize="end"
+      android:gravity="center"
+      android:lineSpacingMultiplier="1.2"
+      android:maxLines="2"
+      android:textColor="@android:color/white"
+      android:textSize="14sp"
+      tools:text="不是一个人的王者，而是团队的荣耀！5v5王者峡谷等你来战" />
+
+    <LinearLayout
+      android:id="@+id/ksad_playabale_end_btn_container"
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/ksad_play_again_dialog_btn_height"
+      android:layout_marginTop="@dimen/ksad_playable_end_btn_margin_top"
+      android:orientation="horizontal">
+
+      <com.kwad.components.core.widget.KSCornerButton
+        android:id="@+id/ksad_playabale_try"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#33FFFFFF"
+        android:gravity="center"
+        android:text="试玩一下"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"
+        app:ksad_radius="200dp" />
+
+      <View
+        android:id="@+id/ksad_playabale_middle_divider"
+        android:layout_width="16dp"
+        android:layout_height="match_parent" />
+
+      <com.kwad.components.core.widget.KsConvertButton
+        android:id="@+id/ksad_playabale_end_btn_action"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/ksad_reward_main_color"
+        android:gravity="center"
+        android:text="立即下载"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"
+        app:ksad_radius="200dp" />
+
+    </LinearLayout>
+
+  </LinearLayout>
+
+  <com.kwad.components.core.widget.KsLogoView
+    android:id="@+id/ksad_playabale_logo"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom|left"
+    android:layout_marginBottom="10dp"
+    android:layout_marginLeft="10dp"
+    android:background="@drawable/ksad_splash_logo_bg" />
+
+</FrameLayout>

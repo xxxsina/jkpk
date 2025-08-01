@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <!-- 这里的radius 并不是真的需要200dp，而是该按钮需要做成半圆形，所以设置成大于高度 -->
+  <item>
+    <shape android:shape="rectangle">
+      <solid android:color="@color/ksad_reward_main_color" />
+      <corners android:radius="42dp" />
+    </shape>
+  </item>
+</selector>

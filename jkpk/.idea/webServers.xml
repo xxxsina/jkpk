@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="7861745d-9312-4779-a76b-5bd54e64a891" name="健康派卡API">
+        <fileTransfer rootFolder="/www/wwwroot/jiankangpaika.blcwg.com/public/jkpk" accessType="SFTP" host="112.124.32.43" port="22" sshConfigId="83fafb1b-dca4-42c5-9fb9-623cad02006d" sshConfig="root@112.124.32.43:22 key" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

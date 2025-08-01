@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ksad_black_alpha20"
+    tools:parentTag="android.widget.FrameLayout">
+
+    <!--广告中心点，用于控制手的初始位置-->
+    <View
+        android:id="@+id/ksad_center"
+        android:layout_centerInParent="true"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+
+    <!--手控件的左上角，用于确定手的初始位置-->
+    <View
+        android:id="@+id/ksad_top_left"
+        android:layout_toLeftOf="@id/ksad_center"
+        android:layout_above="@id/ksad_center"
+        android:layout_marginRight="22dp"
+        android:layout_marginBottom="26dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+
+    <!--外部的圆-->
+    <ImageView
+        android:id="@+id/ksad_outside_circle"
+        android:visibility="invisible"
+        android:layout_above="@id/ksad_center"
+        android:layout_toLeftOf="@id/ksad_center"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="23dp"
+        android:background="@drawable/ksad_click_wave_bg"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        tools:visibility="visible"/>
+
+    <!--内部的圆-->
+    <ImageView
+        android:id="@+id/ksad_inside_circle"
+        android:visibility="invisible"
+        android:layout_above="@id/ksad_center"
+        android:layout_toLeftOf="@id/ksad_center"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="23dp"
+        android:background="@drawable/ksad_click_wave_bg"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        tools:visibility="visible"/>
+
+    <ImageView
+        android:id="@+id/ksad_hand"
+        android:layout_alignTop="@id/ksad_top_left"
+        android:layout_alignLeft="@id/ksad_top_left"
+        android:src="@drawable/ksad_ad_hand"
+        android:layout_width="48dp"
+        android:layout_height="48dp"/>
+
+    <TextView
+        android:textSize="16sp"
+        android:textColor="@color/ksad_default_privacy_link_color"
+        android:fontFamily="sans-serif-medium"
+        android:textStyle="bold"
+        android:layout_below="@id/ksad_center"
+        android:layout_marginTop="30dp"
+        android:shadowColor="@color/ksad_black_alpha100"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="5"
+        android:layout_centerHorizontal="true"
+        android:text="@string/ksad_click_immediate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

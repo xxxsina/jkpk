@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.jiankangpaika.app-mergeDebugResources-94:/values-v27/values-v27.xml",
+            "map": [
+                {
+                    "source": "/Users/brucelee/.gradle/caches/transforms-3/9d987b28a5bfd7dfdef2ad08aef76f40/transformed/jetified-mbridge_chinasame_16.6.57/res/values-v27/values-v27.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,158",
+                        "endLines": "2,4",
+                        "endColumns": "102,12",
+                        "endOffsets": "153,266"
+                    }
+                }
+            ]
+        }
+    ]
+}

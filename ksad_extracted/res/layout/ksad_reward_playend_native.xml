@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:id="@+id/ksad_playend_native_container"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical">
+
+  <com.kwad.components.ad.reward.widget.tailframe.TailFrameView
+    android:id="@+id/ksad_video_tail_frame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="gone"
+    tools:visibility="visible" />
+
+  <!-- 金牛电商的原生结束页面 -->
+  <ViewStub
+    android:id="@+id/ksad_playend_native_jinniu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout="@layout/ksad_reward_jinniu_end" />
+
+  <!-- 试玩一下结束页，全屏展示-->
+  <ViewStub
+    android:id="@+id/ksad_playable_end_stub"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout="@layout/ksad_playable_end_info" />
+</merge>

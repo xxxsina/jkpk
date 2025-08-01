@@ -1,0 +1,51 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    
+    <!-- 背景圆形 -->
+    <path
+        android:fillColor="#4CAF50"
+        android:pathData="M54,54m-45,0a45,45 0,1 1,90 0a45,45 0,1 1,-90 0" />
+    
+    <!-- 健康派卡图标主体 -->
+    <group android:translateX="54" android:translateY="54">
+        
+        <!-- 房屋图标代表生活 -->
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M-15,-20L0,-30L15,-20L15,15L-15,15Z" />
+        
+        <!-- 房屋门 -->
+        <path
+            android:fillColor="#4CAF50"
+            android:pathData="M-5,5L5,5L5,15L-5,15Z" />
+        
+        <!-- 房屋窗户 -->
+        <path
+            android:fillColor="#4CAF50"
+            android:pathData="M-12,-5L-8,-5L-8,-10L-12,-10Z" />
+        <path
+            android:fillColor="#4CAF50"
+            android:pathData="M8,-5L12,-5L12,-10L8,-10Z" />
+        
+        <!-- 宝石图标 -->
+        <path
+            android:fillColor="#FFD700"
+            android:pathData="M-3,-25L3,-25L5,-20L0,-15L-5,-20Z" />
+        
+        <!-- 装饰性光芒 -->
+        <path
+            android:fillColor="#FFD700"
+            android:pathData="M0,-30L1,-28L0,-26L-1,-28Z" />
+        <path
+            android:fillColor="#FFD700"
+            android:pathData="M-6,-27L-5,-25L-7,-24L-8,-26Z" />
+        <path
+            android:fillColor="#FFD700"
+            android:pathData="M6,-27L8,-26L7,-24L5,-25Z" />
+        
+    </group>
+    
+</vector>

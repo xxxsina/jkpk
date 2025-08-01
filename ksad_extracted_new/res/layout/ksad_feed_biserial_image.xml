@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tool="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:background="@drawable/ksad_feed_biserial_bg"
+  android:orientation="vertical"
+  tool:ignore="ContentDescription,SpUsage,RtlHardcoded"
+  tool:layout_height="357dp"
+  android:id="@+id/ksad_feed_biserial_image"
+  tool:layout_width="201dp">
+
+
+  <com.kwad.sdk.widget.RatioFrameLayout
+    android:id="@+id/ksad_image_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+      android:id="@+id/ksad_ad_image"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_gravity="center"
+      android:scaleType="centerCrop" />
+
+    <com.kwad.components.core.widget.KsLogoView
+      android:id="@+id/ksad_ad_dislike_logo"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerVertical="true" />
+
+    <ImageView
+      android:id="@+id/ksad_ad_dislike"
+      android:layout_width="24dp"
+      android:layout_height="24dp"
+      android:layout_gravity="top|right"
+      android:layout_marginRight="8dp"
+      android:layout_marginTop="10dp"
+      android:src="@drawable/ksad_ad_dislike_gray" />
+
+    <LinearLayout
+      android:id="@+id/ksad_ad_biserial_info_container"
+      android:layout_width="match_parent"
+      android:layout_height="55dp"
+      android:layout_gravity="bottom"
+      android:background="#FFFFFF"
+      android:orientation="vertical"
+      android:paddingLeft="8dp"
+      android:paddingRight="8dp">
+
+      <TextView
+        android:id="@+id/ksad_ad_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="10dp"
+        android:ellipsize="end"
+        android:includeFontPadding="false"
+        android:maxLines="1"
+        android:textColor="#9C9C9C"
+        android:textSize="10dp"
+        tool:text="快手广告快手广告快手广告快手广告快手广告快手广告快手广告快手广告快手广告快手广告" />
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="17dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="11dp"
+        android:orientation="horizontal">
+
+        <ImageView
+          android:id="@+id/ksad_app_icon"
+          android:layout_width="16dp"
+          android:layout_height="16dp"
+          android:layout_gravity="left|center"
+          android:src="@drawable/ksad_default_app_icon" />
+
+        <TextView
+          android:id="@+id/ksad_app_title"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="6dp"
+          android:layout_weight="1"
+          android:gravity="center_vertical"
+          android:ellipsize="end"
+          android:includeFontPadding="false"
+          android:maxLines="1"
+          android:textColor="#000000"
+          android:textSize="12dp"
+          tool:text="快手APP" />
+
+        <TextView
+          android:id="@+id/ksad_app_desc"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginBottom="5dp"
+          android:layout_marginTop="10dp"
+          android:ellipsize="end"
+          android:includeFontPadding="false"
+          android:maxLines="1"
+          android:textColor="#9C9C9C"
+          android:textSize="10dp"
+          android:visibility="gone"
+          tool:text="快手广告快手广告快手广告快手广告快手广告快手广告快手广告快手广告快手广告快手广告" />
+
+        <include
+          android:id="@+id/ksad_ad_h5_container"
+          layout="@layout/ksad_feed_open_biserial_h5"
+          android:layout_width="59dp"
+          android:layout_height="17dp"
+          android:layout_gravity="right"
+          tool:visibility="gone" />
+
+        <LinearLayout
+          android:id="@+id/ksad_ad_download_container"
+          android:layout_width="wrap_content"
+          android:layout_height="17dp"
+          android:gravity="right"
+          tool:visibility="visible">
+
+          <com.kwad.components.ad.widget.BiserialDownloadProgressView
+            android:id="@+id/ksad_app_download_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="right" />
+        </LinearLayout>
+      </LinearLayout>
+    </LinearLayout>
+
+
+    <com.kwad.components.core.widget.ComplianceTextView
+      android:id="@+id/ksad_compliance_view"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="9dp"
+      android:layout_marginLeft="15dp"
+      android:layout_marginRight="12dp"
+      android:background="@drawable/ksad_compliance_white_bg"
+      android:ellipsize="end"
+      android:maxLines="1"
+      android:textColor="#FF9C9C9C"
+      android:visibility="gone"
+      app:ksad_privacy_color="#FF9C9C9C" />
+  </com.kwad.sdk.widget.RatioFrameLayout>
+
+
+</LinearLayout>

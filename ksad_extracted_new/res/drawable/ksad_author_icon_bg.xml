@@ -1,0 +1,4 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="oval">
+
+  <stroke android:color="@color/ksad_reward_main_color" android:width="@dimen/ksad_reward_author_icon_stroke_width"/>
+</shape>

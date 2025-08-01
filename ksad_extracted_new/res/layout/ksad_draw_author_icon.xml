@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="70dp"
+  android:layout_height="wrap_content"
+  android:gravity="center"
+  android:clipChildren="false"
+  android:clipToPadding="false"
+  android:orientation="vertical">
+
+  <LinearLayout
+    android:id="@+id/ksad_top_flag_layout"
+    android:layout_width="64dp"
+    android:paddingTop="10dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="top|center_horizontal"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <com.kwad.components.core.widget.KsStyledLinearLayout
+      android:id="@+id/ksad_top_layout"
+      android:layout_width="58dp"
+      android:layout_height="25dp"
+      android:background="@drawable/ksad_draw_follow_btn_bg"
+      android:gravity="center"
+      android:orientation="horizontal">
+
+      <TextView
+        android:id="@+id/ksad_fans_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:maxLines="1"
+        android:textColor="@android:color/white"
+        android:textSize="12sp"
+        tools:text="直播中" />
+
+    </com.kwad.components.core.widget.KsStyledLinearLayout>
+
+    <ImageView
+      android:id="@+id/ksad_author_arrow_down"
+      android:layout_width="wrap_content"
+      android:layout_height="3dp"
+      android:layout_gravity="center_horizontal"
+      android:background="@drawable/ksad_draw_follow_arrow_down" />
+  </LinearLayout>
+
+
+  <FrameLayout
+    android:id="@+id/ksad_author_icon_layout"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:layout_gravity="center_horizontal">
+
+    <!--  实现波纹动画的底部图片，默认尺寸是头像的一半，最大值是外层容器的值  -->
+    <com.kwad.components.core.widget.KSCornerImageView
+      android:id="@+id/ksad_author_animator"
+      android:layout_width="62dp"
+      android:layout_height="62dp"
+      android:layout_gravity="center"
+      android:src="@drawable/ksad_author_circle" />
+
+    <!--  实现波纹动画的底部图，第二环  -->
+    <com.kwad.components.core.widget.KSCornerImageView
+      android:id="@+id/ksad_author_animator2"
+      android:layout_width="62dp"
+      android:layout_height="62dp"
+      android:layout_gravity="center"
+      android:src="@drawable/ksad_author_circle" />
+
+    <!--  头像的容器，使得头像在缩放动画时不超过该区域  -->
+    <com.kwad.sdk.widget.KSFrameLayout
+      android:id="@+id/ksad_author_icon_frame"
+      android:layout_width="62dp"
+      android:layout_height="62dp"
+      android:layout_gravity="center"
+      android:padding="1dp"
+      app:ksad_radius="200dp">
+
+      <com.kwad.components.core.widget.KSCornerImageView
+        android:id="@+id/ksad_author_icon"
+        android:layout_width="56dp"
+        android:layout_gravity="center"
+        android:layout_height="56dp"
+        app:ksad_radius="200dp"
+        tools:src="@drawable/ksad_default_app_icon" />
+    </com.kwad.sdk.widget.KSFrameLayout>
+
+    <!-- 头像上层固定的圆环  -->
+    <com.kwad.components.core.widget.KSCornerImageView
+      android:id="@+id/ksad_author_icon_outer"
+      android:layout_width="62dp"
+      android:layout_height="62dp"
+      android:layout_gravity="center"
+      android:background="@drawable/ksad_author_circle" />
+  </FrameLayout>
+
+  <com.kwad.components.core.widget.KsStyledLinearLayout
+    android:id="@+id/ksad_origin_live_bottom_layout"
+    android:layout_width="46dp"
+    android:layout_height="16dp"
+    android:layout_gravity="bottom|center_horizontal"
+    android:layout_marginTop="-19dp"
+    android:background="@drawable/ksad_draw_follow_btn_bg"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:visibility="visible">
+
+    <TextView
+      android:id="@+id/ksad_origin_live_bottom_text"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:gravity="center"
+      android:maxLines="1"
+      android:text="直播中"
+      android:textColor="@android:color/white"
+      android:textSize="10sp"
+      tools:text="直播中" />
+  </com.kwad.components.core.widget.KsStyledLinearLayout>
+</LinearLayout>

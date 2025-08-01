@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.jiankangpaika.app-mergeReleaseResources-90:/values-v19/values-v19.xml",
+            "map": [
+                {
+                    "source": "/Users/brucelee/.gradle/caches/transforms-3/036bb394031cbc49e2bbf70080b3715a/transformed/jetified-anythink_core/res/values-v19/values-v19.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "4",
+                        "endColumns": "12",
+                        "endOffsets": "222"
+                    }
+                }
+            ]
+        }
+    ]
+}

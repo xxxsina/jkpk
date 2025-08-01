@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/ksad_activity_apk_info_area_native"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:gravity="center"
+  android:orientation="vertical"
+  tools:background="#B3000000">
+
+  <!-- 横屏模式，激励视打开App n秒任务中，对应的Apk信息区域-->
+  <!-- 包含的元素内容和 ksad_reward_apk_info_card_native 的一致-->
+
+  <ImageView
+    android:id="@+id/ksad_reward_apk_info_icon"
+    android:layout_width="54dp"
+    android:layout_height="54dp"
+    tools:src="@drawable/ksad_default_app_icon" />
+
+  <TextView
+    android:id="@+id/ksad_reward_apk_info_name"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="13dp"
+    android:layout_marginTop="16dp"
+    android:includeFontPadding="false"
+    android:text="王者农药"
+    android:textColor="#FFFFFFFF"
+    android:textSize="17sp" />
+
+  <com.kwad.sdk.widget.KSRatingBar
+    android:id="@+id/ksad_reward_apk_info_score"
+    android:layout_width="wrap_content"
+    android:layout_height="10dp"
+    android:layout_gravity="center"
+    app:ksad_clickable="false"
+    app:ksad_halfstart="false"
+    app:ksad_starCount="4"
+    app:ksad_starEmpty="@drawable/ksad_star_unchecked"
+    app:ksad_starFill="@drawable/ksad_star_checked"
+    app:ksad_starImageHeight="9dp"
+    app:ksad_starImagePadding="0dp"
+    app:ksad_starImageWidth="10dp"
+    app:ksad_totalStarCount="5" />
+
+  <com.kwad.components.ad.widget.KsAppTagsView
+    android:id="@+id/ksad_reward_apk_info_tags"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/ksad_reward_apk_info_card_tags_height"
+    android:layout_marginBottom="12dp"
+    android:layout_marginTop="10dp"
+    android:divider="@drawable/ksad_reward_apk_tags_divider"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:showDividers="middle">
+
+  </com.kwad.components.ad.widget.KsAppTagsView>
+
+  <TextView
+    android:id="@+id/ksad_reward_apk_info_desc"
+    android:layout_width="230dp"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="24dp"
+    android:ellipsize="end"
+    android:gravity="center"
+    android:maxLines="2"
+    android:textColor="#FFFFFFFF"
+    android:textSize="14sp"
+    tools:text="不是一个人的王者，而是团队的荣耀！5v5王者峡" />
+
+
+  <FrameLayout
+    android:id="@+id/ksad_reward_apk_info_install_container"
+    style="@style/ksad_RewardCardBtnInstall"
+    android:layout_width="230dp"
+    android:clickable="true"
+    android:focusable="true">
+
+    <!-- 开始下载按钮 -->
+    <Button
+      android:id="@+id/ksad_reward_apk_info_install_start"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_gravity="center"
+      android:background="@android:color/transparent"
+      android:textColor="@android:color/white"
+      android:textSize="15sp"
+      tools:text="开始下载" />
+
+    <!-- 行动号召按钮，默认不显示 -->
+    <Button
+      android:id="@+id/ksad_reward_apk_info_install_action"
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      android:layout_gravity="center"
+      android:background="@android:color/transparent"
+      android:textColor="@android:color/white"
+      android:textSize="15sp"
+      tools:text="安装并体验n秒  可领取奖励" />
+  </FrameLayout>
+</LinearLayout>

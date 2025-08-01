@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?><!--开屏滑动手势的布局-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:orientation="vertical">
+  <!-- 设计稿：手势区域高度186dp，下方滑动提示区域高度116，占比分别为 0.62和0.38-->
+  <ImageView
+    android:id="@+id/ksad_splash_slideView"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="0.62"
+    android:scaleType="centerInside" />
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_gravity="center"
+    android:layout_weight="0.38"
+    android:background="@drawable/ksad_splash_bg_slide"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+      android:id="@+id/ksad_splash_slide_title"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center_horizontal"
+      android:shadowColor="#66000000"
+      android:shadowDy="2"
+      android:shadowRadius="4"
+      android:text="向上滑动"
+      android:textColor="#ffffff"
+      android:textSize="20dp" />
+
+    <TextView
+      android:id="@+id/ksad_splash_slide_actiontext"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center_horizontal"
+      android:shadowColor="#66000000"
+      android:shadowDy="2"
+      android:shadowRadius="4"
+      android:text="跳转至第三方应用"
+      android:textColor="#ffffff"
+      android:textSize="14dp" />
+  </LinearLayout>
+
+</LinearLayout>

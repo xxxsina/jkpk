@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/ksad_playable_pre_tips_root"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="@dimen/ksad_reward_playable_pre_tips_width"
+  android:layout_height="@dimen/ksad_reward_playable_pre_tips_height"
+  android:background="@drawable/ksad_playable_pre_tips_bg"
+  android:gravity="center_vertical"
+  android:orientation="horizontal"
+  android:paddingLeft="3dp"
+  android:visibility="gone"
+  tools:visibility="visible">
+
+  <!-- 试玩广告前置的提示 -->
+
+  <!-- 圆形图标 -->
+  <com.kwad.components.core.widget.KSCornerImageView
+    android:id="@+id/ksad_playabel_pre_tips_icon"
+    android:layout_width="@dimen/ksad_reward_playable_pre_tips_icon_size"
+    android:layout_height="@dimen/ksad_reward_playable_pre_tips_icon_size"
+    android:background="@color/ksad_playable_pre_tips_icon_bg"
+    android:padding="@dimen/ksad_reward_playable_pre_tips_icon_padding"
+    android:src="@drawable/ksad_interstitial_toast_logo"
+    app:ksad_radius="100dp" />
+
+  <TextView
+    android:id="@+id/ksad_playabel_pre_tips_text"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="8dp"
+    android:alpha="0"
+    android:text="试玩一下"
+    android:textColor="#FFFFFFFF"
+    android:textSize="16sp"
+    tools:alpha="1" />
+
+</LinearLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/ksad_reward_origin_live_root"
+  android:orientation="horizontal"
+  android:layout_width="match_parent"
+  android:background="@drawable/ksad_reward_live_action_bottom_bg"
+  android:clipChildren="false"
+  android:clipToPadding="false"
+  android:paddingBottom="24dp"
+  android:paddingHorizontal="16dp"
+  android:layout_height="match_parent">
+  <RelativeLayout
+      android:layout_weight="1"
+      android:visibility="gone"
+      android:id="@+id/ksad_reward_origin_live_base1"
+      android:layout_width="match_parent"
+      android:gravity="left"
+      android:layout_height="wrap_content"/>
+  <LinearLayout
+      android:layout_weight="1"
+      android:orientation="vertical"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/ksad_reward_origin_live_relative"
+        android:layout_width="wrap_content"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:gravity="right"
+        android:layout_height="wrap_content">
+
+      <com.kwad.components.ad.reward.widget.KsAuthorIconView
+          android:id="@+id/ksad_live_author_icon"
+          android:layout_width="@dimen/ksad_reward_author_width"
+          android:layout_height="wrap_content"
+          android:layout_marginHorizontal="5dp"
+          android:layout_alignParentLeft="true" />
+
+      <LinearLayout
+          android:layout_toRightOf="@+id/ksad_live_author_icon"
+          android:layout_alignBottom="@+id/ksad_live_author_icon"
+          android:layout_width="match_parent"
+          android:orientation="vertical"
+          android:gravity="center_vertical"
+          android:layout_height="70dp">
+
+        <TextView
+            android:id="@+id/kwad_actionbar_title"
+            android:layout_width="wrap_content"
+            android:maxLines="1"
+            android:gravity="center|left"
+            android:textSize="16sp"
+            android:shadowColor="#4d000000"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="1"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            />
+
+        <TextView
+            android:id="@+id/kwad_actionbar_des_text"
+            android:layout_width="wrap_content"
+            android:maxLines="1"
+            android:gravity="center|left"
+            android:textSize="14sp"
+            android:layout_marginTop="8dp"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="1"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff" />
+      </LinearLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/ksad_live_actionbar_btn"
+        android:layout_width="match_parent"
+        android:layout_marginTop="9dp"
+        android:text="进入直播间"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:textSize="14sp"
+        android:layout_height="48dp"
+        android:background="@drawable/ksad_reward_origrin_live_button_bg" />
+
+    <com.kwad.components.core.widget.KsLogoView
+        android:id="@+id/ksad_reward_live_kwai_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:visibility="gone"
+        android:layout_alignParentRight="true"/>
+  </LinearLayout>
+
+
+</LinearLayout>

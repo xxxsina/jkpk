@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".open.banner.TestBannerAdActivity"
+    tools:ignore="HardcodedText, ContentDescription">
+
+    <FrameLayout
+      android:layout_width="match_parent"
+      android:layout_height="46dp"
+      android:background="@android:color/white">
+
+      <TextView
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:text="测试Banner广告"
+        android:textAllCaps="false"
+        android:textColor="#222222"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+      <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_vertical|start"
+        android:layout_marginLeft="6dp"
+        android:layout_marginStart="6dp"
+        android:onClick="onBackClick"
+        android:src="@drawable/ksad_back_black_icon" />
+    </FrameLayout>
+
+    <View
+      android:layout_width="match_parent"
+      android:layout_height="1px"
+      android:background="#e0e0e0" />
+    <View
+      android:layout_width="match_parent"
+      android:layout_height="1px"
+      android:background="@drawable/ksad_main_list_divider_bg" />
+    <android.support.v7.widget.LinearLayoutCompat
+      android:layout_width="match_parent"
+      android:orientation="horizontal"
+      android:gravity="center"
+      android:layout_height="50dp">
+      <Button
+        android:id="@+id/ksad_banner_type_1"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="setSize1"
+        android:textColor="@color/color_base_red_15"
+        android:text="300*45"/>
+      <Button
+        android:id="@+id/ksad_banner_type_2"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="setSize2"
+        android:text="320*50"/>
+    </android.support.v7.widget.LinearLayoutCompat>
+    <android.support.v7.widget.LinearLayoutCompat
+      android:layout_width="match_parent"
+      android:orientation="horizontal"
+      android:gravity="center"
+      android:layout_height="50dp">
+      <Button
+        android:id="@+id/ksad_banner_type_3"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="setSize3"
+        android:text="300*75"/>
+      <Button
+        android:id="@+id/ksad_banner_type_4"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="setSize4"
+        android:text="320*130"/>
+    </android.support.v7.widget.LinearLayoutCompat>
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@drawable/ksad_main_item_bg"
+      android:clickable="true"
+      android:focusable="true"
+      android:gravity="center"
+      android:onClick="requestBannerAd"
+      android:padding="16dp"
+      android:text="展示Banner广告"
+      android:textColor="#222222"
+      android:textSize="16sp" />
+    <View
+      android:layout_width="match_parent"
+      android:layout_height="1px"
+      android:background="@drawable/ksad_main_list_divider_bg" />
+
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="#f8f8f8"
+      android:clickable="true"
+      android:focusable="true"
+      android:padding="16dp"
+      android:text="可选设置项："
+      android:textColor="#222222"
+      android:textSize="16sp" />
+    <View
+      android:layout_width="match_parent"
+      android:layout_height="1px"
+      android:background="@drawable/ksad_main_list_divider_bg" />
+
+    <Switch
+      android:id="@+id/show_banner_landscape_switch"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:background="#f8f8f8"
+      android:padding="16dp"
+      android:switchPadding="16dp"
+      android:text="是否开启横屏展示"
+      android:textSize="16sp" />
+
+
+    <View
+      android:layout_width="match_parent"
+      android:layout_height="1px"
+      android:background="@drawable/ksad_main_list_divider_bg" />
+
+    <Switch
+      android:id="@+id/switch_banner_voice"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:background="#f8f8f8"
+      android:checked="false"
+      android:padding="16dp"
+      android:switchPadding="16dp"
+      android:text="是否开启声音"
+      android:textSize="16sp" />
+
+    <View
+      android:layout_width="match_parent"
+      android:layout_height="1px"
+      android:background="@drawable/ksad_main_list_divider_bg" />
+
+    <include layout="@layout/server_bidding_layout" />
+  </LinearLayout>
+  <FrameLayout
+    android:layout_gravity="center"
+    android:id="@+id/ksad_banner_content"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+  </FrameLayout>
+</FrameLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="horizontal">
+
+  <!-- 激励视频的播放器区域，包含有播放器、app信息、模糊背景图等 -->
+  <FrameLayout
+    android:id="@+id/ksad_reward_play_layout"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:layout_weight="1">
+
+    <!-- 图片类型的不用该VideoView -->
+    <com.kwad.components.core.video.DetailVideoView
+      android:id="@+id/ksad_video_player"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_gravity="left|center_vertical"
+      android:clickable="true"
+      android:background="#4D000000"
+      android:focusable="true" />
+  </FrameLayout>
+
+
+  <!-- 右侧 apk信息的区域，包含native 实现和 h5实现-->
+  <FrameLayout
+    android:id="@+id/ksad_play_right_area"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:background="@android:color/transparent">
+
+    <!-- 覆盖一个蒙层 -->
+    <ImageView
+      android:id="@+id/ksad_play_right_area_bg_img"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="#B3000000" />
+
+    <!-- 右侧内容区域 -->
+    <FrameLayout
+      android:id="@+id/ksad_play_right_area_container"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"/>
+
+    <!-- WebView 区域高宽比 375/334 -->
+    <com.kwad.sdk.widget.KSFrameLayout
+      android:id="@+id/ksad_right_area_webview_container"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_gravity="center"
+      android:background="@android:color/transparent"
+      tools:visibility="visible">
+
+      <com.kwad.sdk.core.webview.KsAdWebView
+        android:id="@+id/ksad_right_area_webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@android:color/transparent"
+        android:paddingBottom="59dp"
+        android:visibility="gone"
+        tools:visibility="visible" />
+    </com.kwad.sdk.widget.KSFrameLayout>
+  </FrameLayout>
+</LinearLayout>

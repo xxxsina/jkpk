@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="@dimen/ksad_hand_slide_width"
+  android:layout_height="@dimen/ksad_hand_slide_height"
+  android:orientation="vertical"
+  tools:background="#88000000">
+
+  <com.kwad.components.ad.reward.widget.KsShadowImageView
+    android:id="@+id/ksad_hand_slide_tail"
+    android:layout_width="@dimen/ksad_hand_slide_width"
+    android:layout_height="@dimen/ksad_hand_slide_tail_height_start"
+    android:layout_gravity="center_horizontal|bottom"
+    android:alpha="0"
+    android:paddingLeft="@dimen/ksad_hand_slide_tail_shadow_width"
+    android:paddingRight="@dimen/ksad_hand_slide_tail_shadow_width"
+    android:src="@drawable/ksad_slide_hand_bg"
+    app:ksad_enableBottomShadow="false"
+    app:ksad_enableTopShadow="false"
+    app:ksad_shadowColor="#33000000"
+    app:ksad_shadowSize="@dimen/ksad_hand_slide_tail_shadow_width"
+    tools:alpha="1" />
+
+  <ImageView
+    android:id="@+id/ksad_hand_slide_hand"
+    android:layout_width="@dimen/ksad_hand_slide_width"
+    android:layout_height="@dimen/ksad_hand_slide_hand_height"
+    android:layout_gravity="center_horizontal|bottom"
+    android:alpha="0"
+    android:src="@drawable/ksad_slide_hand"
+    tools:alpha="1" />
+</FrameLayout>

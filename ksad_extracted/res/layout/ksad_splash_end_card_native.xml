@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.kwad.sdk.widget.KSFrameLayout
+    android:id="@+id/ksad_splash_end_card_native_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:visibility="gone"
+    tools:visibility="visible">
+
+    <ImageView
+      android:id="@+id/ksad_splash_end_card_native_bg"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:scaleType="centerCrop" />
+
+    <com.kwad.components.ad.splashscreen.presenter.endcard.SplashEndLandView
+      android:id="@+id/ksad_splash_end_card_native_dialog_root"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="@color/ksad_splash_endcard_bg_color"/>
+
+    <TextView
+      android:id="@+id/ksad_ad_developer_text"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="bottom|center_horizontal"
+      android:layout_marginBottom="12dp"
+      android:layout_marginLeft="32dp"
+      android:layout_marginRight="32dp"
+      android:gravity="center"
+      android:ellipsize="end"
+      android:maxLines="2"
+      android:visibility="gone"
+      android:textColor="@color/ksad_splash_endcard_developer_color"
+      android:textSize="10sp" />
+  <com.kwad.components.core.widget.ComplianceTextView
+    android:id="@+id/ksad_compliance_splash_endcard"
+    android:layout_gravity="bottom"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:layout_marginTop="12dp"
+    android:padding="8dp"
+    android:textColor="#ffffff"
+    android:textSize="10dp"
+    android:visibility="gone"
+    tools:visibility="visible" />
+  </com.kwad.sdk.widget.KSFrameLayout>

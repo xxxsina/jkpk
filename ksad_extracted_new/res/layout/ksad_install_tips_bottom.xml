@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="@dimen/ksad_install_tips_bottom_height"
+  tools:ignore="RtlHardcoded,ContentDescription">
+
+  <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="76dp"
+    android:layout_alignParentBottom="true"
+    android:background="@drawable/ksad_install_tips_bottom_bg">
+
+    <ImageView
+      android:id="@+id/ksad_install_tips_close"
+      android:layout_width="22dp"
+      android:layout_height="19dp"
+      android:layout_alignParentRight="true"
+      android:paddingLeft="5dp"
+      android:paddingRight="5dp"
+      android:paddingTop="7dp"
+      android:src="@drawable/ksad_install_tips_ic_close" />
+
+    <TextView
+      android:id="@+id/ksad_install_tips_content"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerVertical="true"
+      android:layout_marginLeft="108dp"
+      android:layout_marginRight="8dp"
+      android:layout_toLeftOf="@id/ksad_install_tips_install"
+      android:gravity="center_vertical"
+      android:maxLines="2"
+      android:textColor="#222222"
+      android:textSize="14sp"
+      tools:text="快手联盟已经下载完毕，请点击免费安装" />
+
+    <Button
+      android:id="@+id/ksad_install_tips_install"
+      android:layout_width="72dp"
+      android:layout_height="36dp"
+      android:layout_alignParentRight="true"
+      android:layout_centerVertical="true"
+      android:layout_marginRight="12dp"
+      android:background="@drawable/ksad_install_tips_btn_install_bottom_bg"
+      android:gravity="center"
+      android:shadowColor="#33000000"
+      android:shadowDx="0"
+      android:shadowDy="0"
+      android:shadowRadius="4"
+      android:text="安装"
+      android:textColor="@android:color/white"
+      android:textSize="14sp"
+      tools:ignore="HardcodedText" />
+
+  </RelativeLayout>
+
+  <ImageView
+    android:id="@+id/ksad_install_tips_icon"
+    android:layout_width="88dp"
+    android:layout_height="88dp"
+    android:layout_alignParentBottom="true"
+    android:layout_marginBottom="12dp"
+    android:layout_marginLeft="12dp"
+    android:scaleType="fitCenter"
+    android:src="@drawable/ksad_logo_gray" />
+
+</RelativeLayout>

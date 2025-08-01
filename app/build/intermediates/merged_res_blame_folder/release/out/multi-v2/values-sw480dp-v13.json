@@ -1,0 +1,36 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.jiankangpaika.app-mergeReleaseResources-90:/values-sw480dp-v13/values-sw480dp-v13.xml",
+            "map": [
+                {
+                    "source": "/Users/brucelee/.gradle/caches/transforms-3/7811510dded67cfc0d31fe84e68fd65d/transformed/jetified-anythink_china_core/res/values-sw480dp-v13/values-sw480dp-v13.xml",
+                    "from": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,121,192",
+                        "endColumns": "65,70,71",
+                        "endOffsets": "116,187,259"
+                    }
+                },
+                {
+                    "source": "/Users/brucelee/.gradle/caches/transforms-3/036bb394031cbc49e2bbf70080b3715a/transformed/jetified-anythink_core/res/values-sw480dp-v13/values-sw480dp-v13.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "69",
+                        "endOffsets": "120"
+                    },
+                    "to": {
+                        "startLines": "5",
+                        "startColumns": "4",
+                        "startOffsets": "264",
+                        "endColumns": "69",
+                        "endOffsets": "329"
+                    }
+                }
+            ]
+        }
+    ]
+}

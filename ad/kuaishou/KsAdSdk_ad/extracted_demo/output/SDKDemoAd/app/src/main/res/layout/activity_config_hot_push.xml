@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".open.contentalliance.contentpage.TestContentPagePushHomeActivity">
+
+    <EditText
+        android:id="@+id/video_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:hint="请输入视频描述" />
+
+
+    <EditText
+        android:id="@+id/video_pos_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:hint="请输入PosId地址" />
+
+
+    <EditText
+        android:id="@+id/push_str"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:hint="请输入 pushStr" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="请首先在设置->通知管理中，打开快手联盟的通知开关"
+        android:layout_margin="20dp"
+        />
+
+
+    <Button
+        android:id="@+id/push_confirm"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:text="发送通知"
+        />
+
+</LinearLayout>

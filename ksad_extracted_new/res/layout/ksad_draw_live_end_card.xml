@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.kwad.sdk.widget.KSFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content">
+
+  <com.kwad.sdk.widget.KSFrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="280dp"
+    android:layout_gravity="center">
+
+
+    <com.kwad.sdk.widget.KSLinearLayout
+      android:id="@+id/ksad_draw_live_card_bg"
+      android:layout_width="match_parent"
+      android:layout_height="250dp"
+      android:layout_gravity="bottom"
+      android:layout_marginHorizontal="35dp"
+      android:background="@drawable/ksad_draw_live_actionbar_shop_bg"
+      android:orientation="vertical">
+
+      <TextView
+        android:id="@+id/ksad_draw_live_end_app_name"
+        android:layout_width="match_parent"
+        android:maxLines="1"
+        android:layout_marginHorizontal="63dp"
+        android:layout_height="27dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="85dp"
+        android:gravity="center"
+        android:text="直播中"
+        android:textColor="#000"
+        android:textSize="20sp" />
+
+      <TextView
+        android:id="@+id/ksad_draw_live_end_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="13dp"
+        android:layout_marginHorizontal="50dp"
+        android:gravity="center"
+        android:text="点击进入直播间"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:textColor="#666"
+        android:textSize="15sp" />
+
+      <TextView
+        android:id="@+id/ksad_live_actionbar_btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="27dp"
+        android:layout_marginHorizontal="26.5dp"
+        android:background="@drawable/ksad_draw_live_button_bg"
+        android:gravity="center"
+        android:text="进入直播间"
+        android:textColor="#ffffff"
+        android:textSize="15sp" />
+    </com.kwad.sdk.widget.KSLinearLayout>
+
+    <com.kwad.components.ad.draw.presenter.livecard.KsLiveEndAuthorView
+      android:id="@+id/ksad_draw_author_icon"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="top|center_horizontal"/>
+
+  </com.kwad.sdk.widget.KSFrameLayout>
+
+</com.kwad.sdk.widget.KSFrameLayout>

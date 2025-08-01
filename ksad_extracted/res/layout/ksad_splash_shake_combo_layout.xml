@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@+id/ksad_shake_combo_root"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="177dp"
+  android:layout_gravity="bottom"
+  android:visibility="gone"
+  tools:background="#50FF0000"
+  tools:visibility="visible">
+
+  <com.kwad.components.ad.splashscreen.widget.KsButtonBorderSpreadView
+    android:id="@+id/ksad_shake_combo_button_spread"
+    android:layout_width="300dp"
+    android:layout_height="88dp"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="11dp">
+
+    <ImageView
+      android:layout_width="263dp"
+      android:layout_height="65dp"
+      android:layout_gravity="center"
+      android:layout_marginTop="2dp"
+      android:scaleType="fitXY"
+      android:id="@+id/ksad_shake_combo_button_background"
+      android:src="@drawable/ksad_splash_shake_combo_button" />
+
+    <LinearLayout
+      android:layout_width="263dp"
+      android:layout_height="62dp"
+      android:layout_gravity="center_horizontal"
+      android:layout_marginTop="13dp"
+      android:orientation="vertical">
+
+      <LinearLayout
+        android:layout_width="240dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <com.kwad.components.ad.splashscreen.widget.KsShakeView
+          android:id="@+id/ksad_shake_combo_shake_icon"
+          android:layout_width="31dp"
+          android:layout_height="30dp"
+          app:ksad_innerCirclePadding="10dp"
+          app:ksad_innerCircleStrokeColor="#00FFFFFF"
+          app:ksad_innerCircleStrokeWidth="3dp"
+          app:ksad_outerStrokeColor="#00FFFFFF"
+          app:ksad_outerStrokeWidth="1dp"
+          app:ksad_shakeIcon="@drawable/ksad_ic_shake_combo_hand"
+          app:ksad_solidColor="#00FFFFFF" />
+
+        <TextView
+          android:id="@+id/ksad_shake_combo_shake_main_text"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="9dp"
+          android:ellipsize="end"
+          android:paddingTop="0dp"
+          android:layout_marginTop="0dp"
+          android:maxLines="1"
+          android:maxWidth="190dp"
+          tools:text="摇一摇"
+          android:text="@string/ksad_splash_shake_combo_action_text"
+          android:textColor="@android:color/white"
+          android:textSize="18sp" />
+      </LinearLayout>
+
+      <TextView
+        android:id="@+id/ksad_shake_combo_sub_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:maxWidth="240dp"
+        android:textColor="#99FFFFFF"
+        android:textSize="12sp"
+        android:text="@string/ksad_splash_shake_combo_sub_text"
+        tools:text="或点击跳转详情页/三方应用" />
+    </LinearLayout>
+
+  </com.kwad.components.ad.splashscreen.widget.KsButtonBorderSpreadView>
+
+  <com.kwad.components.ad.splashscreen.widget.KsSlidePopUpView
+    android:id="@+id/ksad_shake_combo_slide_popup_view"
+    android:layout_width="match_parent"
+    android:layout_height="128dp"
+    android:layout_marginEnd="9dp"
+    android:layout_marginStart="9dp"
+    android:layout_marginTop="177dp"
+    android:background="@drawable/ksad_slide_square_bg_shape"
+    tools:layout_marginTop="117dp">
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical">
+
+      <com.kwad.components.ad.splashscreen.widget.KsSlideArrowView
+        android:id="@+id/ksad_shake_combo_slide_arrow_top"
+        android:layout_width="19dp"
+        android:layout_height="10dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="9dp" />
+
+      <com.kwad.components.ad.splashscreen.widget.KsSlideArrowView
+        android:id="@+id/ksad_shake_combo_slide_arrow_bottom"
+        android:layout_width="19dp"
+        android:layout_height="10dp"
+        android:layout_gravity="center_horizontal" />
+
+      <TextView
+        android:id="@+id/ksad_shake_combo_slide_action_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="7dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:maxWidth="270dp"
+        android:text="@string/ksad_splash_slide_guide_text"
+        android:textColor="#99FFFFFF"
+        android:textSize="12sp" />
+    </LinearLayout>
+  </com.kwad.components.ad.splashscreen.widget.KsSlidePopUpView>
+
+</FrameLayout>

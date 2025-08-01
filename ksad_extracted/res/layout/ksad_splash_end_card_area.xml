@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout android:id="@+id/ksad_splash_end_card_native_view"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:gravity="center"
+  android:orientation="vertical">
+
+  <ImageView
+    android:id="@+id/ksad_ad_endcard_title_view"
+    android:layout_width="@dimen/ksad_splash_endcard_title_iconw"
+    android:layout_height="@dimen/ksad_splash_endcard_title_iconh"
+    android:layout_gravity="center_horizontal"
+    android:src="@drawable/ksad_splash_endcard_title" />
+
+  <FrameLayout
+    android:id="@+id/ksad_splash_end_card_giftbox_view"
+    android:layout_width="@dimen/ksad_splash_endcard_gift_iconw"
+    android:layout_height="@dimen/ksad_splash_endcard_gift_iconh"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="7dp">
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="@drawable/ksad_splash_endcard_giftbox"
+      android:gravity="center_horizontal"
+      android:orientation="vertical">
+
+      <ImageView
+        android:id="@+id/ksad_ad_endcard_icon"
+        android:layout_width="@dimen/ksad_splash_endcard_app_iconw"
+        android:layout_height="@dimen/ksad_splash_endcard_app_iconh"
+        android:layout_marginTop="@dimen/ksad_splash_endcard_app_margin_top"
+        tools:src="@drawable/ksad_default_app_icon" />
+
+      <TextView
+        android:id="@+id/ksad_ad_endcard_appname"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/ksad_splash_endcard_appname_h"
+        android:layout_marginTop="@dimen/ksad_splash_endcard_appname_margin_top"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/ksad_splash_endcard_name_color"
+        android:textSize="@dimen/ksad_splash_endcard_appname_text_sp"
+        android:textStyle="bold" />
+
+      <TextView
+        android:id="@+id/ksad_ad_endcard_appversion"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/ksad_splash_endcard_appver_h"
+        android:textColor="@color/ksad_splash_endcard_appversion_color"
+        android:textSize="@dimen/ksad_splash_endcard_appver_text_sp" />
+
+      <TextView
+        android:id="@+id/ksad_ad_endcard_appdesc"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ksad_splash_endcard_appdesc_h"
+        android:layout_marginTop="@dimen/ksad_splash_endcard_appdesc_margin_top"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="2"
+        android:paddingLeft="36dp"
+        android:paddingRight="36dp"
+        android:textColor="@color/ksad_splash_endcard_appdesc_color"
+        android:textSize="@dimen/ksad_splash_endcard_appdesc_text_sp" />
+
+    </LinearLayout>
+
+    <com.kwad.components.core.widget.KsLogoView
+      android:id="@+id/ksad_ad_endcard_logo"
+      android:layout_width="wrap_content"
+      android:layout_height="16dp"
+      android:layout_gravity="left|bottom"
+      android:layout_marginBottom="8dp"
+      android:layout_marginLeft="8dp"
+      android:background="@drawable/ksad_logo_bg_big_radius"
+      android:scaleX="0.8"
+      android:scaleY="0.8"
+      tools:layout_width="80dp" />
+
+  </FrameLayout>
+
+
+  <LinearLayout
+    android:id="@+id/ksad_splash_endcard_actionbar"
+    android:layout_width="@dimen/ksad_splash_endcard_actionbar_iconw"
+    android:layout_height="@dimen/ksad_splash_endcard_actionbar_iconh"
+    android:layout_marginTop="6dp"
+    android:background="@drawable/ksad_splash_endcard_btn_bg"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+      android:id="@+id/ksad_ad_btn_title"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:ellipsize="end"
+      android:maxLines="1"
+      android:textColor="@color/ksad_splash_endcard_title_color"
+      android:textSize="@dimen/ksad_splash_endcard_ab_title_text_sp"
+      android:textStyle="bold"
+      tools:text="立即查看" />
+
+    <TextView
+      android:id="@+id/ksad_ad_btn_sub_title"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="2dp"
+      android:ellipsize="end"
+      android:maxLines="1"
+      android:textColor="@color/ksad_splash_endcard_title_color"
+      android:textSize="@dimen/ksad_splash_endcard_ab_subtitle_text_sp"
+      android:visibility="gone" />
+  </LinearLayout>
+
+  <com.kwad.components.ad.splashscreen.widget.CloseCountDownView
+    android:id="@+id/ksad_ad_endcard_close_root"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/ksad_splash_endcard_close_root_h"
+    android:layout_marginTop="@dimen/ksad_splash_endcard_close_root_margin_top"
+    android:background="@drawable/ksad_splash_endcard_close_bg"
+    android:gravity="center" />
+
+</LinearLayout>

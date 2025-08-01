@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.kwad.sdk"
+    android:versionCode="4042001"
+    android:versionName="4.4.20.1" >
+
+    <uses-sdk
+        android:minSdkVersion="18"
+        android:targetSdkVersion="34"
+        tools:overrideLibrary="cn.leo.produce" />
+
+    <!-- 检测当前网络状态是2G、3G、4G还是WiFi -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- 联网权限 -->
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- 获取设备标识IMEI。用于标识用户 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" /> <!-- 获取MAC地址，用于标识用户 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- 安装应用权限 -->
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" /> <!-- 实现摇一摇触发转化的功能 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application>
+        <activity
+            android:name="com.kwad.sdk.api.proxy.app.AdWebViewActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <activity
+            android:name="com.kwad.sdk.api.proxy.app.KsFullScreenVideoActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.kwad.sdk.api.proxy.app.KsFullScreenLandScapeVideoActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.kwad.sdk.api.proxy.app.KsRewardVideoActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.kwad.sdk.api.proxy.app.KSRewardLandScapeVideoActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.kwad.sdk.api.proxy.app.FeedDownloadActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$KsTrendsActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <activity
+            android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$ProfileHomeActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$ProfileVideoDetailActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$TubeProfileActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$ChannelDetailActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$TubeDetailActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$EpisodeDetailActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$RequestInstallPermissionActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:theme="@style/TransparentDialogActivity" >
+            <intent-filter>
+                <action android:name="intent.action.requestInstallPermission" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivity1"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$GoodsPlayBackActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivity2"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivity3"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivity4"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivity5"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivity6"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivity7"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivity8"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivity9"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivity10"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivitySingleTop1"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivitySingleTop2"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivitySingleInstance1"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivitySingleInstance2"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$DeveloperConfigActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$LandscapeFragmentActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$LandscapeFragmentActivitySingleTop1"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTop"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$LandscapeFragmentActivitySingleTop2"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTop"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$LandscapeFragmentActivitySingleTask1"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$LandscapeFragmentActivitySingleTask2"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$LandscapeFragmentActivitySingleInstance1"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleInstance"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$LandscapeFragmentActivitySingleInstance2"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleInstance"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+
+        <service android:name="com.kwad.sdk.api.proxy.app.FileDownloadService$SharedMainProcessService" />
+        <service android:name="com.kwad.sdk.api.proxy.app.FileDownloadService$SeparateProcessService" />
+        <service
+            android:name="com.kwad.sdk.api.proxy.app.DownloadService"
+            android:exported="false" />
+        <service
+            android:name="com.kwad.sdk.api.proxy.app.ServiceProxyRemote"
+            android:exported="false"
+            android:process=":kssdk_remote" />
+
+        <provider
+            android:name="com.kwad.sdk.api.proxy.app.AdSdkFileProvider"
+            android:authorities="${applicationId}.adFileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/ksad_file_paths" />
+        </provider>
+    </application>
+
+</manifest>

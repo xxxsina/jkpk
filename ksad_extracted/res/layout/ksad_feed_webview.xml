@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.kwad.sdk.widget.RatioFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/ksad_container"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  tools:ignore="ContentDescription,SpUsage,RtlHardcoded"
+  tools:layout_height="195dp">
+
+    <com.kwad.sdk.core.webview.KsAdWebView
+      android:id="@+id/ksad_web_default_bottom_card_webView"
+      android:layout_width="match_parent"
+      android:layerType="software"
+      android:layout_height="match_parent"
+      android:scrollbarStyle="insideOverlay" />
+
+    <com.kwad.sdk.widget.KSRelativeLayout
+           android:id="@+id/ksad_feed_ad_video_container"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:visibility="invisible"
+           android:layout_marginTop="8dp"
+           android:layout_marginBottom="8dp">
+
+        <ImageView
+            android:id="@+id/ksad_video_first_frame_container"
+            android:scaleType="fitXY"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <View
+          android:id="@+id/ksad_live_end_bg_mantle"
+          android:background="@color/ksad_black_alpha35"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:visibility="gone" />
+        <LinearLayout
+          android:id="@+id/ksad_video_immerse_text_container"
+          android:layout_width="match_parent"
+          android:layout_height="57dp"
+          android:layout_alignParentBottom="true"
+          android:visibility="gone"
+          android:background="@drawable/ksad_feed_immerse_video_bg">
+            <TextView
+              android:id="@+id/ksad_video_immerse_text"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginBottom="5dp"
+              android:layout_marginLeft="10dp"
+              android:layout_marginRight="2dp"
+              android:layout_gravity="bottom"
+              android:clickable="true"
+              android:visibility="gone"
+              android:textColor="#FFFFFF"
+              android:textSize="18dp"
+              android:ellipsize="end"
+              android:maxLines="2"
+              android:focusable="true" />
+        </LinearLayout>
+    </com.kwad.sdk.widget.KSRelativeLayout>
+
+    <com.kwad.sdk.core.webview.KsAdWebView
+      android:id="@+id/ksad_web_bottom_card_webView"
+      android:layout_width="match_parent"
+      android:layerType="software"
+      android:layout_height="match_parent"
+      android:visibility="gone"
+      android:scrollbarStyle="insideOverlay" />
+
+</com.kwad.sdk.widget.RatioFrameLayout>

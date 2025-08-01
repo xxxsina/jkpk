@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@+id/ksad_live_subscribe_end_root"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:background="#88000000">
+
+  <FrameLayout
+    android:layout_width="@dimen/ksad_live_subscribe_end_dialog_width"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginLeft="32dp"
+    android:layout_marginRight="32dp"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <!--  直播预约的结束页弹窗 -->
+
+    <com.kwad.sdk.widget.KSFrameLayout
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/ksad_live_subscribe_end_dialog_height"
+      android:layout_gravity="top"
+      android:layout_marginTop="23dp"
+      android:background="@drawable/ksad_reward_task_dialog_bg">
+
+      <ImageView
+        android:id="@+id/ksad_live_subscribe_end_btn_close"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_margin="4dp"
+        android:src="@drawable/ksad_reward_card_close" />
+
+      <com.kwad.components.core.widget.KsStyledTextButton
+        android:id="@+id/ksad_live_subscribe_end_btn_subscribe"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="25dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:background="@drawable/ksad_ksad_reward_follow_btn_follow_bg"
+        android:gravity="center"
+        android:text="立即预约"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    </com.kwad.sdk.widget.KSFrameLayout>
+
+    <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center_horizontal"
+      android:layout_marginLeft="24dp"
+      android:layout_marginRight="24dp"
+      android:orientation="vertical">
+
+      <!--    使用自定义的View实现圆形的View  -->
+      <com.kwad.sdk.widget.KSFrameLayout
+        android:layout_width="@dimen/ksad_live_subscribe_end_dialog_icon_size"
+        android:layout_height="@dimen/ksad_live_subscribe_end_dialog_icon_size"
+        android:layout_gravity="top|center_horizontal"
+        android:background="#FFFFFF"
+        android:padding="3dp"
+        app:ksad_radius="500dp">
+
+        <com.kwad.components.core.widget.KSCornerImageView
+          android:id="@+id/ksad_live_subscribe_end_icon"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          app:ksad_radius="500dp"
+          tools:src="@drawable/ksad_default_app_icon" />
+      </com.kwad.sdk.widget.KSFrameLayout>
+
+
+      <TextView
+        android:id="@+id/ksad_live_subscribe_end_start_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="28dp"
+        android:drawableLeft="@drawable/ksad_ic_clock"
+        android:drawablePadding="6dp"
+        android:maxLines="1"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:text="3月14日 15:00 准时开播" />
+
+      <TextView
+        android:id="@+id/ksad_live_subscribe_end_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:textColor="#FF666666"
+        android:textSize="12sp"
+        tools:text="汽车用品送大礼了！汽车用品送大礼了汽车用品送大礼了汽车用品送大礼了" />
+
+      <TextView
+        android:id="@+id/ksad_live_subscribe_end_subscribe_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="#FF666666"
+        android:textSize="12sp"
+        tools:text="当前已经有1万人预约" />
+    </LinearLayout>
+
+  </FrameLayout>
+</FrameLayout>

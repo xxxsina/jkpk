@@ -1,0 +1,226 @@
+[
+    {
+        "merged": "com.jiankangpaika.app-merged_res-92:/drawable_avatar_5.png.flat",
+        "source": "com.jiankangpaika.app-main-93:/drawable/avatar_5.png"
+    },
+    {
+        "merged": "com.jiankangpaika.app-merged_res-92:/drawable_ic_swimming.xml.flat",
+        "source": "com.jiankangpaika.app-main-93:/drawable/ic_swimming.xml"
+    },
+    {
+        "merged": "com.jiankangpaika.app-merged_res-92:/drawable_ic_weightlifting.xml.flat",
+        "source": "com.jiankangpaika.app-main-93:/drawable/ic_weightlifting.xml"
+    },
+    {
+        "merged": "com.jiankangpaika.app-merged_res-92:/drawable_ic_equestrian.xml.flat",
+        "source": "com.jiankangpaika.app-main-93:/drawable/ic_equestrian.xml"
+    },
+    {
+        "merged": "com.jiankangpaika.app-merged_res-92:/drawable_ic_cycling.xml.flat",
+        "source": "com.jiankangpaika.app-main-93:/drawable/ic_cycling.xml"
+    },
+    {
+        "merged": "com.jiankangpaika.app-merged_res-92:/drawable_ic_home.xml.flat",
+        "source": "com.jiankangpaika.app-main-93:/drawable/ic_home.xml"
+    },
+    {
+        "merged": "com.jiankangpaika.app-merged_res-92:/drawable_avatar_2.png.flat",
+        "source": "com.jiankangpaika.app-main-93:/drawable/avatar_2.png"
+    },
+    {
+        "merged": "com.jiankangpaika.app-merged_res-92:/drawable_ic_sport.xml.flat",
+        "source": "com.jiankangpaika.app-main-93:/drawable/ic_sport.xml"
+    },
+    {
+        "merged": "com.jiankangpaika.app-merged_res-92:/drawable_touxiang_1.png.flat",
+        "source": "com.jiankangpaika.app-main-93:/drawable/touxiang_1.png"
+    },
+    {
+        "merged": "com.jiankangpaika.app-merged_res-92:/drawable_slide_4.xml.flat",
+        "source": "com.jiankangpaika.app-main-93:/drawable/slide_4.xml"
+    },
+    {
+        "merged": "com.jiankangpaika.app-merged_res-92:/drawable_ic_profile.xml.flat",
+        "source": "com.jiankangpaika.app-main-93:/drawable/ic_profile.xml"
+    },
+    {
+        "merged": "com.jiankangpaika.app-merged_res-92:/drawable_ic_checkin.xml.flat",
+        "source": "com.jiankangpaika.app-main-93:/drawable/ic_checkin.xml"
+    },
+    {
+        "merged": "com.jiankangpaika.app-merged_res-92:/drawable_sport_card_2.png.flat",
+        "source": "com.jiankangpaika.app-main-93:/drawable/sport_card_2.png"
+    },
+    {
+        "merged": "com.jiankangpaika.app-merged_res-92:/drawable_ic_launcher_legacy.xml.flat",
+        "source": "com.jiankangpaika.app-main-93:/drawable/ic_launcher_legacy.xml"
+    },
+    {
+        "merged": "com.jiankangpaika.app-merged_res-92:/drawable_ic_ball_sports.xml.flat",
+        "source": "com.jiankangpaika.app-main-93:/drawable/ic_ball_sports.xml"
+    },
+    {
+        "merged": "com.jiankangpaika.app-merged_res-92:/drawable_banner_1.jpg.flat",
+        "source": "com.jiankangpaika.app-main-93:/drawable/banner_1.jpg"
+    },
+    {
+        "merged": "com.jiankangpaika.app-merged_res-92:/drawable_avatar_4.png.flat",
+        "source": "com.jiankangpaika.app-main-93:/drawable/avatar_4.png"
+    },
+    {
+        "merged": "com.jiankangpaika.app-merged_res-92:/drawable_banner_background.xml.flat",
+        "source": "com.jiankangpaika.app-main-93:/drawable/banner_background.xml"
+    },
+    {
+        "merged": "com.jiankangpaika.app-merged_res-92:/drawable_avatar_1.png.flat",
+        "source": "com.jiankangpaika.app-main-93:/drawable/avatar_1.png"
+    },
+    {
+        "merged": "com.jiankangpaika.app-merged_res-92:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "com.jiankangpaika.app-main-93:/drawable/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.jiankangpaika.app-merged_res-92:/xml_tt_file_paths.xml.flat",
+        "source": "com.jiankangpaika.app-main-93:/xml/tt_file_paths.xml"
+    },
+    {
+        "merged": "com.jiankangpaika.app-merged_res-92:/drawable_sport_card_3.png.flat",
+        "source": "com.jiankangpaika.app-main-93:/drawable/sport_card_3.png"
+    },
+    {
+        "merged": "com.jiankangpaika.app-merged_res-92:/drawable_avatar_8.png.flat",
+        "source": "com.jiankangpaika.app-main-93:/drawable/avatar_8.png"
+    },
+    {
+        "merged": "com.jiankangpaika.app-merged_res-92:/drawable_ic_shooting.xml.flat",
+        "source": "com.jiankangpaika.app-main-93:/drawable/ic_shooting.xml"
+    },
+    {
+        "merged": "com.jiankangpaika.app-merged_res-92:/xml_backup_rules.xml.flat",
+        "source": "com.jiankangpaika.app-main-93:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "com.jiankangpaika.app-merged_res-92:/raw_camera_shutter.txt.flat",
+        "source": "com.jiankangpaika.app-main-93:/raw/camera_shutter.txt"
+    },
+    {
+        "merged": "com.jiankangpaika.app-merged_res-92:/drawable_ic_water_sports.xml.flat",
+        "source": "com.jiankangpaika.app-main-93:/drawable/ic_water_sports.xml"
+    },
+    {
+        "merged": "com.jiankangpaika.app-merged_res-92:/drawable_qiandao_bg.png.flat",
+        "source": "com.jiankangpaika.app-main-93:/drawable/qiandao_bg.png"
+    },
+    {
+        "merged": "com.jiankangpaika.app-merged_res-92:/drawable_slide_2.xml.flat",
+        "source": "com.jiankangpaika.app-main-93:/drawable/slide_2.xml"
+    },
+    {
+        "merged": "com.jiankangpaika.app-merged_res-92:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.jiankangpaika.app-main-93:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.jiankangpaika.app-merged_res-92:/drawable_tech.png.flat",
+        "source": "com.jiankangpaika.app-main-93:/drawable/tech.png"
+    },
+    {
+        "merged": "com.jiankangpaika.app-merged_res-92:/xml_file_paths.xml.flat",
+        "source": "com.jiankangpaika.app-main-93:/xml/file_paths.xml"
+    },
+    {
+        "merged": "com.jiankangpaika.app-merged_res-92:/layout_activity_splash.xml.flat",
+        "source": "com.jiankangpaika.app-main-93:/layout/activity_splash.xml"
+    },
+    {
+        "merged": "com.jiankangpaika.app-merged_res-92:/drawable_slide_1.xml.flat",
+        "source": "com.jiankangpaika.app-main-93:/drawable/slide_1.xml"
+    },
+    {
+        "merged": "com.jiankangpaika.app-merged_res-92:/drawable_sports.png.flat",
+        "source": "com.jiankangpaika.app-main-93:/drawable/sports.png"
+    },
+    {
+        "merged": "com.jiankangpaika.app-merged_res-92:/xml_anythink_bk_gdt_file_path.xml.flat",
+        "source": "com.jiankangpaika.app-main-93:/xml/anythink_bk_gdt_file_path.xml"
+    },
+    {
+        "merged": "com.jiankangpaika.app-merged_res-92:/drawable_food.png.flat",
+        "source": "com.jiankangpaika.app-main-93:/drawable/food.png"
+    },
+    {
+        "merged": "com.jiankangpaika.app-merged_res-92:/xml_network_config.xml.flat",
+        "source": "com.jiankangpaika.app-main-93:/xml/network_config.xml"
+    },
+    {
+        "merged": "com.jiankangpaika.app-merged_res-92:/drawable_avatar_7.png.flat",
+        "source": "com.jiankangpaika.app-main-93:/drawable/avatar_7.png"
+    },
+    {
+        "merged": "com.jiankangpaika.app-merged_res-92:/xml_network_security_config.xml.flat",
+        "source": "com.jiankangpaika.app-main-93:/xml/network_security_config.xml"
+    },
+    {
+        "merged": "com.jiankangpaika.app-merged_res-92:/drawable_avatar_6.png.flat",
+        "source": "com.jiankangpaika.app-main-93:/drawable/avatar_6.png"
+    },
+    {
+        "merged": "com.jiankangpaika.app-merged_res-92:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.jiankangpaika.app-main-93:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.jiankangpaika.app-merged_res-92:/drawable_ic_gymnastics.xml.flat",
+        "source": "com.jiankangpaika.app-main-93:/drawable/ic_gymnastics.xml"
+    },
+    {
+        "merged": "com.jiankangpaika.app-merged_res-92:/xml_data_extraction_rules.xml.flat",
+        "source": "com.jiankangpaika.app-main-93:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "com.jiankangpaika.app-merged_res-92:/drawable_sport_card_4.png.flat",
+        "source": "com.jiankangpaika.app-main-93:/drawable/sport_card_4.png"
+    },
+    {
+        "merged": "com.jiankangpaika.app-merged_res-92:/drawable_ic_martial_arts.xml.flat",
+        "source": "com.jiankangpaika.app-main-93:/drawable/ic_martial_arts.xml"
+    },
+    {
+        "merged": "com.jiankangpaika.app-merged_res-92:/drawable_slide_3.xml.flat",
+        "source": "com.jiankangpaika.app-main-93:/drawable/slide_3.xml"
+    },
+    {
+        "merged": "com.jiankangpaika.app-merged_res-92:/drawable_touxiang.png.flat",
+        "source": "com.jiankangpaika.app-main-93:/drawable/touxiang.png"
+    },
+    {
+        "merged": "com.jiankangpaika.app-merged_res-92:/drawable_banner_2.jpg.flat",
+        "source": "com.jiankangpaika.app-main-93:/drawable/banner_2.jpg"
+    },
+    {
+        "merged": "com.jiankangpaika.app-merged_res-92:/drawable_avatar_3.png.flat",
+        "source": "com.jiankangpaika.app-main-93:/drawable/avatar_3.png"
+    },
+    {
+        "merged": "com.jiankangpaika.app-merged_res-92:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.jiankangpaika.app-main-93:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.jiankangpaika.app-merged_res-92:/drawable_sport_card_1.png.flat",
+        "source": "com.jiankangpaika.app-main-93:/drawable/sport_card_1.png"
+    },
+    {
+        "merged": "com.jiankangpaika.app-merged_res-92:/drawable_tcm.png.flat",
+        "source": "com.jiankangpaika.app-main-93:/drawable/tcm.png"
+    },
+    {
+        "merged": "com.jiankangpaika.app-merged_res-92:/drawable_logo.jpg.flat",
+        "source": "com.jiankangpaika.app-main-93:/drawable/logo.jpg"
+    },
+    {
+        "merged": "com.jiankangpaika.app-merged_res-92:/drawable_ic_running.xml.flat",
+        "source": "com.jiankangpaika.app-main-93:/drawable/ic_running.xml"
+    },
+    {
+        "merged": "com.jiankangpaika.app-merged_res-92:/xml_anythink_bk_tt_file_path.xml.flat",
+        "source": "com.jiankangpaika.app-main-93:/xml/anythink_bk_tt_file_path.xml"
+    }
+]

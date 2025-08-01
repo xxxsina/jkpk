@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+  <solid android:color="#FF5181FB" />
+  <!--  该数值是为了形成半圆形，并非真实的尺寸 -->
+  <corners android:radius="200dp" />
+</shape>

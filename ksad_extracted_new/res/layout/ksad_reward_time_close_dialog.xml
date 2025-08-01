@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:background="#99000000">
+
+  <!--  激励视频 新增挽留弹窗样式 rewardContentDetainType = 2 -->
+
+  <LinearLayout
+    android:layout_width="271dp"
+    android:layout_height="352dp"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+    <com.kwad.sdk.widget.KSFrameLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="@drawable/ksad_reward_task_dialog_bg">
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_marginBottom="24dp"
+        android:orientation="vertical">
+
+        <TextView
+          android:id="@+id/ksad_reward_time_close_dialog_play_time_tips"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_horizontal"
+          android:layout_marginTop="24dp"
+          android:layout_marginBottom="24dp"
+          android:textColor="#CC000000"
+          android:maxLines="1"
+          android:textSize="18sp"
+          android:textStyle="bold"
+          android:ellipsize="end"
+          tools:text="再看30秒，可获得优惠" />
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_horizontal|bottom"
+          android:layout_marginLeft="32dp"
+          android:layout_marginRight="32dp"
+          android:layout_marginBottom="24dp"
+          android:orientation="vertical">
+
+          <com.kwad.components.core.widget.KSCornerImageView
+            android:id="@+id/ksad_reward_time_close_dialog_icon"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:background="#FFEAEAEA"
+            app:ksad_radius="12dp"
+            android:padding="1dp"
+            android:layout_gravity="top|center_horizontal"
+            tools:src="@drawable/ksad_default_app_icon" />
+
+          <TextView
+            android:id="@+id/ksad_reward_time_close_dialog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:textColor="#FF222222"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:text="快手联盟" />
+
+          <TextView
+            android:id="@+id/ksad_reward_time_close_dialog_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="2"
+            android:textColor="#FF666666"
+            android:textSize="14sp"
+            tools:text="不是一个人的王者，而是团队的荣耀！5v5王者峡谷等你来战" />
+          <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+            <TextView
+              android:id="@+id/ksad_reward_time_close_dialog_detail"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center"
+              android:ellipsize="end"
+              android:gravity="center"
+              android:maxLines="1"
+              android:text="了解详情"
+              android:textColor="@color/ksad_reward_main_color"
+              android:textSize="14sp" />
+            <ImageView
+              android:id="@+id/ksad_reward_right_arrow"
+              android:layout_width="18dp"
+              android:layout_height="18dp"
+              android:src="@drawable/ksad_reward_red_right_arrow"/>
+          </LinearLayout>
+
+        </LinearLayout>
+
+      </LinearLayout>
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="24dp"
+        android:orientation="vertical">
+
+        <com.kwad.components.core.widget.KsStyledTextButton
+          android:id="@+id/ksad_reward_time_close_dialog_btn_continue"
+          android:layout_width="207dp"
+          android:layout_height="45dp"
+          android:layout_gravity="center_horizontal|bottom"
+          android:layout_marginBottom="12dp"
+          android:background="@drawable/ksad_ksad_reward_follow_btn_follow_bg"
+          android:gravity="center"
+          android:text="留下看看"
+          android:textColor="@android:color/white"
+          android:textSize="15sp"
+          android:textStyle="bold" />
+
+        <TextView
+          android:id="@+id/ksad_reward_time_close_dialog_btn_deny"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_horizontal|bottom"
+          android:gravity="center"
+          android:text="残忍离开"
+          android:textColor="#FF9C9C9C"
+          android:textSize="12sp" />
+
+      </LinearLayout>
+
+    </com.kwad.sdk.widget.KSFrameLayout>
+
+  </LinearLayout>
+
+</FrameLayout>

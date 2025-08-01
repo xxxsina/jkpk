@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical"
+  tools:context=".open.reward.TestRewardVideoActivity"
+  tools:ignore="HardcodedText,ContentDescription">
+
+  <FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="46dp"
+    android:background="@android:color/white">
+
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="46dp"
+      android:background="@android:color/white"
+      android:gravity="center"
+      android:text="测试激励视频广告"
+      android:textAllCaps="false"
+      android:textColor="#222222"
+      android:textSize="17sp"
+      android:textStyle="bold" />
+
+    <ImageView
+      android:layout_width="40dp"
+      android:layout_height="40dp"
+      android:layout_gravity="center_vertical|start"
+      android:layout_marginLeft="6dp"
+      android:layout_marginStart="6dp"
+      android:onClick="onBackClick"
+      android:src="@drawable/ksad_back_black_icon" />
+  </FrameLayout>
+
+  <View
+    android:layout_width="match_parent"
+    android:layout_height="1px"
+    android:background="#e0e0e0" />
+
+  <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ksad_main_item_bg"
+    android:clickable="true"
+    android:focusable="true"
+    android:gravity="start"
+    android:onClick="requestRewardAd"
+    android:padding="16dp"
+    android:text="展示激励视频广告"
+    android:textColor="#222222"
+    android:textSize="16sp" />
+
+  <View
+    android:layout_width="match_parent"
+    android:layout_height="1px"
+    android:background="@drawable/ksad_main_list_divider_bg" />
+
+  <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#f8f8f8"
+    android:clickable="true"
+    android:focusable="true"
+    android:padding="16dp"
+    android:text="可选设置项："
+    android:textColor="#222222"
+    android:textSize="16sp" />
+
+  <View
+    android:layout_width="match_parent"
+    android:layout_height="1px"
+    android:background="@drawable/ksad_main_list_divider_bg" />
+
+  <Switch
+    android:id="@+id/change_orientation_switch"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#f8f8f8"
+    android:padding="16dp"
+    android:switchPadding="16dp"
+    android:text="切换当前屏幕方向"
+    android:textSize="16sp" />
+
+  <View
+    android:layout_width="match_parent"
+    android:layout_height="1px"
+    android:background="@drawable/ksad_main_list_divider_bg" />
+
+  <Switch
+    android:id="@+id/show_landscape_switch"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#f8f8f8"
+    android:padding="16dp"
+    android:switchPadding="16dp"
+    android:text="是否开启横屏展示"
+    android:textSize="16sp" />
+
+  <View
+    android:layout_width="match_parent"
+    android:layout_height="1px"
+    android:background="@drawable/ksad_main_list_divider_bg" />
+
+  <Switch
+    android:id="@+id/play_online_switch"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#f8f8f8"
+    android:padding="16dp"
+    android:switchPadding="16dp"
+    android:text="是否开启在线播放"
+    android:textSize="16sp" />
+
+  <View
+    android:layout_width="match_parent"
+    android:layout_height="1px"
+    android:background="@drawable/ksad_main_list_divider_bg" />
+
+
+  <Switch
+    android:id="@+id/reward_enable_server_callback"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#f8f8f8"
+    android:padding="16dp"
+    android:switchPadding="16dp"
+    android:text="是否启用服务端回调"
+    android:textSize="16sp" />
+
+  <View
+    android:layout_width="match_parent"
+    android:layout_height="1px"
+    android:background="@drawable/ksad_main_list_divider_bg" />
+
+  <Switch
+    android:id="@+id/show_reward_after_reuquest"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#f8f8f8"
+    android:padding="16dp"
+    android:checked="true"
+    android:switchPadding="16dp"
+    android:text="请求后是否立即展示"
+    android:textSize="16sp" />
+
+  <View
+    android:layout_width="match_parent"
+    android:layout_height="1px"
+    android:background="@drawable/ksad_main_list_divider_bg" />
+
+  <include layout="@layout/server_bidding_layout" />
+
+</LinearLayout>

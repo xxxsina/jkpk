@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.kwad.sdk.widget.KSFrameLayout android:id="@+id/ksad_reward_apk_info_card_root"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:layout_gravity="bottom"
+  android:background="@android:color/transparent"
+  android:orientation="vertical"
+  app:ksad_ratio="0.455">
+  <!-- 卡片的高宽比为：156f / 343f-->
+
+  <!-- native 实现-->
+  <include
+    android:id="@+id/ksad_reward_apk_info_card_native_container"
+    layout="@layout/ksad_reward_apk_info_card_native"
+    android:visibility="gone"
+    tools:visibility="visible" />
+
+  <!-- H5实现 -->
+  <com.kwad.sdk.core.webview.KsAdWebView
+    android:id="@+id/ksad_reward_apk_info_card_h5"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="bottom|center_horizontal"
+    android:visibility="gone"
+    />
+
+</com.kwad.sdk.widget.KSFrameLayout>

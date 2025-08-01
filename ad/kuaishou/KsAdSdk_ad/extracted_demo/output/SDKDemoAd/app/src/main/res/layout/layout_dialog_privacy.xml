@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="MissingDefaultResource">
+
+    <RelativeLayout
+        android:background="@drawable/dialog_background"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="448dp">
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:src="@drawable/test_ic_close"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"/>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="40dp"
+            android:textColor="@color/text_black"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/privacy_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <ScrollView
+            android:layout_below="@id/tv_title"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="122dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:scrollbarSize="4dp"
+            android:scrollbarStyle="insideOverlay"
+            android:scrollbarThumbVertical="@drawable/privacy_dialog_scrollbar_thumb"
+            android:scrollbarTrackVertical="@android:color/transparent"
+            android:scrollbars="vertical">
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:lineSpacingMultiplier="1.2"
+                android:paddingLeft="32dp"
+                android:paddingRight="32dp"
+                android:textColor="@color/dialog_content_color"
+                android:textSize="15sp"
+                tools:text="content" />
+
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/ll_container"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="50dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_not_accept"
+                android:text="@string/not_accept"
+                android:background="@drawable/background_button_gray_large"
+                android:textSize="15sp"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/text_click_color"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:layout_weight="139"
+                android:layout_width="0dp"
+                android:layout_height="48dp"/>
+
+            <View
+                android:layout_weight="17"
+                android:layout_width="0dp"
+                android:layout_height="0dp"/>
+
+            <TextView
+                android:id="@+id/tv_accept_and_continue"
+                android:text="@string/accept_and_continue"
+                android:background="@drawable/background_button_orange_large"
+                android:textSize="15sp"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/dialog_background_color"
+                android:gravity="center"
+                android:layout_weight="139"
+                android:layout_width="0dp"
+                android:layout_height="48dp"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

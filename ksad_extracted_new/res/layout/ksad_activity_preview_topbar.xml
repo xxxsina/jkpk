@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="44dp"
+  android:orientation="vertical">
+
+  <!-- 激励预览页面的顶部栏自定义View -->
+
+  <ProgressBar
+    android:id="@+id/ksad_preview_topbar_progress"
+    style="?android:progressBarStyleHorizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:progress="30"
+    android:progressDrawable="@drawable/ksad_reward_preview_topbar_progress"
+    tools:progress="50" />
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <ImageView
+      android:id="@+id/ksad_preview_topbar_reward_gift_icon"
+      android:layout_width="15dp"
+      android:layout_height="15dp"
+      android:layout_marginRight="6dp"
+      android:src="@drawable/ksad_reward_preview_top_gift" />
+
+    <TextView
+      android:id="@+id/ksad_preview_topbar_reward_tips"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginRight="6dp"
+      android:gravity="center"
+      android:includeFontPadding="false"
+      android:text="浏览页面"
+      android:textColor="#FF6B80"
+      tools:text="浏览页面" />
+
+    <TextView
+      android:id="@+id/ksad_preview_topbar_reward_count"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:gravity="center"
+      android:includeFontPadding="false"
+      android:textColor="#FFFFFF"
+      tools:text="10 秒后即可获得奖励" />
+  </LinearLayout>
+
+
+  <ImageView
+    android:id="@+id/ksad_preview_topbar_close"
+    android:layout_width="20dp"
+    android:layout_height="20dp"
+    android:layout_gravity="center_vertical|right"
+    android:layout_marginRight="14dp"
+    android:src="@drawable/ksad_reward_preview_close" />
+</FrameLayout>

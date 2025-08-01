@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">快手联盟</string>
+    <array name="select_feed_array">
+        <item>文字悬浮在图片</item>
+        <item>左文右图</item>
+        <item>左图右文</item>
+        <item>上文下(图/视频)</item>
+        <item>上(图/视频)下文</item>
+    </array>
+
+    <array name="select_config_feed_array">
+        <item>文字悬浮在(图/视频)</item>
+        <item>左文右图</item>
+        <item>左图右文</item>
+        <item>上文下(图/视频)</item>
+        <item>上(图/视频)下文</item>
+        <item>三图样式</item>
+        <item>橱窗样式</item>
+        <item>竖版上文下(图/视频)样式</item>
+        <item>竖版上(图/视频)下文样式</item>
+        <item>竖版大(图/视频)</item>
+        <item>竖版小说样式(图/视频)</item>
+        <item>竖版双列样式(图/视频)</item>
+    </array>
+
+    <string name="privacy_policy_pre">欢迎您使用快手联盟sdk，请您充分阅读并理解</string>
+    <string name="privacy_terms_and_policy">快手联盟隐私政策</string>
+    <string name="and">和</string>
+    <string name="user_service_protocol">快手联盟sdk使用规范</string>
+    <string name="privacy_policy_post">：\n1.在您使用"快手联盟"及相关服务的过程中，我们将根据合法、正当、必要的原则收集信息。为给您提供更好的服务体验，我们可能记录网络日志信息，以及使用软件及相关服务的频率、崩溃数据、总体安装、使用情况、性能数据等信息，以帮助我们排查以及解决故障问题。\n2.为了保障产品与服务的安全、高效运转，当您使用"快手联盟"及相关服务时，我们可能会使用相关技术向您的设备发送一个或多个 Cookie 或匿名标识符，以收集和存储您访问、使用本产品时的信息。\n3.我们会采用各种安全技术保护您的个人信息，不随意从第三方获取、共享或对外提供您的信息。\n4.我们非常重视您对个人信息的管理，并尽全力保护您对于您个人信息的查询、访问、修改、删除、注销账号、投诉举报以及设置隐私功能等权利，以使您有能力保障您的隐私和安全。具体查询、访问、修改、删除等问题您可以联系快手联盟官网客服或将问题发送至 support@kuaishou.com与我们联系。\n5.我们重视未成年人的个人信息保护，在您使用我们的服务过程中，我们推定您具有相应的民事行为能力。如您为未成年人，在您使用快手联盟服务之前，您应在您的父母或者其他监护人的监护、指导下仔细阅读本隐私政策，并在征得您的父母或监护人同意的前提下向我们提供信息。</string>
+
+
+    <string name="privacy_title">温馨提示</string>
+    <string name="not_accept">不同意</string>
+    <string name="accept_and_continue">同意并继续</string>
+  <string name="title_activity_test_banner_ad">TestBannerAdActivity</string>
+    <string name="start_video">开始</string>
+    <string name="stop_video">停止</string>
+    <string name="pause_video">暂停</string>
+</resources>

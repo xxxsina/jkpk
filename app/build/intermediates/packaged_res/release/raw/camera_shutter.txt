@@ -1,0 +1,4 @@
+# Camera Shutter Sound Placeholder
+# This is a placeholder file for the camera shutter sound.
+# Replace this with an actual audio file (e.g., camera_shutter.mp3 or camera_shutter.wav)
+# The audio file should be a short camera shutter sound effect.

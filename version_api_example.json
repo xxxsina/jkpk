@@ -1,0 +1,13 @@
+{
+  "code": 200,
+  "message": "success",
+  "data": {
+    "versionCode": 2,
+    "versionName": "1.1.0",
+    "updateMessage": "新版本更新内容：\n\n🎉 新功能：\n• 新增运动数据统计功能\n• 优化签到体验\n• 新增广告奖励机制\n\n🔧 优化改进：\n• 修复已知问题\n• 提升应用性能\n• 优化用户界面",
+    "downloadUrl": "http://shop.blcwg.com/downloads/shenhuobao_v1.1.0.apk",
+    "forceUpdate": false,
+    "fileSize": "25.6MB",
+    "updateTime": "2024-01-15 10:30:00"
+  }
+}

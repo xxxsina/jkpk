@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="text_black">#000000</color>
+    <!--辅助文字色-->
+    <color name="text_color_assistant">#9C9C9C</color>
+    <color name="dialog_content_color">#666666</color>
+    <color name="btn_stroke_color">#C6C6C6</color>
+    <color name="btn_stroke_color_a80">#80C6C6C6</color>
+    <color name="dialog_background_color">#FFFFFF</color>
+    <color name="text_black_222">#222222</color>
+    <color name="text_black_222_a80">#80222222</color>
+    <color name="color_base_red_19_a50">#80FE3666</color>
+    <color name="color_base_red_15">#FE3666</color>
+    <color name="link_color">#3F5B8D</color>
+    <color name="test_yellow">#FFFFFF00</color>
+</resources>

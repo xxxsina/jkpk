@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.kwad.sdk.widget.KSFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:fitsSystemWindows="true">
+
+  <com.kwad.sdk.widget.KSLinearLayout
+    android:id="@+id/ksad_info_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B3000000"
+    android:fitsSystemWindows="true"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <com.kwad.sdk.core.page.widget.RoundAngleImageView
+      android:id="@+id/ksad_ad_cover"
+      android:src="@drawable/ksad_default_app_icon"
+      android:layout_width="80dp"
+      android:scaleType="fitXY"
+      android:layout_height="80dp"/>
+
+    <TextView
+      android:id="@+id/ksad_ad_title"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="24dp"
+      android:singleLine="true"
+      android:textColor="#ffffff"
+      android:textSize="24sp"
+      android:maxLines="1"
+      android:maxEms="8"
+      android:ellipsize="end"
+      android:text="可爱的广告君"
+      tools:text="美图秀秀" />
+
+    <TextView
+      android:id="@+id/ksad_ad_info"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center_horizontal"
+      android:layout_marginTop="24dp"
+      android:paddingLeft="65dp"
+      android:gravity="center"
+      android:paddingRight="65dp"
+      android:textColor="#ffffff"
+      android:maxEms="32"
+      android:maxLines="2"
+      android:ellipsize="end"
+      android:textSize="16sp"
+      tools:text="拍出高级脸，会动的魔法表情，拍
+      拍什么都可以拍出高级感的完美相机什么都可以拍出高级感的完美相机拍什么都可以拍出高级感的完美相机！" />
+
+    <com.kwad.sdk.widget.DownloadProgressBar
+      android:id="@+id/ksad_web_download_progress"
+      android:layout_width="255dp"
+      android:layout_height="48dp"
+      android:layout_gravity="center"
+      android:layout_marginTop="24dp" />
+  </com.kwad.sdk.widget.KSLinearLayout>
+
+  <com.kwad.components.core.widget.KsLogoView
+    android:id="@+id/ksad_land_page_logo"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:visibility="gone"
+    android:layout_marginBottom="60dp"
+    android:layout_marginLeft="8dp"
+    android:background="@drawable/ksad_splash_logo_bg"
+    tools:text="广告" />
+  <com.kwad.components.core.widget.ComplianceTextView
+    android:id="@+id/ksad_compliance_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:textColor="#ffffff"
+    android:textSize="10dp"
+    android:visibility="gone"
+    tools:visibility="visible" />
+</com.kwad.sdk.widget.KSFrameLayout>

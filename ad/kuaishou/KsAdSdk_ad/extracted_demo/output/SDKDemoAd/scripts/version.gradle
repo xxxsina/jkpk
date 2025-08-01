@@ -1,0 +1,13 @@
+ext.deps = [:]
+ext.versions = [:]
+versions.support = "27.1.1"
+def support = [:]
+support.annotations = "com.android.support:support-annotations:$versions.support"
+support.appcompat_v7 = "com.android.support:appcompat-v7:$versions.support"
+support.v4 = "com.android.support:support-v4:$versions.support"
+support.v13 = "com.android.support:support-v13:$versions.support"
+support.recyclerview_v7 = "com.android.support:recyclerview-v7:$versions.support"
+support.design = "com.android.support:design:$versions.support"
+deps.support = support
+
+

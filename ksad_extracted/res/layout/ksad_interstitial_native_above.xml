@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.kwad.sdk.widget.KSFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/ksad_interstitial_native_container"
+  xmlns:tools="http://schemas.android.com/tools"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:clipChildren="true"
+  android:orientation="vertical"
+  tools:background="#ffffff"
+  app:ksad_radius="@dimen/ksad_interstitial_card_radius"
+  tools:ignore="ContentDescription,SpUsage,RtlHardcoded">
+
+  <RelativeLayout
+    android:id="@+id/ksad_interstitial_full_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center">
+
+    <com.kwad.sdk.widget.KSFrameLayout
+      android:id="@+id/ksad_interstitial_native_video_container"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_marginBottom="@dimen/ksad_interstitial_download_bar_height"
+      android:layout_centerInParent="true"
+      android:layout_gravity="center"
+      android:gravity="center">
+
+      <ImageView
+        android:id="@+id/ksad_video_first_frame_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop" />
+    </com.kwad.sdk.widget.KSFrameLayout>
+
+  </RelativeLayout>
+
+
+  <include layout="@layout/ksad_interstitial_native_element" />
+
+</com.kwad.sdk.widget.KSFrameLayout>

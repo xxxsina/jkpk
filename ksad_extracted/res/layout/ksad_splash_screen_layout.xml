@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.kwad.sdk.core.view.AdBaseFrameLayout android:id="@+id/ksad_splash_root_container"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:clickable="true"
+  android:focusableInTouchMode="true"
+  tools:background="@android:color/holo_orange_light"
+  tools:ignore="RtlHardcoded, SpUsage">
+
+  <!-- 播放页 -->
+  <FrameLayout
+    android:id="@+id/splash_play_card_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:visibility="gone">
+    <!--播放器-->
+    <ImageView
+      android:id="@+id/ksad_splash_background"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:scaleType="centerCrop"
+      android:visibility="gone" />
+
+    <com.kwad.components.core.video.DetailVideoView
+      android:id="@+id/ksad_splash_video_player"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_gravity="center"
+      tools:visibility="gone" />
+
+    <ImageView
+      android:id="@+id/ksad_splash_foreground"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_gravity="center"
+      android:scaleType="fitCenter"
+      android:visibility="invisible" />
+
+    <FrameLayout
+      android:id="@+id/ksad_splash_default_image_view_container"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_gravity="center"
+      android:background="@drawable/ksad_splash_default_bgimg"
+      android:gravity="center_horizontal"
+      android:paddingBottom="70dp"
+      android:visibility="gone">
+
+      <com.kwad.components.ad.splashscreen.presenter.playcard.SplashPlayDefaultInfoView
+        android:id="@+id/ksad_splash_default_image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center" />
+    </FrameLayout>
+
+
+    <!-- native 兜底的ActionBar，在H5出现异常的时候进行兜底，会是全屏覆盖，然后内部判断点击区域 -->
+    <ImageView
+      android:id="@+id/ksad_splash_actionbar_full_screen"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:clickable="true"
+      android:src="@android:color/transparent"
+      android:visibility="gone" />
+
+    <ViewStub
+      android:id="@+id/ksad_splash_slideTouchView"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout="@layout/ksad_layout_splash_slideview" />
+
+    <ViewStub
+      android:id="@+id/ksad_splash_actionbar_native_stub"
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/ksad_splash_actionbar_height"
+      android:layout_gravity="bottom"
+      android:layout_marginBottom="@dimen/ksad_splash_actionbar_margin_bottom"
+      android:layout="@layout/ksad_splash_action_native"
+      android:visibility="gone"
+      tools:visibility="visible" />
+
+    <FrameLayout
+      android:id="@+id/ksad_splash_webview_container"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:visibility="gone" />
+    <!-- TK播放页 -->
+    <FrameLayout
+      android:id="@+id/splash_tk_play_card_view"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:visibility="gone" />
+
+    <View
+      android:id="@+id/ksad_skip_view_area"
+      android:layout_width="154dp"
+      android:layout_height="118dp"
+      android:layout_gravity="right"
+      android:visibility="gone"
+      tools:visibility="visible" />
+
+    <LinearLayout
+      android:id="@+id/ksad_splash_left_top_root"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:visibility="gone">
+
+      <LinearLayout
+        android:id="@+id/ksad_preload_left_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|top"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp">
+
+        <com.kwad.components.ad.splashscreen.widget.SkipView
+          android:id="@+id/ksad_splash_skip_left_view"
+          android:layout_width="wrap_content"
+          android:layout_height="@dimen/ksad_skip_view_height"
+          android:background="@drawable/ksad_skip_view_bg"
+          android:paddingLeft="@dimen/ksad_skip_view_padding_horizontal"
+          android:paddingRight="@dimen/ksad_skip_view_padding_horizontal"
+          android:visibility="gone"
+          tools:visibility="visible" />
+
+        <com.kwad.components.ad.splashscreen.widget.CircleSkipView
+          android:id="@+id/ksad_splash_circle_skip_left_view"
+          android:layout_width="@dimen/ksad_skip_view_height"
+          android:layout_height="@dimen/ksad_skip_view_height"
+          android:visibility="gone" />
+
+        <TextView
+          android:id="@+id/ksad_splash_preload_left_tips"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_vertical"
+          android:layout_marginLeft="20.5dp"
+          android:gravity="center_vertical"
+          android:shadowColor="#4D000000"
+          android:shadowDx="0"
+          android:shadowDy="1"
+          android:shadowRadius="2"
+          android:text="@string/ksad_splash_preload_tips_text"
+          android:textColor="@android:color/white"
+          android:textSize="12sp" />
+      </LinearLayout>
+
+      <com.kwad.components.core.widget.ComplianceTextView
+        android:id="@+id/ksad_compliance_left_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:padding="8dp"
+        android:textColor="#ffffff"
+        android:textSize="10dp"
+        android:visibility="gone"
+        tools:visibility="visible" />
+    </LinearLayout>
+
+    <LinearLayout
+      android:id="@+id/ksad_splash_right_top_root"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:visibility="gone">
+
+      <LinearLayout
+        android:id="@+id/ksad_preload_right_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|top"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="32dp">
+
+        <TextView
+          android:id="@+id/ksad_splash_preload_right_tips"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_vertical"
+          android:layout_marginRight="15dp"
+          android:gravity="center_vertical"
+          android:shadowColor="#4D000000"
+          android:shadowDx="0"
+          android:shadowDy="1"
+          android:shadowRadius="2"
+          android:text="@string/ksad_splash_preload_tips_text"
+          android:textColor="@android:color/white"
+          android:textSize="12sp" />
+
+        <com.kwad.components.ad.splashscreen.widget.SkipView
+          android:id="@+id/ksad_splash_skip_right_view"
+          android:layout_width="wrap_content"
+          android:layout_height="@dimen/ksad_skip_view_height"
+          android:background="@drawable/ksad_skip_view_bg"
+          android:paddingLeft="@dimen/ksad_skip_view_padding_horizontal"
+          android:paddingRight="@dimen/ksad_skip_view_padding_horizontal"
+          android:visibility="gone" />
+
+        <com.kwad.components.ad.splashscreen.widget.CircleSkipView
+          android:id="@+id/ksad_splash_circle_skip_right_view"
+          android:layout_width="@dimen/ksad_skip_view_height"
+          android:layout_height="@dimen/ksad_skip_view_height"
+          android:visibility="gone" />
+      </LinearLayout>
+
+      <com.kwad.components.core.widget.ComplianceTextView
+        android:id="@+id/ksad_compliance_right_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="12dp"
+        android:padding="8dp"
+        android:textColor="#ffffff"
+        android:textSize="10dp"
+        android:visibility="gone"
+        tools:visibility="visible" />
+    </LinearLayout>
+
+
+    <com.kwad.components.core.widget.KsLogoView
+      android:id="@+id/ksad_splash_logo_container"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="left|bottom"
+      android:background="@drawable/ksad_splash_logo_bg" />
+
+    <ImageView
+      android:id="@+id/ksad_splash_sound"
+      android:layout_width="34dp"
+      android:layout_height="30dp"
+      android:layout_gravity="right|top"
+      android:layout_marginRight="16dp"
+      android:layout_marginTop="16dp"
+      android:scaleType="fitCenter"
+      android:src="@drawable/ksad_splash_sound_selector"
+      android:visibility="gone"
+      tools:ignore="ContentDescription"
+      tools:visibility="visible" />
+
+    <include
+      layout="@layout/ksad_splash_bottom_view"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center_horizontal|bottom" />
+  </FrameLayout>
+  <!-- FULL TK -->
+  <FrameLayout
+    android:id="@+id/splash_full_tk_play_card_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="gone" />
+  <!-- TK结束页 -->
+  <FrameLayout
+    android:id="@+id/splash_end_card_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="gone" />
+  <!-- native 实现的endcard -->
+  <ViewStub
+    android:id="@+id/ksad_splash_endcard_view_stub"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout="@layout/ksad_splash_end_card_native" />
+</com.kwad.sdk.core.view.AdBaseFrameLayout>

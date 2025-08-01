@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
+  <LinearLayout
+    android:layout_width="271dp"
+    android:layout_height="305dp"
+    android:layout_gravity="center"
+    android:background="@drawable/ksad_interstitial_intercept_dialog_bg"
+    android:orientation="vertical">
+
+    <com.kwad.components.core.widget.KSCornerImageView
+      android:id="@+id/ksad_interstitial_intercept_app_icon"
+      android:layout_width="54dp"
+      android:layout_height="54dp"
+      android:layout_gravity="center_horizontal"
+      android:layout_marginTop="24dp"
+      android:clickable="true"
+      android:focusable="true"
+      app:ksad_radius="4dp"
+      tools:src="@drawable/ksad_default_app_icon" />
+
+    <TextView
+      android:id="@+id/ksad_interstitial_intercept_app_title"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center_horizontal"
+      android:layout_marginTop="5dp"
+      android:clickable="true"
+      android:ellipsize="end"
+      android:focusable="true"
+      android:includeFontPadding="false"
+      android:maxLines="1"
+      android:padding="5dp"
+      android:textColor="@color/ksad_text_black_222"
+      android:textSize="16dp"
+      android:textStyle="bold"
+      tools:text="快手APP" />
+
+    <TextView
+      android:id="@+id/ksad_interstitial_intercept_dialog_desc"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="27dp"
+      android:layout_marginRight="27dp"
+      android:ellipsize="end"
+      android:gravity="center"
+      android:layout_gravity="center_horizontal"
+      android:maxLines="2"
+      android:padding="5dp"
+      android:textColor="@color/ksad_black_6c"
+      android:textSize="14dp"
+      tools:text="理肤泉自用感受 本人油皮痘痘肌，一直认为油皮再涂护肤品岂不是更油理念水乳…" />
+
+    <TextView
+      android:id="@+id/ksad_interstitial_intercept_dialog_detail"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:ellipsize="end"
+      android:gravity="center"
+      android:maxLines="1"
+      android:layout_marginTop="5dp"
+      android:text="@string/ksad_see_detail"
+      android:textColor="@color/ksad_reward_main_color"
+      android:textSize="14dp" />
+
+    <View
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      android:layout_weight="24"/>
+
+    <com.kwad.components.core.widget.KsStyledTextButton
+      android:id="@+id/ksad_interstitial_intercept_dialog_btn_continue"
+      android:layout_width="207dp"
+      android:layout_height="46dp"
+      android:layout_gravity="center_horizontal"
+      android:background="@drawable/ksad_interstitial_btn_watch_continue_bg"
+      android:gravity="center"
+      android:text="@string/ksad_watch_continue"
+      android:textColor="@android:color/white"
+      android:textSize="15dp"
+      android:textStyle="bold" />
+
+    <View
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      android:layout_weight="13"/>
+
+    <TextView
+      android:id="@+id/ksad_interstitial_intercept_dialog_btn_deny"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center_horizontal"
+      android:gravity="center"
+      android:text="@string/ksad_leave_persist"
+      android:textColor="@color/ksad_gray_9c"
+      android:textSize="12dp" />
+
+    <View
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      android:layout_weight="24"/>
+
+  </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.kwad.sdk.core.view.AdBaseFrameLayout android:id="@+id/ksad_root_container"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@android:color/black"
+  tools:ignore="RtlHardcoded, SpUsage">
+  <!-- 原生和三段式的实现，不包含全页面TK和附加功能部分 -->
+
+  <!-- 播放器内容封面的模糊图片 -->
+  <ImageView
+    android:id="@+id/ksad_blur_video_cover"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scaleType="centerCrop"
+    android:visibility="gone" />
+
+
+  <!--播放器区域-->
+  <include layout="@layout/ksad_reward_video_area" />
+
+  <!-- 直播直投的直播结束页面卡片 -->
+  <ViewStub
+    android:id="@+id/ksad_reward_origin_live_end_page_stub"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="top|left"
+    android:layout="@layout/ksad_reward_live_end_page"
+    tools:visibility="visible" />
+
+  <ViewStub
+    android:id="@+id/ksad_reward_origin_live_end_page_stub_landscape"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="top|left"
+    android:layout="@layout/ksad_reward_live_end_page_landscape"
+    tools:visibility="invisible" />
+
+  <com.kwad.components.core.widget.KsLogoView
+    android:id="@+id/ksad_ad_label_play_bar"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:layout_marginBottom="100dp"
+    android:layout_marginLeft="16dp"
+    android:background="@drawable/ksad_splash_logo_bg"
+    android:visibility="gone"
+    tools:visibility="visible" />
+
+  <ViewStub
+    android:id="@+id/view_stub_action_bar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/ksad_reward_native_normal_actionbar_height"
+    android:layout_gravity="bottom"
+    android:layout="@layout/ksad_video_action_bar_portrait_layout"
+    tools:visibility="visible" />
+
+  <ViewStub
+    android:id="@+id/view_stub_action_bar_landscape"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/ksad_reward_native_normal_actionbar_height"
+    android:layout_gravity="bottom"
+    android:layout="@layout/ksad_video_action_bar_landscape_layout"
+    tools:visibility="visible" />
+
+  <com.kwad.components.ad.reward.widget.actionbar.ActionBarH5
+    android:id="@+id/ksad_video_play_bar_h5"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:layout_gravity="bottom"
+    android:visibility="gone"
+    tools:visibility="visible" />
+
+  <com.kwad.sdk.core.webview.KsAdWebView
+    android:id="@+id/ksad_play_web_card_webView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:background="@android:color/transparent"
+    android:scrollbarStyle="insideOverlay"
+    android:visibility="gone"
+    tools:visibility="invisible" />
+
+  <!-- 小店通广告中商品信息的卡片-->
+  <ViewStub
+    android:id="@+id/ksad_reward_order_card"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/ksad_reward_order_card_height"
+    android:layout_gravity="bottom|left"
+    android:layout_marginBottom="@dimen/ksad_reward_follow_card_margin"
+    android:layout_marginLeft="@dimen/ksad_reward_follow_card_margin"
+    android:layout_marginRight="@dimen/ksad_reward_follow_card_margin"
+    android:layout="@layout/ksad_reward_order_card"
+    android:visibility="gone" />
+
+  <!-- 金牛电商中商品信息的卡片 -->
+  <ViewStub
+    android:id="@+id/ksad_reward_jinniu_card"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/ksad_reward_jinniu_card_height"
+    android:layout_gravity="bottom|left"
+    android:layout_margin="@dimen/ksad_reward_jinniu_card_margin"
+    android:layout="@layout/ksad_reward_order_jinniu"
+    tools:visibility="visible" />
+
+  <!-- 直播直投的底部基础卡片 -->
+  <ViewStub
+    android:id="@+id/ksad_reward_origin_live_base_stub"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/ksad_live_base_card_full_height"
+    android:layout_gravity="bottom|left"
+    android:layout="@layout/ksad_reward_actionbar_origin_live_base"
+    tools:visibility="visible" />
+
+  <!-- 直播直投的底部电商卡片 -->
+  <ViewStub
+    android:id="@+id/ksad_reward_origin_live_shop_stub"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/ksad_live_shop_card_full_height"
+    android:layout_gravity="bottom|left"
+    android:layout_marginHorizontal="20dp"
+    android:layout_marginBottom="23dp"
+    android:layout="@layout/ksad_reward_actionbar_live_shop"
+    tools:visibility="visible" />
+
+  <!-- 直播预约的底部兜底卡片 -->
+  <ViewStub
+    android:id="@+id/ksad_reward_live_subscribe_stub"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/ksad_live_subscribe_card_full_height"
+    android:layout_gravity="bottom|left"
+    android:layout_margin="@dimen/ksad_live_subscribe_card_margin"
+    android:layout="@layout/ksad_live_subscribe_card"
+    tools:visibility="visible" />
+
+  <!-- 试玩一下的卡片 -->
+  <ViewStub
+    android:id="@+id/ksad_common_app_card_stub"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom|left"
+    android:layout="@layout/ksad_common_app_card"
+    tools:visibility="visible" />
+
+  <ViewStub
+    android:id="@+id/ksad_common_app_card_land_stub"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:layout="@layout/ksad_common_app_card_land"
+    tools:visibility="visible" />
+
+  <include
+    android:id="@+id/ksad_play_detail_top_toolbar"
+    layout="@layout/ksad_fullscreen_detail_top_toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="top"
+    android:layout_marginTop="16dp"
+    android:visibility="gone"
+    tools:visibility="visible" />
+
+  <!--play end-->
+
+  <!-- native 实现的playend 容器 -->
+  <include
+    layout="@layout/ksad_reward_playend_native"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" />
+
+  <FrameLayout
+    android:id="@+id/ksad_web_card_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="gone" />
+
+  <FrameLayout
+    android:id="@+id/ksad_landing_page_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="gone" />
+
+  <include
+    android:id="@+id/ksad_play_end_top_toolbar"
+    layout="@layout/ksad_fullscreen_end_top_toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="top"
+    android:layout_marginTop="16dp"
+    android:visibility="gone"
+    tools:visibility="gone" />
+
+
+  <!-- 直播预约的提示ViewStub -->
+  <ViewStub
+    android:id="@+id/ksad_card_tips_view"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/ksad_live_card_tips_height"
+    android:layout_gravity="bottom|left"
+    android:layout_marginBottom="@dimen/ksad_live_card_tips_margin_bottom"
+    android:layout_marginLeft="@dimen/ksad_live_card_tips_margin_left"
+    android:layout="@layout/ksad_card_tips" />
+
+  <com.kwad.components.core.widget.ComplianceTextView
+    android:id="@+id/ksad_compliance_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:layout_marginTop="56dp"
+    android:padding="8dp"
+    android:textColor="#ffffff"
+    android:textSize="10dp"
+    android:visibility="gone"
+    tools:visibility="visible" />
+
+</com.kwad.sdk.core.view.AdBaseFrameLayout>

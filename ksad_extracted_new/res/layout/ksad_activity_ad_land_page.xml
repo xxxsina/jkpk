@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.kwad.sdk.widget.KSRelativeLayout android:id="@+id/ksad_root_container"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:fitsSystemWindows="true"
+  android:orientation="vertical">
+  <ImageView
+    android:id="@+id/ksad_video_blur_bg"
+    android:layout_width="match_parent"
+    android:scaleType="centerCrop"
+    android:layout_height="match_parent" />
+
+  <com.kwad.sdk.widget.KSRelativeLayout
+    android:id="@+id/ksad_video_container"
+    android:layout_width="match_parent"
+    android:layout_height="210dp"
+    android:visibility="gone">
+
+    <!--播放器-->
+    <com.kwad.components.core.video.DetailVideoView
+      android:id="@+id/ksad_video_player"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_centerInParent="true"
+      android:visibility="visible"
+      tools:background="@android:color/black" />
+
+    <ImageView
+      android:id="@+id/ksad_video_cover"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignBottom="@+id/ksad_video_player"
+      android:layout_alignLeft="@+id/ksad_video_player"
+      android:layout_alignRight="@+id/ksad_video_player"
+      android:layout_alignTop="@+id/ksad_video_player" />
+
+    <com.kwad.components.core.widget.KsLogoView
+      android:id="@+id/ksad_feed_ad_label"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="8dp"
+      android:layout_alignParentBottom="true"
+      android:layout_marginLeft="8dp"
+      android:background="@drawable/ksad_splash_logo_bg"
+      tools:text="广告" />
+  </com.kwad.sdk.widget.KSRelativeLayout>
+
+  <ImageView
+    android:layout_width="40dp"
+    android:layout_height="40dp"
+    android:src="@drawable/ksad_live_top_back" />
+
+  <FrameLayout
+    android:id="@+id/ksad_web_card_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/ksad_video_container">
+
+    <com.kwad.sdk.core.webview.KsAdWebView
+      android:id="@+id/ksad_landing_page_webview"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent" />
+
+    <include
+      android:id="@+id/ksad_ad_land_page_native"
+      layout="@layout/ksad_ad_land_page_native"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:visibility="gone" />
+  </FrameLayout>
+
+  <ImageView
+    android:id="@+id/ksad_back_icon"
+    android:layout_width="40dp"
+    android:layout_height="40dp"
+    android:src="@drawable/ksad_live_top_back" />
+
+  <ImageView
+      android:id="@+id/ksad_right_close"
+      android:layout_width="40dp"
+      android:layout_height="40dp"
+      android:padding="6dp"
+      android:layout_marginEnd="6dp"
+      android:layout_marginTop="2dp"
+      android:layout_alignParentEnd="true"
+      android:layout_alignParentTop="true"
+      android:scaleType="centerInside"
+      android:src="@drawable/ksad_page_close"
+      android:visibility="gone"
+      tools:visibility="visible" />
+
+</com.kwad.sdk.widget.KSRelativeLayout>

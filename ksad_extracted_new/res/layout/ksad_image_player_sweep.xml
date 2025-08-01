@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 激励图片播放器上方的扫光动画View，其中的单个波纹-->
+<ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="@dimen/ksad_image_player_sweep_wave_height_start"
+  android:layout_gravity="top"
+  tools:src="@drawable/ksad_image_player_sweep1" />
